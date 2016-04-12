@@ -13,3 +13,4 @@
 
 # OTM-DE
 *.bak
+.target/

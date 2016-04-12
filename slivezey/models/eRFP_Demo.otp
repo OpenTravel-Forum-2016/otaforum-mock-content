@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<otp:Project xmlns="http://www.w3.org/2001/XMLSchema" xmlns:otp="http://www.OpenTravel.org/ns/OTA2/Project_v01_00">
+    <otp:projectId>http://www.opentravel.org/OTM</otp:projectId>
+    <otp:name>eRFP_Demo</otp:name>
+    <otp:description></otp:description>
+    <otp:ManagedProjectItem defaultItem="true">
+        <otp:Repository>Opentravel</otp:Repository>
+        <otp:BaseNamespace>http://www.opentravel.org/OTM/product/eRFP</otp:BaseNamespace>
+        <otp:Filename>eRFP_1_0_0.otm</otp:Filename>
+        <otp:Version>1.0.0</otp:Version>
+    </otp:ManagedProjectItem>
+    <otp:ManagedProjectItem>
+        <otp:Repository>Opentravel</otp:Repository>
+        <otp:BaseNamespace>http://www.opentravel.org/OTM/Common</otp:BaseNamespace>
+        <otp:Filename>OTA_SimpleTypes_0_0_0.otm</otp:Filename>
+        <otp:Version>0.0.0</otp:Version>
+    </otp:ManagedProjectItem>
+    <otp:ManagedProjectItem>
+        <otp:Repository>Opentravel</otp:Repository>
+        <otp:BaseNamespace>http://www.opentravel.org/OTM/product</otp:BaseNamespace>
+        <otp:Filename>Product_1_0_0.otm</otp:Filename>
+        <otp:Version>1.0.0</otp:Version>
+    </otp:ManagedProjectItem>
+    <otp:ManagedProjectItem>
+        <otp:Repository>Opentravel</otp:Repository>
+        <otp:BaseNamespace>http://www.opentravel.org/OTM/Common</otp:BaseNamespace>
+        <otp:Filename>Common_1_0_0.otm</otp:Filename>
+        <otp:Version>1.0.0</otp:Version>
+    </otp:ManagedProjectItem>
+    <otp:ManagedProjectItem>
+        <otp:Repository>Opentravel</otp:Repository>
+        <otp:BaseNamespace>http://www.opentravel.org/OTM/Common</otp:BaseNamespace>
+        <otp:Filename>CodeList_1_0_0.otm</otp:Filename>
+        <otp:Version>1.0.0</otp:Version>
+    </otp:ManagedProjectItem>
+    <otp:UnmanagedProjectItem>
+        <otp:FileLocation>eRFP_API.otm</otp:FileLocation>
+    </otp:UnmanagedProjectItem>
+    <otp:RepositoryReferences>
+        <otp:RepositoryRef repositoryId="Opentravel">http://www.opentravelmodel.net</otp:RepositoryRef>
+    </otp:RepositoryReferences>
+</otp:Project>
