@@ -2,6 +2,7 @@
 
 This is the mock content project for the OpenTravel 2016 Advisory Forum hackathon.  The contents of this project are published to the mock content server in near-real-time
 
+
 ##Dependencies
 * Git (https://git-scm.com/downloads)
 * Maven 3.2 (https://archive.apache.org/dist/maven/maven-3/3.2.5/binaries/)
