@@ -27,7 +27,7 @@
         <Action actionId="Get" common="false">
             <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
             <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
-                payloadType="E_RFPResource_ID" statusCodes="200"/>
+                payloadType="E_RFPResource_SubstitutionGroup" statusCodes="200"/>
         </Action>
     </Resource>
     

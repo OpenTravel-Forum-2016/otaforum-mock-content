@@ -3,13 +3,13 @@
 	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.opentravel.otm</groupId>
-	<artifactId>api-publication-plugin</artifactId>
+	<artifactId>mock-content-workspace</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>API Publication Maven Plugin</name>
+	<name>OTM Mock Content Workspace</name>
 	
 	<build>
-		<defaultGoal>install</defaultGoal>
+		<defaultGoal>api-publication:prepare-context</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.opentravel.otm</groupId>
@@ -24,13 +24,6 @@
 						</configuration>
 					</execution>
 				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>org.opentravel.otm</groupId>
-						<artifactId>schema-compiler</artifactId>
-						<version>4.0-SNAPSHOT</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
