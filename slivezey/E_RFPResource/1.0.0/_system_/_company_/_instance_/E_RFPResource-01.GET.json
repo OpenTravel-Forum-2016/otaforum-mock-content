@@ -1,12 +1,13 @@
 {
-  "E_RFPSummary" : {
-    "@type" : "E_RFP",
+  "E_RFPDetail" : {
+    "@type" : "E_RFP_Detail",
+    "comments" : "Example String Value",
     "Identifier" : {
       "value" : "guid12345",
       "url" : "http://www.w3.org/2001/XMLSchema",
-      "system" : "{system}",
-      "company" : "{company}",
-      "instance" : "{instance}"
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
     },
     "RequestInfo" : {
       "@type" : "RequestInfo",
@@ -57,7 +58,7 @@
     "Contacts" : {
       "@type" : "Contacts",
       "Contact" : [ {
-        "@type" : "Contact_Company",
+        "@type" : "Contact",
         "comments" : "I am a long string.",
         "primaryInd" : true,
         "Identifier" : {
@@ -66,173 +67,20 @@
           "system" : "sysABC3344",
           "company" : "Acme",
           "instance" : "i0987654321"
-        },
-        "CompanySummary" : {
-          "@type" : "Company",
-          "id" : "company_1",
-          "Identifier" : {
-            "value" : "guid12345",
-            "url" : "http://www.w3.org/2001/XMLSchema",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          },
-          "Name" : [ {
-            "value" : "Travel Adventure Partners Incorporated",
-            "division" : "Travel Division",
-            "department" : "Adventure department",
-            "shortName" : "Adventure Inc",
-            "code" : "AI",
-            "codeContext" : "I am a tiny string."
-          }, {
-            "value" : "Travel Adventure Partners Incorporated",
-            "division" : "Travel Division",
-            "department" : "Adventure department",
-            "shortName" : "Adventure Inc",
-            "code" : "AI",
-            "codeContext" : "I am a tiny string."
-          } ],
-          "Address" : [ {
-            "@type" : "Address_Detail",
-            "role" : "Home",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Yes",
-              "shareSyncInd" : "No",
-              "optInStatus" : "OptedIn",
-              "optInDate" : "2011-01-24T09:45:00",
-              "optOutDate" : "2011-07-04T14:15:00"
-            }
-          }, {
-            "@type" : "Address_Detail",
-            "role" : "Business",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Inherit",
-              "shareSyncInd" : "Yes",
-              "optInStatus" : "OptedOut",
-              "optInDate" : "2011-12-05T06:00:00",
-              "optOutDate" : "2011-01-24T09:45:00"
-            }
-          } ],
-          "Telephone" : [ {
-            "@type" : "Telephone",
-            "role" : "Home",
-            "countryAccessCode" : "Example String Value",
-            "areaCityCode" : "Example String Value",
-            "phoneNumber" : "2358878",
-            "extension" : "Example String Value",
-            "id" : "telephone_1"
-          }, {
-            "@type" : "Telephone",
-            "role" : "Office",
-            "countryAccessCode" : "Example String Value",
-            "areaCityCode" : "Example String Value",
-            "phoneNumber" : "2358878",
-            "extension" : "Example String Value",
-            "id" : "telephone_2"
-          } ],
-          "Email" : [ {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "No",
-            "shareSyncInd" : "Inherit",
-            "optInStatus" : "Unknown",
-            "optInDate" : "2011-07-04T14:15:00",
-            "optOutDate" : "2011-12-05T06:00:00",
-            "validInd" : true,
-            "defaultInd" : true
-          }, {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Yes",
-            "shareSyncInd" : "No",
-            "optInStatus" : "OptedIn",
-            "optInDate" : "2011-01-24T09:45:00",
-            "optOutDate" : "2011-07-04T14:15:00",
-            "validInd" : true,
-            "defaultInd" : true
-          } ],
-          "URL" : [ {
-            "value" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
-            "type" : "I am a short string.",
-            "defaultInd" : true
-          }, {
-            "value" : "http://www.w3.org/2001/XMLSchema",
-            "type" : "I am a short string.",
-            "defaultInd" : true
-          } ]
         }
       }, {
-        "@type" : "Contact_Company",
+        "@type" : "Contact",
+        "comments" : "I am a long string.",
+        "primaryInd" : true,
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }
+      }, {
+        "@type" : "Contact",
         "comments" : "I am a long string.",
         "primaryInd" : true,
         "Identifier" : {
@@ -241,170 +89,6 @@
           "system" : "sysABC3344",
           "company" : "Acme",
           "instance" : "i0987654321"
-        },
-        "CompanySummary" : {
-          "@type" : "Company",
-          "id" : "company_2",
-          "Identifier" : {
-            "value" : "guid12345",
-            "url" : "http://www.w3.org/2001/XMLSchema",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          },
-          "Name" : [ {
-            "value" : "Travel Adventure Partners Incorporated",
-            "division" : "Travel Division",
-            "department" : "Adventure department",
-            "shortName" : "Adventure Inc",
-            "code" : "AI",
-            "codeContext" : "I am a tiny string."
-          }, {
-            "value" : "Travel Adventure Partners Incorporated",
-            "division" : "Travel Division",
-            "department" : "Adventure department",
-            "shortName" : "Adventure Inc",
-            "code" : "AI",
-            "codeContext" : "I am a tiny string."
-          } ],
-          "Address" : [ {
-            "@type" : "Address_Detail",
-            "role" : "Destination",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Inherit",
-              "shareSyncInd" : "Yes",
-              "optInStatus" : "OptedOut",
-              "optInDate" : "2011-12-05T06:00:00",
-              "optOutDate" : "2011-01-24T09:45:00"
-            }
-          }, {
-            "@type" : "Address_Detail",
-            "role" : "Other",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "No",
-              "shareSyncInd" : "Inherit",
-              "optInStatus" : "Unknown",
-              "optInDate" : "2011-07-04T14:15:00",
-              "optOutDate" : "2011-12-05T06:00:00"
-            }
-          } ],
-          "Telephone" : [ {
-            "@type" : "Telephone",
-            "role" : "Mobile",
-            "countryAccessCode" : "Example String Value",
-            "areaCityCode" : "Example String Value",
-            "phoneNumber" : "2358878",
-            "extension" : "Example String Value",
-            "id" : "telephone_3"
-          }, {
-            "@type" : "Telephone",
-            "role" : "Other",
-            "countryAccessCode" : "Example String Value",
-            "areaCityCode" : "Example String Value",
-            "phoneNumber" : "2358878",
-            "extension" : "Example String Value",
-            "id" : "telephone_4"
-          } ],
-          "Email" : [ {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Yes",
-            "shareSyncInd" : "No",
-            "optInStatus" : "OptedIn",
-            "optInDate" : "2011-01-24T09:45:00",
-            "optOutDate" : "2011-07-04T14:15:00",
-            "validInd" : true,
-            "defaultInd" : true
-          }, {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Inherit",
-            "shareSyncInd" : "Yes",
-            "optInStatus" : "OptedOut",
-            "optInDate" : "2011-12-05T06:00:00",
-            "optOutDate" : "2011-01-24T09:45:00",
-            "validInd" : true,
-            "defaultInd" : true
-          } ],
-          "URL" : [ {
-            "value" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
-            "type" : "I am a short string.",
-            "defaultInd" : true
-          }, {
-            "value" : "http://www.w3.org/2001/XMLSchema",
-            "type" : "I am a short string.",
-            "defaultInd" : true
-          } ]
         }
       } ]
     },
@@ -413,29 +97,99 @@
       "comments" : "Example String Value",
       "flexibleInd" : true,
       "DateTimeSpanWindows" : [ {
-        "@type" : "DateTimeSpanWindows",
+        "@type" : "DateTimeSpanWindows_Detail",
         "TimeSpan" : {
           "value" : null,
           "start" : "2016-08-22T19:32:52Z",
           "end" : "2016-08-28T04:32:52Z"
+        },
+        "StartWindow" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "EndWindow" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "Duration" : [ "PT1004199059S", "PT130S", "PT2M10S" ],
+        "DurationUnit" : {
+          "value" : "SUN"
         }
       }, {
-        "@type" : "DateTimeSpanWindows",
+        "@type" : "DateTimeSpanWindows_Detail",
         "TimeSpan" : {
           "value" : null,
           "start" : "2016-08-22T19:32:52Z",
           "end" : "2016-08-28T04:32:52Z"
+        },
+        "StartWindow" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "EndWindow" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "Duration" : [ "P1DT2S", "-P1Y", "P1Y2M3DT5H20M30.123S" ],
+        "DurationUnit" : {
+          "value" : "SAT"
+        }
+      }, {
+        "@type" : "DateTimeSpanWindows_Detail",
+        "TimeSpan" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "StartWindow" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "EndWindow" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        },
+        "Duration" : [ "PT1004199059S", "PT130S", "PT2M10S" ],
+        "DurationUnit" : {
+          "value" : "FRI"
         }
       } ]
     },
     "Sites" : {
       "@type" : "Sites",
       "Site" : [ {
-        "@type" : "Site_Summary",
-        "code" : "CHIDT"
+        "@type" : "Site_Detail",
+        "code" : "CHIDT",
+        "name" : "ABC Hotel",
+        "cityCode" : "CHI",
+        "chainCode" : "AA",
+        "chainName" : "XYZ Chain",
+        "brandCode" : "BB",
+        "brandName" : "BB Brand"
       }, {
-        "@type" : "Site_Summary",
-        "code" : "CHIDT"
+        "@type" : "Site_Detail",
+        "code" : "CHIDT",
+        "name" : "ABC Hotel",
+        "cityCode" : "CHI",
+        "chainCode" : "AA",
+        "chainName" : "XYZ Chain",
+        "brandCode" : "BB",
+        "brandName" : "BB Brand"
+      }, {
+        "@type" : "Site_Detail",
+        "code" : "CHIDT",
+        "name" : "ABC Hotel",
+        "cityCode" : "CHI",
+        "chainCode" : "AA",
+        "chainName" : "XYZ Chain",
+        "brandCode" : "BB",
+        "brandName" : "BB Brand"
       } ]
     },
     "RoomBlock" : {
@@ -452,33 +206,57 @@
         "@type" : "StayDay",
         "dayNumber" : 1,
         "StayDayRoom" : [ {
-          "@type" : "StayDayRoom",
+          "@type" : "StayDayRoom_Detail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
           "RoomTypeSummary" : {
             "@type" : "RoomType",
             "roomTypeId" : "roomType_1",
             "roomTypeCode" : "STD",
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom",
+          "@type" : "StayDayRoom_Detail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
           "RoomTypeSummary" : {
             "@type" : "RoomType",
             "roomTypeId" : "roomType_2",
             "roomTypeCode" : "STD",
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom_Detail",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_3",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         } ]
@@ -486,33 +264,115 @@
         "@type" : "StayDay",
         "dayNumber" : 1,
         "StayDayRoom" : [ {
-          "@type" : "StayDayRoom",
+          "@type" : "StayDayRoom_Detail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeSummary" : {
-            "@type" : "RoomType",
-            "roomTypeId" : "roomType_3",
-            "roomTypeCode" : "STD",
-            "bedTypeCode" : "K1",
-            "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
-            }
-          }
-        }, {
-          "@type" : "StayDayRoom",
-          "numberOfUnits" : 75,
-          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
           "RoomTypeSummary" : {
             "@type" : "RoomType",
             "roomTypeId" : "roomType_4",
             "roomTypeCode" : "STD",
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom_Detail",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_5",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom_Detail",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_6",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+            }
+          }
+        } ]
+      }, {
+        "@type" : "StayDay",
+        "dayNumber" : 1,
+        "StayDayRoom" : [ {
+          "@type" : "StayDayRoom_Detail",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_7",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom_Detail",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_8",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom_Detail",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "comments" : "Comments about this stay day.",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_9",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         } ]
@@ -526,7 +386,7 @@
       "peakMeetingRoom" : 3,
       "Identifier" : {
         "value" : "guid12345",
-        "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "url" : "http://www.w3.org/2001/XMLSchema",
         "system" : "sysABC3344",
         "company" : "Acme",
         "instance" : "i0987654321"
@@ -535,7 +395,7 @@
         "@type" : "EventDay",
         "dayNumber" : 1,
         "EventFunction" : [ {
-          "@type" : "EventFunction",
+          "@type" : "EventFunction_Detail",
           "eventId" : "eventFunction_1",
           "startTime" : "09:45:00",
           "endTime" : "14:15:00",
@@ -543,6 +403,7 @@
           "functionName" : "Break-out session",
           "meetingSpaceId" : "246542",
           "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
           "twentyFourHourHoldInd" : true,
           "EventFunctionType" : {
             "value" : "Board Meeting"
@@ -550,9 +411,113 @@
           "MeetingSpaceSize" : {
             "value" : 1200.0,
             "unitOfMeasure" : "Sq. Ft."
-          }
+          },
+          "AVNeeds" : [ {
+            "value" : "Audio recording"
+          }, {
+            "value" : "Audio recording"
+          }, {
+            "value" : "AV Technician"
+          }, {
+            "value" : "AV Technician"
+          }, {
+            "value" : "Background music"
+          }, {
+            "value" : "Background music"
+          } ],
+          "RoomSetup" : {
+            "value" : "Ballroom"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Box Lunch"
+            },
+            "AVNeeds" : [ {
+              "value" : "Copier"
+            }, {
+              "value" : "Copier"
+            }, {
+              "value" : "Disc player"
+            }, {
+              "value" : "Disc player"
+            }, {
+              "value" : "Dry erase board with eraser and markers"
+            }, {
+              "value" : "Dry erase board with eraser and markers"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Breakfast"
+            },
+            "AVNeeds" : [ {
+              "value" : "DVD player"
+            }, {
+              "value" : "DVD player"
+            }, {
+              "value" : "Easel"
+            }, {
+              "value" : "Easel"
+            }, {
+              "value" : "Flip chart and markers"
+            }, {
+              "value" : "Flip chart and markers"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Breakfast Buffet"
+            },
+            "AVNeeds" : [ {
+              "value" : "High speed internet access"
+            }, {
+              "value" : "High speed internet access"
+            }, {
+              "value" : "Installed stage"
+            }, {
+              "value" : "Installed stage"
+            }, {
+              "value" : "Laptop computer"
+            }, {
+              "value" : "Laptop computer"
+            } ]
+          } ]
         }, {
-          "@type" : "EventFunction",
+          "@type" : "EventFunction_Detail",
           "eventId" : "eventFunction_2",
           "startTime" : "06:00:00",
           "endTime" : "09:45:00",
@@ -560,14 +525,241 @@
           "functionName" : "Break-out session",
           "meetingSpaceId" : "246542",
           "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
           "twentyFourHourHoldInd" : true,
           "EventFunctionType" : {
-            "value" : "Box Lunch"
+            "value" : "Breakout"
           },
           "MeetingSpaceSize" : {
             "value" : 1200.0,
             "unitOfMeasure" : "Sq. Ft."
-          }
+          },
+          "AVNeeds" : [ {
+            "value" : "Laser pointer"
+          }, {
+            "value" : "Laser pointer"
+          }, {
+            "value" : "LCD panel"
+          }, {
+            "value" : "LCD panel"
+          }, {
+            "value" : "Microphone"
+          }, {
+            "value" : "Microphone"
+          } ],
+          "RoomSetup" : {
+            "value" : "Banquet"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Brunch"
+            },
+            "AVNeeds" : [ {
+              "value" : "PA system"
+            }, {
+              "value" : "PA system"
+            }, {
+              "value" : "Podium"
+            }, {
+              "value" : "Podium"
+            }, {
+              "value" : "Polling devices"
+            }, {
+              "value" : "Polling devices"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Ceremony"
+            },
+            "AVNeeds" : [ {
+              "value" : "Portable stage"
+            }, {
+              "value" : "Portable stage"
+            }, {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Projector"
+            }, {
+              "value" : "Projector"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Changing Room"
+            },
+            "AVNeeds" : [ {
+              "value" : "Screen"
+            }, {
+              "value" : "Screen"
+            }, {
+              "value" : "Spotlights"
+            }, {
+              "value" : "Spotlights"
+            }, {
+              "value" : "Telephone"
+            }, {
+              "value" : "Telephone"
+            } ]
+          } ]
+        }, {
+          "@type" : "EventFunction_Detail",
+          "eventId" : "eventFunction_3",
+          "startTime" : "14:15:00",
+          "endTime" : "06:00:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Coat Check"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          },
+          "AVNeeds" : [ {
+            "value" : "Video camera"
+          }, {
+            "value" : "Video camera"
+          }, {
+            "value" : "Video conferencing"
+          }, {
+            "value" : "Video conferencing"
+          }, {
+            "value" : "Video recording"
+          }, {
+            "value" : "Video recording"
+          } ],
+          "RoomSetup" : {
+            "value" : "Boardroom"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Cocktail Reception"
+            },
+            "AVNeeds" : [ {
+              "value" : "Wireless microphone"
+            }, {
+              "value" : "Wireless microphone"
+            }, {
+              "value" : "Audio recording"
+            }, {
+              "value" : "Audio recording"
+            }, {
+              "value" : "AV Technician"
+            }, {
+              "value" : "AV Technician"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Cofee Break"
+            },
+            "AVNeeds" : [ {
+              "value" : "Background music"
+            }, {
+              "value" : "Background music"
+            }, {
+              "value" : "Copier"
+            }, {
+              "value" : "Copier"
+            }, {
+              "value" : "Disc player"
+            }, {
+              "value" : "Disc player"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Continental Breakfast"
+            },
+            "AVNeeds" : [ {
+              "value" : "Dry erase board with eraser and markers"
+            }, {
+              "value" : "Dry erase board with eraser and markers"
+            }, {
+              "value" : "DVD player"
+            }, {
+              "value" : "DVD player"
+            }, {
+              "value" : "Easel"
+            }, {
+              "value" : "Easel"
+            } ]
+          } ]
         } ],
         "EventStatus" : {
           "value" : "Event Planned"
@@ -576,24 +768,7 @@
         "@type" : "EventDay",
         "dayNumber" : 1,
         "EventFunction" : [ {
-          "@type" : "EventFunction",
-          "eventId" : "eventFunction_3",
-          "startTime" : "14:15:00",
-          "endTime" : "06:00:00",
-          "attendeeQuantity" : 50,
-          "functionName" : "Break-out session",
-          "meetingSpaceId" : "246542",
-          "meetingSpaceName" : "Grand Ballroom",
-          "twentyFourHourHoldInd" : true,
-          "EventFunctionType" : {
-            "value" : "Breakfast"
-          },
-          "MeetingSpaceSize" : {
-            "value" : 1200.0,
-            "unitOfMeasure" : "Sq. Ft."
-          }
-        }, {
-          "@type" : "EventFunction",
+          "@type" : "EventFunction_Detail",
           "eventId" : "eventFunction_4",
           "startTime" : "09:45:00",
           "endTime" : "14:15:00",
@@ -601,17 +776,739 @@
           "functionName" : "Break-out session",
           "meetingSpaceId" : "246542",
           "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
           "twentyFourHourHoldInd" : true,
           "EventFunctionType" : {
-            "value" : "Breakfast Buffet"
+            "value" : "Continuous Break"
           },
           "MeetingSpaceSize" : {
             "value" : 1200.0,
             "unitOfMeasure" : "Sq. Ft."
-          }
+          },
+          "AVNeeds" : [ {
+            "value" : "Flip chart and markers"
+          }, {
+            "value" : "Flip chart and markers"
+          }, {
+            "value" : "High speed internet access"
+          }, {
+            "value" : "High speed internet access"
+          }, {
+            "value" : "Installed stage"
+          }, {
+            "value" : "Installed stage"
+          } ],
+          "RoomSetup" : {
+            "value" : "Classroom"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Dance"
+            },
+            "AVNeeds" : [ {
+              "value" : "Laptop computer"
+            }, {
+              "value" : "Laptop computer"
+            }, {
+              "value" : "Laser pointer"
+            }, {
+              "value" : "Laser pointer"
+            }, {
+              "value" : "LCD panel"
+            }, {
+              "value" : "LCD panel"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Dinner"
+            },
+            "AVNeeds" : [ {
+              "value" : "Microphone"
+            }, {
+              "value" : "Microphone"
+            }, {
+              "value" : "PA system"
+            }, {
+              "value" : "PA system"
+            }, {
+              "value" : "Podium"
+            }, {
+              "value" : "Podium"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Dinner Buffet"
+            },
+            "AVNeeds" : [ {
+              "value" : "Polling devices"
+            }, {
+              "value" : "Polling devices"
+            }, {
+              "value" : "Portable stage"
+            }, {
+              "value" : "Portable stage"
+            }, {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Powered speaker"
+            } ]
+          } ]
+        }, {
+          "@type" : "EventFunction_Detail",
+          "eventId" : "eventFunction_5",
+          "startTime" : "06:00:00",
+          "endTime" : "09:45:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Exihibits"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          },
+          "AVNeeds" : [ {
+            "value" : "Projector"
+          }, {
+            "value" : "Projector"
+          }, {
+            "value" : "Screen"
+          }, {
+            "value" : "Screen"
+          }, {
+            "value" : "Spotlights"
+          }, {
+            "value" : "Spotlights"
+          } ],
+          "RoomSetup" : {
+            "value" : "Classroom - 2 per 6 ft. tables"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "General Session"
+            },
+            "AVNeeds" : [ {
+              "value" : "Telephone"
+            }, {
+              "value" : "Telephone"
+            }, {
+              "value" : "Video camera"
+            }, {
+              "value" : "Video camera"
+            }, {
+              "value" : "Video conferencing"
+            }, {
+              "value" : "Video conferencing"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Holding Room"
+            },
+            "AVNeeds" : [ {
+              "value" : "Video recording"
+            }, {
+              "value" : "Video recording"
+            }, {
+              "value" : "Wireless microphone"
+            }, {
+              "value" : "Wireless microphone"
+            }, {
+              "value" : "Audio recording"
+            }, {
+              "value" : "Audio recording"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Hospitality Room"
+            },
+            "AVNeeds" : [ {
+              "value" : "AV Technician"
+            }, {
+              "value" : "AV Technician"
+            }, {
+              "value" : "Background music"
+            }, {
+              "value" : "Background music"
+            }, {
+              "value" : "Copier"
+            }, {
+              "value" : "Copier"
+            } ]
+          } ]
+        }, {
+          "@type" : "EventFunction_Detail",
+          "eventId" : "eventFunction_6",
+          "startTime" : "14:15:00",
+          "endTime" : "06:00:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "In-House Meeting"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          },
+          "AVNeeds" : [ {
+            "value" : "Disc player"
+          }, {
+            "value" : "Disc player"
+          }, {
+            "value" : "Dry erase board with eraser and markers"
+          }, {
+            "value" : "Dry erase board with eraser and markers"
+          }, {
+            "value" : "DVD player"
+          }, {
+            "value" : "DVD player"
+          } ],
+          "RoomSetup" : {
+            "value" : "Classroom - 3 per 6 ft. tables"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Interview"
+            },
+            "AVNeeds" : [ {
+              "value" : "Easel"
+            }, {
+              "value" : "Easel"
+            }, {
+              "value" : "Flip chart and markers"
+            }, {
+              "value" : "Flip chart and markers"
+            }, {
+              "value" : "High speed internet access"
+            }, {
+              "value" : "High speed internet access"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Lunch"
+            },
+            "AVNeeds" : [ {
+              "value" : "Installed stage"
+            }, {
+              "value" : "Installed stage"
+            }, {
+              "value" : "Laptop computer"
+            }, {
+              "value" : "Laptop computer"
+            }, {
+              "value" : "Laser pointer"
+            }, {
+              "value" : "Laser pointer"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Lunch Buffet"
+            },
+            "AVNeeds" : [ {
+              "value" : "LCD panel"
+            }, {
+              "value" : "LCD panel"
+            }, {
+              "value" : "Microphone"
+            }, {
+              "value" : "Microphone"
+            }, {
+              "value" : "PA system"
+            }, {
+              "value" : "PA system"
+            } ]
+          } ]
         } ],
         "EventStatus" : {
           "value" : "Event Scheduled (no details at this time)"
+        }
+      }, {
+        "@type" : "EventDay",
+        "dayNumber" : 1,
+        "EventFunction" : [ {
+          "@type" : "EventFunction_Detail",
+          "eventId" : "eventFunction_7",
+          "startTime" : "09:45:00",
+          "endTime" : "14:15:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Meal On Own"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          },
+          "AVNeeds" : [ {
+            "value" : "Podium"
+          }, {
+            "value" : "Podium"
+          }, {
+            "value" : "Polling devices"
+          }, {
+            "value" : "Polling devices"
+          }, {
+            "value" : "Portable stage"
+          }, {
+            "value" : "Portable stage"
+          } ],
+          "RoomSetup" : {
+            "value" : "Classroom - 3 per 8 ft. tables"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Meeting"
+            },
+            "AVNeeds" : [ {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Projector"
+            }, {
+              "value" : "Projector"
+            }, {
+              "value" : "Screen"
+            }, {
+              "value" : "Screen"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Menu Tasting"
+            },
+            "AVNeeds" : [ {
+              "value" : "Spotlights"
+            }, {
+              "value" : "Spotlights"
+            }, {
+              "value" : "Telephone"
+            }, {
+              "value" : "Telephone"
+            }, {
+              "value" : "Video camera"
+            }, {
+              "value" : "Video camera"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "No Agenda Hold"
+            },
+            "AVNeeds" : [ {
+              "value" : "Video conferencing"
+            }, {
+              "value" : "Video conferencing"
+            }, {
+              "value" : "Video recording"
+            }, {
+              "value" : "Video recording"
+            }, {
+              "value" : "Wireless microphone"
+            }, {
+              "value" : "Wireless microphone"
+            } ]
+          } ]
+        }, {
+          "@type" : "EventFunction_Detail",
+          "eventId" : "eventFunction_8",
+          "startTime" : "06:00:00",
+          "endTime" : "09:45:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Off Site"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          },
+          "AVNeeds" : [ {
+            "value" : "Audio recording"
+          }, {
+            "value" : "Audio recording"
+          }, {
+            "value" : "AV Technician"
+          }, {
+            "value" : "AV Technician"
+          }, {
+            "value" : "Background music"
+          }, {
+            "value" : "Background music"
+          } ],
+          "RoomSetup" : {
+            "value" : "Classroom - 4 per 8 ft. tables"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Office"
+            },
+            "AVNeeds" : [ {
+              "value" : "Copier"
+            }, {
+              "value" : "Copier"
+            }, {
+              "value" : "Disc player"
+            }, {
+              "value" : "Disc player"
+            }, {
+              "value" : "Dry erase board with eraser and markers"
+            }, {
+              "value" : "Dry erase board with eraser and markers"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Reception"
+            },
+            "AVNeeds" : [ {
+              "value" : "DVD player"
+            }, {
+              "value" : "DVD player"
+            }, {
+              "value" : "Easel"
+            }, {
+              "value" : "Easel"
+            }, {
+              "value" : "Flip chart and markers"
+            }, {
+              "value" : "Flip chart and markers"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Recreation"
+            },
+            "AVNeeds" : [ {
+              "value" : "High speed internet access"
+            }, {
+              "value" : "High speed internet access"
+            }, {
+              "value" : "Installed stage"
+            }, {
+              "value" : "Installed stage"
+            }, {
+              "value" : "Laptop computer"
+            }, {
+              "value" : "Laptop computer"
+            } ]
+          } ]
+        }, {
+          "@type" : "EventFunction_Detail",
+          "eventId" : "eventFunction_9",
+          "startTime" : "14:15:00",
+          "endTime" : "06:00:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "comments" : "Comments about this function.",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Registration"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          },
+          "AVNeeds" : [ {
+            "value" : "Laser pointer"
+          }, {
+            "value" : "Laser pointer"
+          }, {
+            "value" : "LCD panel"
+          }, {
+            "value" : "LCD panel"
+          }, {
+            "value" : "Microphone"
+          }, {
+            "value" : "Microphone"
+          } ],
+          "RoomSetup" : {
+            "value" : "Classroom (Chevron) - 2 per 6 ft. tables"
+          },
+          "EventSubFunction" : [ {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "09:45:00",
+            "endTime" : "14:15:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Rehearsal"
+            },
+            "AVNeeds" : [ {
+              "value" : "PA system"
+            }, {
+              "value" : "PA system"
+            }, {
+              "value" : "Podium"
+            }, {
+              "value" : "Podium"
+            }, {
+              "value" : "Polling devices"
+            }, {
+              "value" : "Polling devices"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "06:00:00",
+            "endTime" : "09:45:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Room Ready"
+            },
+            "AVNeeds" : [ {
+              "value" : "Portable stage"
+            }, {
+              "value" : "Portable stage"
+            }, {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Powered speaker"
+            }, {
+              "value" : "Projector"
+            }, {
+              "value" : "Projector"
+            } ]
+          }, {
+            "@type" : "EventSubFunction_Detail",
+            "name" : "Roll-in lunch",
+            "startTime" : "14:15:00",
+            "endTime" : "06:00:00",
+            "attendeeQuantity" : 50,
+            "Id" : {
+              "value" : "guid12345",
+              "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+              "system" : "sysABC3344",
+              "company" : "Acme",
+              "instance" : "i0987654321"
+            },
+            "SubFunctionType" : {
+              "value" : "Set Up"
+            },
+            "AVNeeds" : [ {
+              "value" : "Screen"
+            }, {
+              "value" : "Screen"
+            }, {
+              "value" : "Spotlights"
+            }, {
+              "value" : "Spotlights"
+            }, {
+              "value" : "Telephone"
+            }, {
+              "value" : "Telephone"
+            } ]
+          } ]
+        } ],
+        "EventStatus" : {
+          "value" : "No Event"
         }
       } ],
       "FoodAndBeveragesBudget" : {
@@ -619,6 +1516,16 @@
         "currencyCode" : "USD",
         "decimalPlaces" : 2
       }
+    },
+    "AdditionalInfo" : {
+      "value" : null,
+      "attachDocumentInd" : true,
+      "aVNeedsInd" : true,
+      "decisionFactorsInd" : true,
+      "contractualRequirementsInd" : true,
+      "billingInfoInd" : true,
+      "otherSuppliersInd" : true,
+      "thirdPartyPlannerInd" : true
     }
   }
 }

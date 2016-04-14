@@ -1,128 +1,426 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<E_RFP xmlns="http://www.opentravel.org/OTM/product/eRFP/v1"
-    xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1" xmlns:prod-0100="http://www.opentravel.org/OTM/product/v1">
-    <Identifier company="{company}" instance="{instance}"
-        system="{system}" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
-    <RequestInfo commisionInd="true"
-        decisionDue="2010-12-31T11:55:00+06:00" eventBlockInd="true"
-        eventName="I am a short string." id="requestInfo_1"
-        peakRoomQuantity="100" rFPDescription="Text about the event."
-        rFPName="ABC Convention" responseDue="2010-12-31T11:55:00+06:00"
-        roomBlockInd="true" totalAttendees="500">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<E_RFPDetail xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1" xmlns:prod-0100="http://www.opentravel.org/OTM/product/v1" comments="Example String Value" xmlns="http://www.opentravel.org/OTM/product/eRFP/v1">
+    <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    <RequestInfo commisionInd="true" decisionDue="2010-12-31T11:55:00+06:00" eventBlockInd="true" eventName="I am a short string." id="requestInfo_1" peakRoomQuantity="100" rFPDescription="Text about the event." rFPName="ABC Convention" responseDue="2010-12-31T11:55:00+06:00" roomBlockInd="true" totalAttendees="500">
         <EventType>Anniversary</EventType>
         <BusinessType>Contract</BusinessType>
         <MarketSegment>AirlineCrew</MarketSegment>
         <TotalEventBudget currencyCode="USD" decimalPlaces="2">80000</TotalEventBudget>
         <LargestMeetingSpace unitOfMeasure="Sq. Ft.">1200</LargestMeetingSpace>
         <TotalMeetingSpace unitOfMeasure="Sq. Ft.">1200</TotalMeetingSpace>
-        <ExpectedCommissionRate amount="5000"
-            currencyCode="Example String Value" decimalPlaces="2" percent="5"/>
+        <ExpectedCommissionRate amount="5000" currencyCode="Example String Value" decimalPlaces="2" percent="5"/>
         <PreferredContactMethod>Fax</PreferredContactMethod>
     </RequestInfo>
     <Contacts>
         <Contact comments="I am a long string." primaryInd="true">
-            <Identifier company="Acme" instance="i0987654321"
-                system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+            <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
         </Contact>
         <Contact comments="I am a long string." primaryInd="true">
-            <Identifier company="Acme" instance="i0987654321"
-                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+            <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+        </Contact>
+        <Contact comments="I am a long string." primaryInd="true">
+            <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
         </Contact>
     </Contacts>
     <Dates comments="Example String Value" flexibleInd="true">
-        <ota2-0100:DateTimeSpanWindows>
+        <ota2-0100:DateTimeSpanWindowsDetail>
             <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
-        </ota2-0100:DateTimeSpanWindows>
-        <ota2-0100:DateTimeSpanWindows>
+            <ota2-0100:StartWindow end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:EndWindow end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:Duration>PT1004199059S</ota2-0100:Duration>
+            <ota2-0100:Duration>PT130S</ota2-0100:Duration>
+            <ota2-0100:Duration>PT2M10S</ota2-0100:Duration>
+            <ota2-0100:DurationUnit>SUN</ota2-0100:DurationUnit>
+        </ota2-0100:DateTimeSpanWindowsDetail>
+        <ota2-0100:DateTimeSpanWindowsDetail>
             <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
-        </ota2-0100:DateTimeSpanWindows>
+            <ota2-0100:StartWindow end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:EndWindow end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:Duration>P1DT2S</ota2-0100:Duration>
+            <ota2-0100:Duration>-P1Y</ota2-0100:Duration>
+            <ota2-0100:Duration>P1Y2M3DT5H20M30.123S</ota2-0100:Duration>
+            <ota2-0100:DurationUnit>SAT</ota2-0100:DurationUnit>
+        </ota2-0100:DateTimeSpanWindowsDetail>
+        <ota2-0100:DateTimeSpanWindowsDetail>
+            <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:StartWindow end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:EndWindow end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+            <ota2-0100:Duration>PT1004199059S</ota2-0100:Duration>
+            <ota2-0100:Duration>PT130S</ota2-0100:Duration>
+            <ota2-0100:Duration>PT2M10S</ota2-0100:Duration>
+            <ota2-0100:DurationUnit>FRI</ota2-0100:DurationUnit>
+        </ota2-0100:DateTimeSpanWindowsDetail>
     </Dates>
     <Sites>
-        <prod-0100:Site code="CHIDT"/>
-        <prod-0100:Site code="CHIDT"/>
+        <prod-0100:SiteDetail brandCode="BB" brandName="BB Brand" chainCode="AA" chainName="XYZ Chain" cityCode="CHI" code="CHIDT" name="ABC Hotel"/>
+        <prod-0100:SiteDetail brandCode="BB" brandName="BB Brand" chainCode="AA" chainName="XYZ Chain" cityCode="CHI" code="CHIDT" name="ABC Hotel"/>
+        <prod-0100:SiteDetail brandCode="BB" brandName="BB Brand" chainCode="AA" chainName="XYZ Chain" cityCode="CHI" code="CHIDT" name="ABC Hotel"/>
     </Sites>
-    <RoomBlock organizerCheckInDaysBefore="2"
-        organizerCheckOutDaysAfter="1" sleepingRoomInd="true">
+    <RoomBlock organizerCheckInDaysBefore="2" organizerCheckOutDaysAfter="1" sleepingRoomInd="true">
         <BudgetedRoomRate currencyCode="USD" decimalPlaces="2">80000</BudgetedRoomRate>
         <StayDay dayNumber="1">
-            <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomType bedTypeCode="K1"
-                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_1">
-                    <ota2-0100:Comments>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_1">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
-                    </ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
                 </prod-0100:RoomType>
-            </StayDayRoom>
-            <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomType bedTypeCode="K1"
-                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_2">
-                    <ota2-0100:Comments>
+            </StayDayRoomDetail>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_2">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
-                    </ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
                 </prod-0100:RoomType>
-            </StayDayRoom>
+            </StayDayRoomDetail>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_3">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
+            </StayDayRoomDetail>
         </StayDay>
         <StayDay dayNumber="1">
-            <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomType bedTypeCode="K1"
-                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_3">
-                    <ota2-0100:Comments>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_4">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
-                    </ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
                 </prod-0100:RoomType>
-            </StayDayRoom>
-            <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomType bedTypeCode="K1"
-                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_4">
-                    <ota2-0100:Comments>
+            </StayDayRoomDetail>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_5">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
                         <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
-                    </ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
                 </prod-0100:RoomType>
-            </StayDayRoom>
+            </StayDayRoomDetail>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_6">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
+            </StayDayRoomDetail>
+        </StayDay>
+        <StayDay dayNumber="1">
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_7">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
+            </StayDayRoomDetail>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_8">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
+            </StayDayRoomDetail>
+            <StayDayRoomDetail comments="Comments about this stay day." numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_9">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
+            </StayDayRoomDetail>
         </StayDay>
         <ReservationMethod>Electronic rooming list</ReservationMethod>
     </RoomBlock>
     <EventBlock peakMeetingRoom="3">
-        <Identifier company="Acme" instance="i0987654321"
-            system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+        <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
         <EventDay dayNumber="1">
-            <EventFunction attendeeQuantity="50" endTime="14:15:00"
-                eventId="eventFunction_1"
-                functionName="Break-out session" meetingSpaceId="246542"
-                meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="14:15:00" eventId="eventFunction_1" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
                 <EventFunctionType>Board Meeting</EventFunctionType>
                 <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
-            </EventFunction>
-            <EventFunction attendeeQuantity="50" endTime="09:45:00"
-                eventId="eventFunction_2"
-                functionName="Break-out session" meetingSpaceId="246542"
-                meetingSpaceName="Grand Ballroom" startTime="06:00:00" twentyFourHourHoldInd="true">
-                <EventFunctionType>Box Lunch</EventFunctionType>
+                <AVNeeds>Audio recording</AVNeeds>
+                <AVNeeds>AV Technician</AVNeeds>
+                <AVNeeds>Background music</AVNeeds>
+                <RoomSetup>Ballroom</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Box Lunch</SubFunctionType>
+                    <AVNeeds>Copier</AVNeeds>
+                    <AVNeeds>Disc player</AVNeeds>
+                    <AVNeeds>Dry erase board with eraser and markers</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Breakfast</SubFunctionType>
+                    <AVNeeds>DVD player</AVNeeds>
+                    <AVNeeds>Easel</AVNeeds>
+                    <AVNeeds>Flip chart and markers</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Breakfast Buffet</SubFunctionType>
+                    <AVNeeds>High speed internet access</AVNeeds>
+                    <AVNeeds>Installed stage</AVNeeds>
+                    <AVNeeds>Laptop computer</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="09:45:00" eventId="eventFunction_2" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="06:00:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Breakout</EventFunctionType>
                 <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
-            </EventFunction>
+                <AVNeeds>Laser pointer</AVNeeds>
+                <AVNeeds>LCD panel</AVNeeds>
+                <AVNeeds>Microphone</AVNeeds>
+                <RoomSetup>Banquet</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Brunch</SubFunctionType>
+                    <AVNeeds>PA system</AVNeeds>
+                    <AVNeeds>Podium</AVNeeds>
+                    <AVNeeds>Polling devices</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Ceremony</SubFunctionType>
+                    <AVNeeds>Portable stage</AVNeeds>
+                    <AVNeeds>Powered speaker</AVNeeds>
+                    <AVNeeds>Projector</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Changing Room</SubFunctionType>
+                    <AVNeeds>Screen</AVNeeds>
+                    <AVNeeds>Spotlights</AVNeeds>
+                    <AVNeeds>Telephone</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="06:00:00" eventId="eventFunction_3" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="14:15:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Coat Check</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+                <AVNeeds>Video camera</AVNeeds>
+                <AVNeeds>Video conferencing</AVNeeds>
+                <AVNeeds>Video recording</AVNeeds>
+                <RoomSetup>Boardroom</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Cocktail Reception</SubFunctionType>
+                    <AVNeeds>Wireless microphone</AVNeeds>
+                    <AVNeeds>Audio recording</AVNeeds>
+                    <AVNeeds>AV Technician</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Cofee Break</SubFunctionType>
+                    <AVNeeds>Background music</AVNeeds>
+                    <AVNeeds>Copier</AVNeeds>
+                    <AVNeeds>Disc player</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Continental Breakfast</SubFunctionType>
+                    <AVNeeds>Dry erase board with eraser and markers</AVNeeds>
+                    <AVNeeds>DVD player</AVNeeds>
+                    <AVNeeds>Easel</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
             <EventStatus>Event Planned</EventStatus>
         </EventDay>
         <EventDay dayNumber="1">
-            <EventFunction attendeeQuantity="50" endTime="06:00:00"
-                eventId="eventFunction_3"
-                functionName="Break-out session" meetingSpaceId="246542"
-                meetingSpaceName="Grand Ballroom" startTime="14:15:00" twentyFourHourHoldInd="true">
-                <EventFunctionType>Breakfast</EventFunctionType>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="14:15:00" eventId="eventFunction_4" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Continuous Break</EventFunctionType>
                 <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
-            </EventFunction>
-            <EventFunction attendeeQuantity="50" endTime="14:15:00"
-                eventId="eventFunction_4"
-                functionName="Break-out session" meetingSpaceId="246542"
-                meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
-                <EventFunctionType>Breakfast Buffet</EventFunctionType>
+                <AVNeeds>Flip chart and markers</AVNeeds>
+                <AVNeeds>High speed internet access</AVNeeds>
+                <AVNeeds>Installed stage</AVNeeds>
+                <RoomSetup>Classroom</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Dance</SubFunctionType>
+                    <AVNeeds>Laptop computer</AVNeeds>
+                    <AVNeeds>Laser pointer</AVNeeds>
+                    <AVNeeds>LCD panel</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Dinner</SubFunctionType>
+                    <AVNeeds>Microphone</AVNeeds>
+                    <AVNeeds>PA system</AVNeeds>
+                    <AVNeeds>Podium</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Dinner Buffet</SubFunctionType>
+                    <AVNeeds>Polling devices</AVNeeds>
+                    <AVNeeds>Portable stage</AVNeeds>
+                    <AVNeeds>Powered speaker</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="09:45:00" eventId="eventFunction_5" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="06:00:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Exihibits</EventFunctionType>
                 <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
-            </EventFunction>
+                <AVNeeds>Projector</AVNeeds>
+                <AVNeeds>Screen</AVNeeds>
+                <AVNeeds>Spotlights</AVNeeds>
+                <RoomSetup>Classroom - 2 per 6 ft. tables</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>General Session</SubFunctionType>
+                    <AVNeeds>Telephone</AVNeeds>
+                    <AVNeeds>Video camera</AVNeeds>
+                    <AVNeeds>Video conferencing</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Holding Room</SubFunctionType>
+                    <AVNeeds>Video recording</AVNeeds>
+                    <AVNeeds>Wireless microphone</AVNeeds>
+                    <AVNeeds>Audio recording</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Hospitality Room</SubFunctionType>
+                    <AVNeeds>AV Technician</AVNeeds>
+                    <AVNeeds>Background music</AVNeeds>
+                    <AVNeeds>Copier</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="06:00:00" eventId="eventFunction_6" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="14:15:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>In-House Meeting</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+                <AVNeeds>Disc player</AVNeeds>
+                <AVNeeds>Dry erase board with eraser and markers</AVNeeds>
+                <AVNeeds>DVD player</AVNeeds>
+                <RoomSetup>Classroom - 3 per 6 ft. tables</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Interview</SubFunctionType>
+                    <AVNeeds>Easel</AVNeeds>
+                    <AVNeeds>Flip chart and markers</AVNeeds>
+                    <AVNeeds>High speed internet access</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Lunch</SubFunctionType>
+                    <AVNeeds>Installed stage</AVNeeds>
+                    <AVNeeds>Laptop computer</AVNeeds>
+                    <AVNeeds>Laser pointer</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Lunch Buffet</SubFunctionType>
+                    <AVNeeds>LCD panel</AVNeeds>
+                    <AVNeeds>Microphone</AVNeeds>
+                    <AVNeeds>PA system</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
             <EventStatus>Event Scheduled (no details at this time)</EventStatus>
+        </EventDay>
+        <EventDay dayNumber="1">
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="14:15:00" eventId="eventFunction_7" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Meal On Own</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+                <AVNeeds>Podium</AVNeeds>
+                <AVNeeds>Polling devices</AVNeeds>
+                <AVNeeds>Portable stage</AVNeeds>
+                <RoomSetup>Classroom - 3 per 8 ft. tables</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Meeting</SubFunctionType>
+                    <AVNeeds>Powered speaker</AVNeeds>
+                    <AVNeeds>Projector</AVNeeds>
+                    <AVNeeds>Screen</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Menu Tasting</SubFunctionType>
+                    <AVNeeds>Spotlights</AVNeeds>
+                    <AVNeeds>Telephone</AVNeeds>
+                    <AVNeeds>Video camera</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>No Agenda Hold</SubFunctionType>
+                    <AVNeeds>Video conferencing</AVNeeds>
+                    <AVNeeds>Video recording</AVNeeds>
+                    <AVNeeds>Wireless microphone</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="09:45:00" eventId="eventFunction_8" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="06:00:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Off Site</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+                <AVNeeds>Audio recording</AVNeeds>
+                <AVNeeds>AV Technician</AVNeeds>
+                <AVNeeds>Background music</AVNeeds>
+                <RoomSetup>Classroom - 4 per 8 ft. tables</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Office</SubFunctionType>
+                    <AVNeeds>Copier</AVNeeds>
+                    <AVNeeds>Disc player</AVNeeds>
+                    <AVNeeds>Dry erase board with eraser and markers</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Reception</SubFunctionType>
+                    <AVNeeds>DVD player</AVNeeds>
+                    <AVNeeds>Easel</AVNeeds>
+                    <AVNeeds>Flip chart and markers</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Recreation</SubFunctionType>
+                    <AVNeeds>High speed internet access</AVNeeds>
+                    <AVNeeds>Installed stage</AVNeeds>
+                    <AVNeeds>Laptop computer</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventFunctionDetail attendeeQuantity="50" comments="Comments about this function." endTime="06:00:00" eventId="eventFunction_9" functionName="Break-out session" meetingSpaceId="246542" meetingSpaceName="Grand Ballroom" startTime="14:15:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Registration</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+                <AVNeeds>Laser pointer</AVNeeds>
+                <AVNeeds>LCD panel</AVNeeds>
+                <AVNeeds>Microphone</AVNeeds>
+                <RoomSetup>Classroom (Chevron) - 2 per 6 ft. tables</RoomSetup>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="14:15:00" name="Roll-in lunch" startTime="09:45:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Rehearsal</SubFunctionType>
+                    <AVNeeds>PA system</AVNeeds>
+                    <AVNeeds>Podium</AVNeeds>
+                    <AVNeeds>Polling devices</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="09:45:00" name="Roll-in lunch" startTime="06:00:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Id>
+                    <SubFunctionType>Room Ready</SubFunctionType>
+                    <AVNeeds>Portable stage</AVNeeds>
+                    <AVNeeds>Powered speaker</AVNeeds>
+                    <AVNeeds>Projector</AVNeeds>
+                </EventSubFunctionDetail>
+                <EventSubFunctionDetail attendeeQuantity="50" endTime="06:00:00" name="Roll-in lunch" startTime="14:15:00">
+                    <Id company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Id>
+                    <SubFunctionType>Set Up</SubFunctionType>
+                    <AVNeeds>Screen</AVNeeds>
+                    <AVNeeds>Spotlights</AVNeeds>
+                    <AVNeeds>Telephone</AVNeeds>
+                </EventSubFunctionDetail>
+            </EventFunctionDetail>
+            <EventStatus>No Event</EventStatus>
         </EventDay>
         <FoodAndBeveragesBudget currencyCode="USD" decimalPlaces="2">80000</FoodAndBeveragesBudget>
     </EventBlock>
-</E_RFP>
+    <AdditionalInfo aVNeedsInd="true" attachDocumentInd="true" billingInfoInd="true" contractualRequirementsInd="true" decisionFactorsInd="true" otherSuppliersInd="true" thirdPartyPlannerInd="true"/>
+</E_RFPDetail>
