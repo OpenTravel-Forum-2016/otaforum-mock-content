@@ -1,9 +1,31 @@
 <html>
 <head>
 	<title>E_RFPResource - API ReadMe</title>
+    <style type="text/css">
+body { 
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+h1	{
+	font-size: 25px;
+}
+h2	{
+	font-size: 20px;
+}
+h3	{
+	font-size: 16px;
+	font-weight: bold;
+}
+.techText {
+    font-family: Monaco, monospace;
+	font-size: 13px;
+}
+	</style>
 </head>
 <body>
-	<h2>E_RFPResource - API ReadMe</h2>
+	<h1>E_RFPResource - API ReadMe</h1>
 	
 	<table cellspacing="0" cellpadding="3" border="1">
 		<tr>
@@ -19,15 +41,39 @@
 			<td>1.0.0</td>
 		</tr>
 		<tr>
-			<td>Operation(s)</td>
+			<td>Additional Info</td>
 			<td>
-							GET (Get)<br/>
-						</td>
-		</tr>
-		<tr>
-			<td>Documentation</td>
-			<td><a href="https://opentravelforum.net:9443/store/site/themes/fancy/templates/api/documentation/download.jag?tenant=carbon.super&resourceUrl=/registry/resource/_system/governance/apimgt/applicationdata/provider/admin/E_RFPResource/1.0.0/documentation/files/index.html">View Documentation</a></td>
+				<a href="https://opentravelforum.net:9443/store/apis/info?name=E_RFPResource&version=1.0.0&provider=admin">View In API Store</a>
+				<br>
+				<a href="https://opentravelforum.net:9443/publisher/info?name=E_RFPResource&version=1.0.0&provider=admin">View In API Publisher</a>
+			</td>
 		</tr>
 	</table>
+	
+	<br>
+	<h2>Operations</h2>
+	<table cellspacing="0" cellpadding="3" border="1">
+		<tr>
+			<th>ID</th>
+			<th>Path Template</th>
+			<th>Mock Service Base URLs</th>
+		<tr>
+				<tr>
+			<td>Get</td>
+			<td nowrap="true"><span class="techText">GET /{system}/{company}/{instance}</span></td>
+			<td>
+				<table cellspacing="0" cellpadding="3" border="0">
+					<tr>
+						<td nowrap="true">Secure Gateway:</td>
+						<td nowrap="true"><span class="techText">https://opentravelforum.net:8243/slivezey/E_RFPResource/1.0.0</span></td>
+					</tr><tr>
+						<td nowrap="true">Mock Server:</td>
+						<td nowrap="true"><span class="techText">https://opentravelforum.net:8443/mock-content/slivezey/E_RFPResource/1.0.0</span></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+			</table>
+	
 </body>
 </html>
