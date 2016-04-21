@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<Profile xmlns:fin="http://www.opentravel.org/OTM/finance/v0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0" id="profile_1" xmlns="http://www.opentravel.org/OTM/profile/v0">
+<Profile xmlns:fin="http://www.opentravel.org/OTM/finance/v0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0" id="{company}" xmlns="http://www.opentravel.org/OTM/profile/v0">
     <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
     <AccessesDetail created="2011-01-24T09:45:00">
         <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
