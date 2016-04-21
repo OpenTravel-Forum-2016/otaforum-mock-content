@@ -1,7 +1,7 @@
 {
   "ProfileSummary" : {
     "@type" : "Profile",
-    "id" : "profile_1",
+    "id" : "{company}",
     "Identifier" : {
       "value" : "guid12345",
       "url" : "http://www.w3.org/2001/XMLSchema",
