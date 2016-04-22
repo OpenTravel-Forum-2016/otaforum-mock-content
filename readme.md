@@ -1,23 +1,21 @@
-#Overview
+#OpenTravel Hackathon Lite
 
-This is the mock content project for the OpenTravel 2016 Advisory Forum hackathon.  The contents of this project are published to the mock content server in near-real-time
-
-
-##Dependencies
-* Git (https://git-scm.com/downloads)
-* Maven 3.2 (https://archive.apache.org/dist/maven/maven-3/3.2.5/binaries/)
+This is the mock content project for the OpenTravel 2016 Advisory Forum hackathon.  OpenTravel’s first hackathon lite will take place at this year’s Advisory Forum.  This event will demonstrate the power of model-first design as a means of accelerating the delivery of new travel products to the marketplace.
 
 
-##Setup
-To create a copy of this repository on your local system, use the Git clone command:
+##Hackathon Lite Agenda:
+* Participants will leverage OTM-DE technology to rapidly design
+    * Information models for travel solutions
+    * RESTful API specifications
+    * Mocked example service responses
+* Within minutes of designing an OTM model, participants will publish their API’s to a live environment created for the OpenTravel hackathon lite
+    * Online API catalog
+    * Secure API Management gateway
+    * Live web service to deliver mock API responses
+* Individuals and teams will then compete to create the most innovative travel solutions that build upon those API’s
+* Participants will present their solutions and provide feedback about how these technologies can accelerate development in their respective organizations
+* The team with the best solution will receive an award at the conclusion of the event
 
-```
-$ git clone https://github.com/OpenTravel-Forum-2016/otaforum-mock-content.git
-```
+The Hackathon Lite and workshops will occur on the second day of the Advisory Forum, Wednesday, May 18, from 1:30 pm – 5:30 pm at Disney’s Coronado Springs Resort. 
 
-##Authoring Mock Content Files
-- TBD -
-
-
-##Publication
-- TBD -
+The event is open to all attendees of the 2016 OpenTravel Advisory Forum.  To sign up or to get more information please contact the OpenTravel team at [info@opentravel.org](mailto:info@opentravel.org).
