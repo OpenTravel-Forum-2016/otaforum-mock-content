@@ -27,7 +27,27 @@
         <Action actionId="Get" common="false">
             <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
             <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="E_RFPResource_ID" statusCodes="200"/>
+        </Action>
+        <Action actionId="Create" common="false">
+            <ActionRequest httpMethod="POST"
+                mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                pathTemplate="/" payloadType="E_RFPResource_SubstitutionGroup"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="E_RFPResource_SubstitutionGroup" statusCodes="201"/>
+        </Action>
+        <Action actionId="Update" common="false">
+            <ActionRequest httpMethod="PUT"
+                mimeTypes="APPLICATION_XML APPLICATION_JSON"
+                paramGroup="ID"
+                pathTemplate="/{system}/{company}/{instance}" payloadType="E_RFPResource_Summary"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
                 payloadType="E_RFPResource_SubstitutionGroup" statusCodes="200"/>
+        </Action>
+        <Action actionId="Delete" common="false">
+            <ActionRequest httpMethod="DELETE" mimeTypes=""
+                paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
+            <ActionResponse mimeTypes="" statusCodes="200"/>
         </Action>
     </Resource>
     

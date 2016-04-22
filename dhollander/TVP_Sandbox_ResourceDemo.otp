@@ -67,6 +67,6 @@
         <otp:FileLocation>ResourceDemo.otm</otp:FileLocation>
     </otp:UnmanagedProjectItem>
     <otp:RepositoryReferences>
-        <otp:RepositoryRef repositoryId="Opentravel">http://opentravelmodel.net</otp:RepositoryRef>
+        <otp:RepositoryRef repositoryId="Opentravel">http://www.opentravelmodel.net</otp:RepositoryRef>
     </otp:RepositoryReferences>
 </otp:Project>
