@@ -1,12 +1,296 @@
 {
-  "E_RFPIdentifier" : {
-    "@type" : "E_RFP_ID",
+  "E_RFPSummary" : {
+    "@type" : "E_RFP",
     "Identifier" : {
       "value" : "guid12345",
       "url" : "http://www.w3.org/2001/XMLSchema",
-      "system" : "sysABC3344",
-      "company" : "Acme",
-      "instance" : "i0987654321"
+      "system" : "{system}",
+      "company" : "{company}",
+      "instance" : "{instance}"
+    },
+    "RequestInfo" : {
+      "@type" : "RequestInfo",
+      "id" : "requestInfo_1",
+      "rFPName" : "ABC Convention",
+      "responseDue" : "2010-12-31T11:55:00+06:00",
+      "decisionDue" : "2010-12-31T11:55:00+06:00",
+      "totalAttendees" : 500,
+      "peakRoomQuantity" : 100,
+      "rFPDescription" : "Text about the event.",
+      "eventName" : "I am a short string.",
+      "roomBlockInd" : true,
+      "eventBlockInd" : true,
+      "commisionInd" : true,
+      "EventType" : {
+        "value" : "Anniversary"
+      },
+      "BusinessType" : {
+        "value" : "Contract"
+      },
+      "MarketSegment" : {
+        "value" : "AirlineCrew"
+      },
+      "TotalEventBudget" : {
+        "value" : 80000.0,
+        "currencyCode" : "USD",
+        "decimalPlaces" : 2
+      },
+      "LargestMeetingSpace" : {
+        "value" : 1200.0,
+        "unitOfMeasure" : "Sq. Ft."
+      },
+      "TotalMeetingSpace" : {
+        "value" : 1200.0,
+        "unitOfMeasure" : "Sq. Ft."
+      },
+      "ExpectedCommissionRate" : {
+        "value" : null,
+        "amount" : 5000.0,
+        "percent" : 5.0,
+        "currencyCode" : "Example String Value",
+        "decimalPlaces" : "2"
+      },
+      "PreferredContactMethod" : {
+        "value" : "Fax"
+      }
+    },
+    "Contacts" : {
+      "@type" : "Contacts",
+      "Contact" : [ {
+        "@type" : "Contact",
+        "comments" : "I am a long string.",
+        "primaryInd" : true,
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }
+      }, {
+        "@type" : "Contact",
+        "comments" : "I am a long string.",
+        "primaryInd" : true,
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }
+      } ]
+    },
+    "Dates" : {
+      "@type" : "Dates",
+      "comments" : "Example String Value",
+      "flexibleInd" : true,
+      "DateTimeSpanWindows" : [ {
+        "@type" : "DateTimeSpanWindows",
+        "TimeSpan" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        }
+      }, {
+        "@type" : "DateTimeSpanWindows",
+        "TimeSpan" : {
+          "value" : null,
+          "start" : "2016-08-22T19:32:52Z",
+          "end" : "2016-08-28T04:32:52Z"
+        }
+      } ]
+    },
+    "Sites" : {
+      "@type" : "Sites",
+      "Site" : [ {
+        "@type" : "Site_Summary",
+        "code" : "CHIDT"
+      }, {
+        "@type" : "Site_Summary",
+        "code" : "CHIDT"
+      } ]
+    },
+    "RoomBlock" : {
+      "@type" : "RoomBlock",
+      "organizerCheckInDaysBefore" : 2,
+      "organizerCheckOutDaysAfter" : 1,
+      "sleepingRoomInd" : true,
+      "BudgetedRoomRate" : {
+        "value" : 80000.0,
+        "currencyCode" : "USD",
+        "decimalPlaces" : 2
+      },
+      "StayDay" : [ {
+        "@type" : "StayDay",
+        "dayNumber" : 1,
+        "StayDayRoom" : [ {
+          "@type" : "StayDayRoom",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_1",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsSummary" : {
+              "@type" : "Comments",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_2",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsSummary" : {
+              "@type" : "Comments",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
+          }
+        } ]
+      }, {
+        "@type" : "StayDay",
+        "dayNumber" : 1,
+        "StayDayRoom" : [ {
+          "@type" : "StayDayRoom",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_3",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsSummary" : {
+              "@type" : "Comments",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
+          }
+        }, {
+          "@type" : "StayDayRoom",
+          "numberOfUnits" : 75,
+          "occupancyType" : "Single",
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_4",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsSummary" : {
+              "@type" : "Comments",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
+          }
+        } ]
+      } ],
+      "ReservationMethod" : {
+        "value" : "Electronic rooming list"
+      }
+    },
+    "EventBlockSummary" : {
+      "@type" : "EventBlock",
+      "peakMeetingRoom" : 3,
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      },
+      "EventDay" : [ {
+        "@type" : "EventDay",
+        "dayNumber" : 1,
+        "EventFunction" : [ {
+          "@type" : "EventFunction",
+          "eventId" : "eventFunction_1",
+          "startTime" : "09:45:00",
+          "endTime" : "14:15:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Board Meeting"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          }
+        }, {
+          "@type" : "EventFunction",
+          "eventId" : "eventFunction_2",
+          "startTime" : "06:00:00",
+          "endTime" : "09:45:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Box Lunch"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          }
+        } ],
+        "EventStatus" : {
+          "value" : "Event Planned"
+        }
+      }, {
+        "@type" : "EventDay",
+        "dayNumber" : 1,
+        "EventFunction" : [ {
+          "@type" : "EventFunction",
+          "eventId" : "eventFunction_3",
+          "startTime" : "14:15:00",
+          "endTime" : "06:00:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Breakfast"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          }
+        }, {
+          "@type" : "EventFunction",
+          "eventId" : "eventFunction_4",
+          "startTime" : "09:45:00",
+          "endTime" : "14:15:00",
+          "attendeeQuantity" : 50,
+          "functionName" : "Break-out session",
+          "meetingSpaceId" : "246542",
+          "meetingSpaceName" : "Grand Ballroom",
+          "twentyFourHourHoldInd" : true,
+          "EventFunctionType" : {
+            "value" : "Breakfast Buffet"
+          },
+          "MeetingSpaceSize" : {
+            "value" : 1200.0,
+            "unitOfMeasure" : "Sq. Ft."
+          }
+        } ],
+        "EventStatus" : {
+          "value" : "Event Scheduled (no details at this time)"
+        }
+      } ],
+      "FoodAndBeveragesBudget" : {
+        "value" : 80000.0,
+        "currencyCode" : "USD",
+        "decimalPlaces" : 2
+      }
     }
   }
 }

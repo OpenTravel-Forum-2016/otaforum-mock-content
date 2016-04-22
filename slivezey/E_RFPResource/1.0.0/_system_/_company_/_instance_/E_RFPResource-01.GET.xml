@@ -1,5 +1,128 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-<E_RFPIdentifier xmlns="http://www.opentravel.org/OTM/product/eRFP/v1">
-    <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
-</E_RFPIdentifier>
+<?xml version="1.0" encoding="UTF-8"?>
+<E_RFP xmlns="http://www.opentravel.org/OTM/product/eRFP/v1"
+    xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1" xmlns:prod-0100="http://www.opentravel.org/OTM/product/v1">
+    <Identifier company="{company}" instance="{instance}"
+        system="{system}" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    <RequestInfo commisionInd="true"
+        decisionDue="2010-12-31T11:55:00+06:00" eventBlockInd="true"
+        eventName="I am a short string." id="requestInfo_1"
+        peakRoomQuantity="100" rFPDescription="Text about the event."
+        rFPName="ABC Convention" responseDue="2010-12-31T11:55:00+06:00"
+        roomBlockInd="true" totalAttendees="500">
+        <EventType>Anniversary</EventType>
+        <BusinessType>Contract</BusinessType>
+        <MarketSegment>AirlineCrew</MarketSegment>
+        <TotalEventBudget currencyCode="USD" decimalPlaces="2">80000</TotalEventBudget>
+        <LargestMeetingSpace unitOfMeasure="Sq. Ft.">1200</LargestMeetingSpace>
+        <TotalMeetingSpace unitOfMeasure="Sq. Ft.">1200</TotalMeetingSpace>
+        <ExpectedCommissionRate amount="5000"
+            currencyCode="Example String Value" decimalPlaces="2" percent="5"/>
+        <PreferredContactMethod>Fax</PreferredContactMethod>
+    </RequestInfo>
+    <Contacts>
+        <Contact comments="I am a long string." primaryInd="true">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+        </Contact>
+        <Contact comments="I am a long string." primaryInd="true">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+        </Contact>
+    </Contacts>
+    <Dates comments="Example String Value" flexibleInd="true">
+        <ota2-0100:DateTimeSpanWindows>
+            <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+        </ota2-0100:DateTimeSpanWindows>
+        <ota2-0100:DateTimeSpanWindows>
+            <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+        </ota2-0100:DateTimeSpanWindows>
+    </Dates>
+    <Sites>
+        <prod-0100:Site code="CHIDT"/>
+        <prod-0100:Site code="CHIDT"/>
+    </Sites>
+    <RoomBlock organizerCheckInDaysBefore="2"
+        organizerCheckOutDaysAfter="1" sleepingRoomInd="true">
+        <BudgetedRoomRate currencyCode="USD" decimalPlaces="2">80000</BudgetedRoomRate>
+        <StayDay dayNumber="1">
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_1">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_2">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+        </StayDay>
+        <StayDay dayNumber="1">
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_3">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_4">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+        </StayDay>
+        <ReservationMethod>Electronic rooming list</ReservationMethod>
+    </RoomBlock>
+    <EventBlock peakMeetingRoom="3">
+        <Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+        <EventDay dayNumber="1">
+            <EventFunction attendeeQuantity="50" endTime="14:15:00"
+                eventId="eventFunction_1"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Board Meeting</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventFunction attendeeQuantity="50" endTime="09:45:00"
+                eventId="eventFunction_2"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="06:00:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Box Lunch</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventStatus>Event Planned</EventStatus>
+        </EventDay>
+        <EventDay dayNumber="1">
+            <EventFunction attendeeQuantity="50" endTime="06:00:00"
+                eventId="eventFunction_3"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="14:15:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Breakfast</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventFunction attendeeQuantity="50" endTime="14:15:00"
+                eventId="eventFunction_4"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Breakfast Buffet</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventStatus>Event Scheduled (no details at this time)</EventStatus>
+        </EventDay>
+        <FoodAndBeveragesBudget currencyCode="USD" decimalPlaces="2">80000</FoodAndBeveragesBudget>
+    </EventBlock>
+</E_RFP>
