@@ -1,7 +1,7 @@
 {
   "CompanyIdentifier" : {
     "@type" : "Company_ID",
-    "id" : "company_1",
+    "id" : "{id}",
     "Identifier" : {
       "value" : "guid12345",
       "url" : "http://www.w3.org/2001/XMLSchema",
