@@ -18,13 +18,9 @@
         applicationContext="http://sandbox/Resource/Demonstration/v0" context="rd"/>
     <Resource abstract="false" basePath="/Profiles"
         businessObjectRef="Profile" firstClass="true" name="ProfileResource">
-<<<<<<< Updated upstream
-        <ParamGroup facetName="Profile_ID" idGroup="true" name="ID"/>
-=======
         <ParamGroup facetName="Profile_ID" idGroup="true" name="ID">
             <Parameter fieldName="company" location="Path"/>
         </ParamGroup>
->>>>>>> Stashed changes
         <ActionFacet label="SubstitutionGroup" referenceRepeat="0" referenceType="Required"/>
         <ActionFacet label="ID" referenceFacet="ID" referenceRepeat="0" referenceType="Required"/>
         <ActionFacet basePayload="Wrapper" label="WrappedProfile"
@@ -41,18 +37,6 @@
             <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
                 payloadType="ProfileResource_SubstitutionGroup" statusCodes="201"/>
         </Action>
-        <Action actionId="Update" common="false">
-            <ActionRequest httpMethod="PUT"
-                mimeTypes="APPLICATION_XML APPLICATION_JSON"
-                paramGroup="ID" pathTemplate="/{company}" payloadType="ProfileResource_WrappedProfile"/>
-            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
-                payloadType="ProfileResource_SubstitutionGroup" statusCodes="200"/>
-        </Action>
-        <Action actionId="Delete" common="false">
-            <ActionRequest httpMethod="DELETE" mimeTypes=""
-                paramGroup="ID" pathTemplate="/{company}"/>
-            <ActionResponse mimeTypes="" statusCodes="200"/>
-        </Action>
     </Resource>
     
     <CoreObject name="Wrapper" notExtendable="false">
@@ -66,14 +50,14 @@
     <Resource abstract="false" basePath="/Companys"
         businessObjectRef="ota2-0100:Company" firstClass="true" name="CompanyResource">
         <ParamGroup facetName="ota2-0100:Company_ID" idGroup="true" name="ID">
-            <Parameter fieldName="id" location="Path"/>
+            <Parameter fieldName="id" location="Header"/>
         </ParamGroup>
         <ActionFacet label="SubstitutionGroup" referenceRepeat="0" referenceType="Required"/>
         <ActionFacet label="ID" referenceFacet="ID" referenceRepeat="0" referenceType="Required"/>
         <ActionFacet label="Summary" referenceFacet="Summary"
             referenceRepeat="0" referenceType="Required"/>
         <Action actionId="Get" common="false">
-            <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/{id}"/>
+            <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/"/>
             <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
                 payloadType="CompanyResource_ID" statusCodes="200"/>
         </Action>
