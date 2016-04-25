@@ -1,5 +1,278 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
-<E_RFPIdentifier xmlns="http://www.opentravel.org/OTM/product/eRFP/v1">
-    <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
-</E_RFPIdentifier>
+<?xml version="1.0" encoding="UTF-8"?>
+<E_RFP xmlns="http://www.opentravel.org/OTM/product/eRFP/v1"
+    xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1" xmlns:prod-0100="http://www.opentravel.org/OTM/product/v1">
+    <Identifier company="{company}" instance="{instance}"
+        system="{system}" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    <RequestInfo commisionInd="true"
+        decisionDue="2010-12-31T11:55:00+06:00" eventBlockInd="true"
+        eventName="I am a short string." id="requestInfo_1"
+        peakRoomQuantity="100" rFPDescription="Text about the event."
+        rFPName="ABC Convention" responseDue="2010-12-31T11:55:00+06:00"
+        roomBlockInd="true" totalAttendees="500">
+        <EventType>Anniversary</EventType>
+        <BusinessType>Contract</BusinessType>
+        <MarketSegment>AirlineCrew</MarketSegment>
+        <TotalEventBudget currencyCode="USD" decimalPlaces="2">80000</TotalEventBudget>
+        <LargestMeetingSpace unitOfMeasure="Sq. Ft.">1200</LargestMeetingSpace>
+        <TotalMeetingSpace unitOfMeasure="Sq. Ft.">1200</TotalMeetingSpace>
+        <ExpectedCommissionRate amount="5000"
+            currencyCode="Example String Value" decimalPlaces="2" percent="5"/>
+        <PreferredContactMethod>Fax</PreferredContactMethod>
+    </RequestInfo>
+    <Contacts>
+        <ContactCompany comments="I am a long string." primaryInd="true">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+            <ota2-0100:Company id="company_1">
+                <ota2-0100:Identifier company="Acme"
+                    instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0100:Identifier>
+                <ota2-0100:Name code="AI"
+                    codeContext="I am a tiny string."
+                    department="Adventure department"
+                    division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0100:Name>
+                <ota2-0100:Name code="AI"
+                    codeContext="I am a tiny string."
+                    department="Adventure department"
+                    division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0100:Name>
+                <ota2-0100:AddressDetail Language="en" role="Home"
+                    type="CLT" use="AUT" validInd="true">
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:Number pO_Box="98567499"
+                        ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0100:Number>
+                    <ota2-0100:Street>Travers Street</ota2-0100:Street>
+                    <ota2-0100:City>Dublin</ota2-0100:City>
+                    <ota2-0100:County>Fairfax</ota2-0100:County>
+                    <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
+                    <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
+                    <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
+                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
+                    <ota2-0100:Privacy optInDate="2011-01-24T09:45:00"
+                        optInStatus="OptedIn"
+                        optOutDate="2011-07-04T14:15:00"
+                        shareMarketInd="Yes" shareSyncInd="No"/>
+                </ota2-0100:AddressDetail>
+                <ota2-0100:AddressDetail Language="en" role="Business"
+                    type="CLT" use="AUT" validInd="true">
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:Number pO_Box="98567499"
+                        ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0100:Number>
+                    <ota2-0100:Street>Travers Street</ota2-0100:Street>
+                    <ota2-0100:City>Dublin</ota2-0100:City>
+                    <ota2-0100:County>Fairfax</ota2-0100:County>
+                    <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
+                    <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
+                    <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
+                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
+                    <ota2-0100:Privacy optInDate="2011-12-05T06:00:00"
+                        optInStatus="OptedOut"
+                        optOutDate="2011-01-24T09:45:00"
+                        shareMarketInd="Inherit" shareSyncInd="Yes"/>
+                </ota2-0100:AddressDetail>
+                <ota2-0100:Telephone areaCityCode="Example String Value"
+                    countryAccessCode="Example String Value"
+                    extension="Example String Value" id="telephone_1"
+                    phoneNumber="2358878" role="Home"/>
+                <ota2-0100:Telephone areaCityCode="Example String Value"
+                    countryAccessCode="Example String Value"
+                    extension="Example String Value" id="telephone_2"
+                    phoneNumber="2358878" role="Office"/>
+                <ota2-0100:Email defaultInd="true" emailType="2"
+                    optInDate="2011-07-04T14:15:00"
+                    optInStatus="Unknown"
+                    optOutDate="2011-12-05T06:00:00"
+                    remark="Example String Value" shareMarketInd="No"
+                    shareSyncInd="Inherit"
+                    textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
+                <ota2-0100:Email defaultInd="true" emailType="2"
+                    optInDate="2011-01-24T09:45:00"
+                    optInStatus="OptedIn"
+                    optOutDate="2011-07-04T14:15:00"
+                    remark="Example String Value" shareMarketInd="Yes"
+                    shareSyncInd="No" textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
+                <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0100:URL>
+                <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.w3.org/2001/XMLSchema</ota2-0100:URL>
+            </ota2-0100:Company>
+        </ContactCompany>
+        <ContactCompany comments="I am a long string." primaryInd="true">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+            <ota2-0100:Company id="company_2">
+                <ota2-0100:Identifier company="Acme"
+                    instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0100:Identifier>
+                <ota2-0100:Name code="AI"
+                    codeContext="I am a tiny string."
+                    department="Adventure department"
+                    division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0100:Name>
+                <ota2-0100:Name code="AI"
+                    codeContext="I am a tiny string."
+                    department="Adventure department"
+                    division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0100:Name>
+                <ota2-0100:AddressDetail Language="en"
+                    role="Destination" type="CLT" use="AUT" validInd="true">
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:Number pO_Box="98567499"
+                        ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0100:Number>
+                    <ota2-0100:Street>Travers Street</ota2-0100:Street>
+                    <ota2-0100:City>Dublin</ota2-0100:City>
+                    <ota2-0100:County>Fairfax</ota2-0100:County>
+                    <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
+                    <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
+                    <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
+                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
+                    <ota2-0100:Privacy optInDate="2011-12-05T06:00:00"
+                        optInStatus="OptedOut"
+                        optOutDate="2011-01-24T09:45:00"
+                        shareMarketInd="Inherit" shareSyncInd="Yes"/>
+                </ota2-0100:AddressDetail>
+                <ota2-0100:AddressDetail Language="en" role="Other"
+                    type="CLT" use="AUT" validInd="true">
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
+                    <ota2-0100:Number pO_Box="98567499"
+                        ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0100:Number>
+                    <ota2-0100:Street>Travers Street</ota2-0100:Street>
+                    <ota2-0100:City>Dublin</ota2-0100:City>
+                    <ota2-0100:County>Fairfax</ota2-0100:County>
+                    <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
+                    <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
+                    <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
+                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
+                    <ota2-0100:Privacy optInDate="2011-07-04T14:15:00"
+                        optInStatus="Unknown"
+                        optOutDate="2011-12-05T06:00:00"
+                        shareMarketInd="No" shareSyncInd="Inherit"/>
+                </ota2-0100:AddressDetail>
+                <ota2-0100:Telephone areaCityCode="Example String Value"
+                    countryAccessCode="Example String Value"
+                    extension="Example String Value" id="telephone_3"
+                    phoneNumber="2358878" role="Mobile"/>
+                <ota2-0100:Telephone areaCityCode="Example String Value"
+                    countryAccessCode="Example String Value"
+                    extension="Example String Value" id="telephone_4"
+                    phoneNumber="2358878" role="Other"/>
+                <ota2-0100:Email defaultInd="true" emailType="2"
+                    optInDate="2011-01-24T09:45:00"
+                    optInStatus="OptedIn"
+                    optOutDate="2011-07-04T14:15:00"
+                    remark="Example String Value" shareMarketInd="Yes"
+                    shareSyncInd="No" textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
+                <ota2-0100:Email defaultInd="true" emailType="2"
+                    optInDate="2011-12-05T06:00:00"
+                    optInStatus="OptedOut"
+                    optOutDate="2011-01-24T09:45:00"
+                    remark="Example String Value"
+                    shareMarketInd="Inherit" shareSyncInd="Yes"
+                    textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
+                <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0100:URL>
+                <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.w3.org/2001/XMLSchema</ota2-0100:URL>
+            </ota2-0100:Company>
+        </ContactCompany>
+    </Contacts>
+    <Dates comments="Example String Value" flexibleInd="true">
+        <ota2-0100:DateTimeSpanWindows>
+            <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+        </ota2-0100:DateTimeSpanWindows>
+        <ota2-0100:DateTimeSpanWindows>
+            <ota2-0100:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+        </ota2-0100:DateTimeSpanWindows>
+    </Dates>
+    <Sites>
+        <prod-0100:Site code="CHIDT"/>
+        <prod-0100:Site code="CHIDT"/>
+    </Sites>
+    <RoomBlock organizerCheckInDaysBefore="2"
+        organizerCheckOutDaysAfter="1" sleepingRoomInd="true">
+        <BudgetedRoomRate currencyCode="USD" decimalPlaces="2">80000</BudgetedRoomRate>
+        <StayDay dayNumber="1">
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_1">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_2">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+        </StayDay>
+        <StayDay dayNumber="1">
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_3">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+            <StayDayRoom numberOfUnits="75" occupancyType="Single">
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_4">
+                    <ota2-0100:Comments>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:Comments>
+                </prod-0100:RoomType>
+            </StayDayRoom>
+        </StayDay>
+        <ReservationMethod>Electronic rooming list</ReservationMethod>
+    </RoomBlock>
+    <EventBlock peakMeetingRoom="3">
+        <Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+        <EventDay dayNumber="1">
+            <EventFunction attendeeQuantity="50" endTime="14:15:00"
+                eventId="eventFunction_1"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Board Meeting</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventFunction attendeeQuantity="50" endTime="09:45:00"
+                eventId="eventFunction_2"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="06:00:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Box Lunch</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventStatus>Event Planned</EventStatus>
+        </EventDay>
+        <EventDay dayNumber="1">
+            <EventFunction attendeeQuantity="50" endTime="06:00:00"
+                eventId="eventFunction_3"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="14:15:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Breakfast</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventFunction attendeeQuantity="50" endTime="14:15:00"
+                eventId="eventFunction_4"
+                functionName="Break-out session" meetingSpaceId="246542"
+                meetingSpaceName="Grand Ballroom" startTime="09:45:00" twentyFourHourHoldInd="true">
+                <EventFunctionType>Breakfast Buffet</EventFunctionType>
+                <MeetingSpaceSize unitOfMeasure="Sq. Ft.">1200</MeetingSpaceSize>
+            </EventFunction>
+            <EventStatus>Event Scheduled (no details at this time)</EventStatus>
+        </EventDay>
+        <FoodAndBeveragesBudget currencyCode="USD" decimalPlaces="2">80000</FoodAndBeveragesBudget>
+    </EventBlock>
+</E_RFP>
