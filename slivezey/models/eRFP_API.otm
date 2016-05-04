@@ -16,7 +16,6 @@
     <Resource abstract="false" basePath="/E_RFPs"
         businessObjectRef="E_RFP" firstClass="true" name="E_RFPResource">
         <ParamGroup facetName="E_RFP_ID" idGroup="true" name="ID">
-            <Parameter fieldName="system" location="Path"/>
             <Parameter fieldName="company" location="Path"/>
             <Parameter fieldName="instance" location="Path"/>
         </ParamGroup>
