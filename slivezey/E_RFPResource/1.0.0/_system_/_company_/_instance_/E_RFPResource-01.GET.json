@@ -93,12 +93,8 @@
             "codeContext" : "I am a tiny string."
           } ],
           "Address" : [ {
-            "@type" : "Address_Detail",
+            "@type" : "Address",
             "role" : "Home",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
             "AddressLine" : [ "I am a short string.", "I am a short string." ],
             "BldgRoom" : [ {
               "value" : "Bldg H",
@@ -125,23 +121,10 @@
               "value" : "IR",
               "name" : "Ireland"
             },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Yes",
-              "shareSyncInd" : "No",
-              "optInStatus" : "OptedIn",
-              "optInDate" : "2011-01-24T09:45:00",
-              "optOutDate" : "2011-07-04T14:15:00"
-            }
+            "PostalCode" : "I am a short string."
           }, {
-            "@type" : "Address_Detail",
+            "@type" : "Address",
             "role" : "Business",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
             "AddressLine" : [ "I am a short string.", "I am a short string." ],
             "BldgRoom" : [ {
               "value" : "Bldg H",
@@ -168,16 +151,7 @@
               "value" : "IR",
               "name" : "Ireland"
             },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Inherit",
-              "shareSyncInd" : "Yes",
-              "optInStatus" : "OptedOut",
-              "optInDate" : "2011-12-05T06:00:00",
-              "optOutDate" : "2011-01-24T09:45:00"
-            }
+            "PostalCode" : "I am a short string."
           } ],
           "Telephone" : [ {
             "@type" : "Telephone",
@@ -201,11 +175,11 @@
             "emailType" : "2",
             "remark" : "Example String Value",
             "textFormat" : "I am a short string.",
-            "shareMarketInd" : "No",
-            "shareSyncInd" : "Inherit",
-            "optInStatus" : "Unknown",
-            "optInDate" : "2011-07-04T14:15:00",
-            "optOutDate" : "2011-12-05T06:00:00",
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00",
             "validInd" : true,
             "defaultInd" : true
           }, {
@@ -213,11 +187,11 @@
             "emailType" : "2",
             "remark" : "Example String Value",
             "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Yes",
-            "shareSyncInd" : "No",
-            "optInStatus" : "OptedIn",
-            "optInDate" : "2011-01-24T09:45:00",
-            "optOutDate" : "2011-07-04T14:15:00",
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00",
             "validInd" : true,
             "defaultInd" : true
           } ],
@@ -268,12 +242,8 @@
             "codeContext" : "I am a tiny string."
           } ],
           "Address" : [ {
-            "@type" : "Address_Detail",
+            "@type" : "Address",
             "role" : "Destination",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
             "AddressLine" : [ "I am a short string.", "I am a short string." ],
             "BldgRoom" : [ {
               "value" : "Bldg H",
@@ -300,23 +270,10 @@
               "value" : "IR",
               "name" : "Ireland"
             },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Inherit",
-              "shareSyncInd" : "Yes",
-              "optInStatus" : "OptedOut",
-              "optInDate" : "2011-12-05T06:00:00",
-              "optOutDate" : "2011-01-24T09:45:00"
-            }
+            "PostalCode" : "I am a short string."
           }, {
-            "@type" : "Address_Detail",
+            "@type" : "Address",
             "role" : "Other",
-            "Language" : "en",
-            "type" : "CLT",
-            "use" : "AUT",
-            "validInd" : true,
             "AddressLine" : [ "I am a short string.", "I am a short string." ],
             "BldgRoom" : [ {
               "value" : "Bldg H",
@@ -343,16 +300,7 @@
               "value" : "IR",
               "name" : "Ireland"
             },
-            "PostalCode" : "I am a short string.",
-            "Remark" : "Example String Value",
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "No",
-              "shareSyncInd" : "Inherit",
-              "optInStatus" : "Unknown",
-              "optInDate" : "2011-07-04T14:15:00",
-              "optOutDate" : "2011-12-05T06:00:00"
-            }
+            "PostalCode" : "I am a short string."
           } ],
           "Telephone" : [ {
             "@type" : "Telephone",
@@ -376,11 +324,11 @@
             "emailType" : "2",
             "remark" : "Example String Value",
             "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Yes",
-            "shareSyncInd" : "No",
-            "optInStatus" : "OptedIn",
-            "optInDate" : "2011-01-24T09:45:00",
-            "optOutDate" : "2011-07-04T14:15:00",
+            "shareMarketInd" : "No",
+            "shareSyncInd" : "Inherit",
+            "optInStatus" : "Unknown",
+            "optInDate" : "2011-07-04T14:15:00",
+            "optOutDate" : "2011-12-05T06:00:00",
             "validInd" : true,
             "defaultInd" : true
           }, {
@@ -388,11 +336,11 @@
             "emailType" : "2",
             "remark" : "Example String Value",
             "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Inherit",
-            "shareSyncInd" : "Yes",
-            "optInStatus" : "OptedOut",
-            "optInDate" : "2011-12-05T06:00:00",
-            "optOutDate" : "2011-01-24T09:45:00",
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00",
             "validInd" : true,
             "defaultInd" : true
           } ],

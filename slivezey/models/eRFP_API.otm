@@ -16,6 +16,7 @@
     <Resource abstract="false" basePath="/E_RFPs"
         businessObjectRef="E_RFP" firstClass="true" name="E_RFPResource">
         <ParamGroup facetName="E_RFP_ID" idGroup="true" name="ID">
+            <Parameter fieldName="system" location="Path"/>
             <Parameter fieldName="company" location="Path"/>
             <Parameter fieldName="instance" location="Path"/>
         </ParamGroup>
@@ -31,8 +32,7 @@
         <Action actionId="Create" common="false">
             <ActionRequest httpMethod="POST"
                 mimeTypes="APPLICATION_JSON APPLICATION_XML"
-                paramGroup="ID"
-                pathTemplate="/{system}/{company}/{instance}" payloadType="E_RFPResource_SubstitutionGroup"/>
+                pathTemplate="/" payloadType="E_RFPResource_SubstitutionGroup"/>
             <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
                 payloadType="E_RFPResource_SubstitutionGroup" statusCodes="201"/>
         </Action>

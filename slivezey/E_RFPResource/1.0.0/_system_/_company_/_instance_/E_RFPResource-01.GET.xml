@@ -34,8 +34,7 @@
                     codeContext="I am a tiny string."
                     department="Adventure department"
                     division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0100:Name>
-                <ota2-0100:AddressDetail Language="en" role="Home"
-                    type="CLT" use="AUT" validInd="true">
+                <ota2-0100:Address role="Home">
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
@@ -48,14 +47,8 @@
                     <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
                     <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
                     <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
-                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
-                    <ota2-0100:Privacy optInDate="2011-01-24T09:45:00"
-                        optInStatus="OptedIn"
-                        optOutDate="2011-07-04T14:15:00"
-                        shareMarketInd="Yes" shareSyncInd="No"/>
-                </ota2-0100:AddressDetail>
-                <ota2-0100:AddressDetail Language="en" role="Business"
-                    type="CLT" use="AUT" validInd="true">
+                </ota2-0100:Address>
+                <ota2-0100:Address role="Business">
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
@@ -68,12 +61,7 @@
                     <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
                     <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
                     <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
-                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
-                    <ota2-0100:Privacy optInDate="2011-12-05T06:00:00"
-                        optInStatus="OptedOut"
-                        optOutDate="2011-01-24T09:45:00"
-                        shareMarketInd="Inherit" shareSyncInd="Yes"/>
-                </ota2-0100:AddressDetail>
+                </ota2-0100:Address>
                 <ota2-0100:Telephone areaCityCode="Example String Value"
                     countryAccessCode="Example String Value"
                     extension="Example String Value" id="telephone_1"
@@ -83,18 +71,18 @@
                     extension="Example String Value" id="telephone_2"
                     phoneNumber="2358878" role="Office"/>
                 <ota2-0100:Email defaultInd="true" emailType="2"
-                    optInDate="2011-07-04T14:15:00"
-                    optInStatus="Unknown"
-                    optOutDate="2011-12-05T06:00:00"
-                    remark="Example String Value" shareMarketInd="No"
-                    shareSyncInd="Inherit"
-                    textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
-                <ota2-0100:Email defaultInd="true" emailType="2"
                     optInDate="2011-01-24T09:45:00"
                     optInStatus="OptedIn"
                     optOutDate="2011-07-04T14:15:00"
                     remark="Example String Value" shareMarketInd="Yes"
                     shareSyncInd="No" textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
+                <ota2-0100:Email defaultInd="true" emailType="2"
+                    optInDate="2011-12-05T06:00:00"
+                    optInStatus="OptedOut"
+                    optOutDate="2011-01-24T09:45:00"
+                    remark="Example String Value"
+                    shareMarketInd="Inherit" shareSyncInd="Yes"
+                    textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
                 <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0100:URL>
                 <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.w3.org/2001/XMLSchema</ota2-0100:URL>
             </ota2-0100:Company>
@@ -113,8 +101,7 @@
                     codeContext="I am a tiny string."
                     department="Adventure department"
                     division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0100:Name>
-                <ota2-0100:AddressDetail Language="en"
-                    role="Destination" type="CLT" use="AUT" validInd="true">
+                <ota2-0100:Address role="Destination">
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
@@ -127,14 +114,8 @@
                     <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
                     <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
                     <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
-                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
-                    <ota2-0100:Privacy optInDate="2011-12-05T06:00:00"
-                        optInStatus="OptedOut"
-                        optOutDate="2011-01-24T09:45:00"
-                        shareMarketInd="Inherit" shareSyncInd="Yes"/>
-                </ota2-0100:AddressDetail>
-                <ota2-0100:AddressDetail Language="en" role="Other"
-                    type="CLT" use="AUT" validInd="true">
+                </ota2-0100:Address>
+                <ota2-0100:Address role="Other">
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:AddressLine>I am a short string.</ota2-0100:AddressLine>
                     <ota2-0100:BldgRoom buldingInd="true">Bldg H</ota2-0100:BldgRoom>
@@ -147,12 +128,7 @@
                     <ota2-0100:StateProv name="Texas">TX</ota2-0100:StateProv>
                     <ota2-0100:Country name="Ireland">IR</ota2-0100:Country>
                     <ota2-0100:PostalCode>32165-9999</ota2-0100:PostalCode>
-                    <ota2-0100:Remark>This address should be used for all official correspondences.</ota2-0100:Remark>
-                    <ota2-0100:Privacy optInDate="2011-07-04T14:15:00"
-                        optInStatus="Unknown"
-                        optOutDate="2011-12-05T06:00:00"
-                        shareMarketInd="No" shareSyncInd="Inherit"/>
-                </ota2-0100:AddressDetail>
+                </ota2-0100:Address>
                 <ota2-0100:Telephone areaCityCode="Example String Value"
                     countryAccessCode="Example String Value"
                     extension="Example String Value" id="telephone_3"
@@ -162,18 +138,18 @@
                     extension="Example String Value" id="telephone_4"
                     phoneNumber="2358878" role="Other"/>
                 <ota2-0100:Email defaultInd="true" emailType="2"
+                    optInDate="2011-07-04T14:15:00"
+                    optInStatus="Unknown"
+                    optOutDate="2011-12-05T06:00:00"
+                    remark="Example String Value" shareMarketInd="No"
+                    shareSyncInd="Inherit"
+                    textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
+                <ota2-0100:Email defaultInd="true" emailType="2"
                     optInDate="2011-01-24T09:45:00"
                     optInStatus="OptedIn"
                     optOutDate="2011-07-04T14:15:00"
                     remark="Example String Value" shareMarketInd="Yes"
                     shareSyncInd="No" textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
-                <ota2-0100:Email defaultInd="true" emailType="2"
-                    optInDate="2011-12-05T06:00:00"
-                    optInStatus="OptedOut"
-                    optOutDate="2011-01-24T09:45:00"
-                    remark="Example String Value"
-                    shareMarketInd="Inherit" shareSyncInd="Yes"
-                    textFormat="I am a short string." validInd="true">I am a medium string.</ota2-0100:Email>
                 <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0100:URL>
                 <ota2-0100:URL defaultInd="true" type="I am a short string.">http://www.w3.org/2001/XMLSchema</ota2-0100:URL>
             </ota2-0100:Company>

@@ -1,6 +1,6 @@
 {
   "E_RFPDetail" : {
-    "@type" : "E_RFP_Detail",
+    "@type" : "E_RFPDetail",
     "comments" : "Example String Value",
     "Identifier" : {
       "value" : "guid12345",
@@ -97,7 +97,7 @@
       "comments" : "Example String Value",
       "flexibleInd" : true,
       "DateTimeSpanWindows" : [ {
-        "@type" : "DateTimeSpanWindows_Detail",
+        "@type" : "DateTimeSpanWindowsDetail",
         "TimeSpan" : {
           "value" : null,
           "start" : "2016-08-22T19:32:52Z",
@@ -118,7 +118,7 @@
           "value" : "SUN"
         }
       }, {
-        "@type" : "DateTimeSpanWindows_Detail",
+        "@type" : "DateTimeSpanWindowsDetail",
         "TimeSpan" : {
           "value" : null,
           "start" : "2016-08-22T19:32:52Z",
@@ -139,7 +139,7 @@
           "value" : "SAT"
         }
       }, {
-        "@type" : "DateTimeSpanWindows_Detail",
+        "@type" : "DateTimeSpanWindowsDetail",
         "TimeSpan" : {
           "value" : null,
           "start" : "2016-08-22T19:32:52Z",
@@ -164,7 +164,7 @@
     "Sites" : {
       "@type" : "Sites",
       "Site" : [ {
-        "@type" : "Site_Detail",
+        "@type" : "SiteDetail",
         "code" : "CHIDT",
         "name" : "ABC Hotel",
         "cityCode" : "CHI",
@@ -173,7 +173,7 @@
         "brandCode" : "BB",
         "brandName" : "BB Brand"
       }, {
-        "@type" : "Site_Detail",
+        "@type" : "SiteDetail",
         "code" : "CHIDT",
         "name" : "ABC Hotel",
         "cityCode" : "CHI",
@@ -182,7 +182,7 @@
         "brandCode" : "BB",
         "brandName" : "BB Brand"
       }, {
-        "@type" : "Site_Detail",
+        "@type" : "SiteDetail",
         "code" : "CHIDT",
         "name" : "ABC Hotel",
         "cityCode" : "CHI",
@@ -206,7 +206,7 @@
         "@type" : "StayDay",
         "dayNumber" : 1,
         "StayDayRoom" : [ {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -217,14 +217,14 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -235,14 +235,14 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -253,7 +253,7 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
@@ -264,7 +264,7 @@
         "@type" : "StayDay",
         "dayNumber" : 1,
         "StayDayRoom" : [ {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -275,14 +275,14 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -293,14 +293,14 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -311,7 +311,7 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
@@ -322,7 +322,7 @@
         "@type" : "StayDay",
         "dayNumber" : 1,
         "StayDayRoom" : [ {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -333,14 +333,14 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -351,14 +351,14 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
             }
           }
         }, {
-          "@type" : "StayDayRoom_Detail",
+          "@type" : "StayDayRoomDetail",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
           "comments" : "Comments about this stay day.",
@@ -369,7 +369,7 @@
             "bedTypeCode" : "K1",
             "nonSmokingInd" : true,
             "CommentsDetail" : {
-              "@type" : "Comments_Detail",
+              "@type" : "CommentsDetail",
               "name" : "I am a short string.",
               "language" : "eng",
               "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
@@ -395,7 +395,7 @@
         "@type" : "EventDay",
         "dayNumber" : 1,
         "EventFunction" : [ {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_1",
           "startTime" : "09:45:00",
           "endTime" : "14:15:00",
@@ -429,7 +429,7 @@
             "value" : "Ballroom"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -458,7 +458,7 @@
               "value" : "Dry erase board with eraser and markers"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -487,7 +487,7 @@
               "value" : "Flip chart and markers"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -517,7 +517,7 @@
             } ]
           } ]
         }, {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_2",
           "startTime" : "06:00:00",
           "endTime" : "09:45:00",
@@ -551,7 +551,7 @@
             "value" : "Banquet"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -580,7 +580,7 @@
               "value" : "Polling devices"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -609,7 +609,7 @@
               "value" : "Projector"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -639,7 +639,7 @@
             } ]
           } ]
         }, {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_3",
           "startTime" : "14:15:00",
           "endTime" : "06:00:00",
@@ -673,7 +673,7 @@
             "value" : "Boardroom"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -702,7 +702,7 @@
               "value" : "AV Technician"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -731,7 +731,7 @@
               "value" : "Disc player"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -768,7 +768,7 @@
         "@type" : "EventDay",
         "dayNumber" : 1,
         "EventFunction" : [ {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_4",
           "startTime" : "09:45:00",
           "endTime" : "14:15:00",
@@ -802,7 +802,7 @@
             "value" : "Classroom"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -831,7 +831,7 @@
               "value" : "LCD panel"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -860,7 +860,7 @@
               "value" : "Podium"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -890,7 +890,7 @@
             } ]
           } ]
         }, {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_5",
           "startTime" : "06:00:00",
           "endTime" : "09:45:00",
@@ -924,7 +924,7 @@
             "value" : "Classroom - 2 per 6 ft. tables"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -953,7 +953,7 @@
               "value" : "Video conferencing"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -982,7 +982,7 @@
               "value" : "Audio recording"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -1012,7 +1012,7 @@
             } ]
           } ]
         }, {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_6",
           "startTime" : "14:15:00",
           "endTime" : "06:00:00",
@@ -1046,7 +1046,7 @@
             "value" : "Classroom - 3 per 6 ft. tables"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -1075,7 +1075,7 @@
               "value" : "High speed internet access"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -1104,7 +1104,7 @@
               "value" : "Laser pointer"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -1141,7 +1141,7 @@
         "@type" : "EventDay",
         "dayNumber" : 1,
         "EventFunction" : [ {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_7",
           "startTime" : "09:45:00",
           "endTime" : "14:15:00",
@@ -1175,7 +1175,7 @@
             "value" : "Classroom - 3 per 8 ft. tables"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -1204,7 +1204,7 @@
               "value" : "Screen"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -1233,7 +1233,7 @@
               "value" : "Video camera"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -1263,7 +1263,7 @@
             } ]
           } ]
         }, {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_8",
           "startTime" : "06:00:00",
           "endTime" : "09:45:00",
@@ -1297,7 +1297,7 @@
             "value" : "Classroom - 4 per 8 ft. tables"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
@@ -1326,7 +1326,7 @@
               "value" : "Dry erase board with eraser and markers"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -1355,7 +1355,7 @@
               "value" : "Flip chart and markers"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -1385,7 +1385,7 @@
             } ]
           } ]
         }, {
-          "@type" : "EventFunction_Detail",
+          "@type" : "EventFunctionDetail",
           "eventId" : "eventFunction_9",
           "startTime" : "14:15:00",
           "endTime" : "06:00:00",
@@ -1419,7 +1419,7 @@
             "value" : "Classroom (Chevron) - 2 per 6 ft. tables"
           },
           "EventSubFunction" : [ {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "09:45:00",
             "endTime" : "14:15:00",
@@ -1448,7 +1448,7 @@
               "value" : "Polling devices"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "06:00:00",
             "endTime" : "09:45:00",
@@ -1477,7 +1477,7 @@
               "value" : "Projector"
             } ]
           }, {
-            "@type" : "EventSubFunction_Detail",
+            "@type" : "EventSubFunctionDetail",
             "name" : "Roll-in lunch",
             "startTime" : "14:15:00",
             "endTime" : "06:00:00",
