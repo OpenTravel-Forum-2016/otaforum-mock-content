@@ -8,7 +8,46 @@
     <Namespace>http://www.opentravel.org/OTM/product/eRFP/v1</Namespace>
     <Prefix>rfp-0100</Prefix>
     <Name>eRFP_API</Name>
+    <Includes>otm://Opentravel/eRFP_1_0_0.otm</Includes>
+    <Import fileHints="otm://Opentravel/Common_1_0_0.otm"
+        namespace="http://www.opentravel.org/OTM/Common/v1" prefix="ota2-0100"/>
     <Context
         applicationContext="http://www.opentravel.org/OTM/product/eRFP/v1" context="rfp"/>
+    <Resource abstract="false" basePath="/E_RFPs"
+        businessObjectRef="E_RFP" firstClass="true" name="E_RFPResource">
+        <ParamGroup facetName="E_RFP_ID" idGroup="true" name="ID">
+            <Parameter fieldName="system" location="Path"/>
+            <Parameter fieldName="company" location="Path"/>
+            <Parameter fieldName="instance" location="Path"/>
+        </ParamGroup>
+        <ActionFacet label="SubstitutionGroup" referenceRepeat="0" referenceType="Required"/>
+        <ActionFacet label="ID" referenceFacet="ID" referenceRepeat="0" referenceType="Required"/>
+        <ActionFacet label="Summary" referenceFacet="Summary"
+            referenceRepeat="0" referenceType="Required"/>
+        <Action actionId="Get" common="false">
+            <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="E_RFPResource_ID" statusCodes="200"/>
+        </Action>
+        <Action actionId="Create" common="false">
+            <ActionRequest httpMethod="POST"
+                mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                pathTemplate="/" payloadType="E_RFPResource_SubstitutionGroup"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="E_RFPResource_SubstitutionGroup" statusCodes="201"/>
+        </Action>
+        <Action actionId="Update" common="false">
+            <ActionRequest httpMethod="PUT"
+                mimeTypes="APPLICATION_XML APPLICATION_JSON"
+                paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="E_RFPResource_SubstitutionGroup" statusCodes="200"/>
+        </Action>
+        <Action actionId="Delete" common="false">
+            <ActionRequest httpMethod="DELETE" mimeTypes=""
+                paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
+            <ActionResponse mimeTypes="" statusCodes="200"/>
+        </Action>
+    </Resource>
     
 </Library>
