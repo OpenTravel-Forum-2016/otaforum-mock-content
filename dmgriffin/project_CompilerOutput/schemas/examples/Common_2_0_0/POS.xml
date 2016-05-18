@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<POS xmlns="http://www.opentravel.org/OTM/Common/v2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v2 ../../Common_2_0_0.xsd">
+    <Source agentDutyCode="I am a tiny string."
+        agentSine="I am a tiny string." airlineVendorID="LH"
+        airportCode="LGA" eRSP_UserID="I am a tiny string."
+        firstDepartPoint="I am a tiny string." iSOCountry="IR"
+        iSOCurrency="Example String Value"
+        pseudoCityCode="I am a tiny string." terminalID="I am a tiny string.">
+        <RequestorIDDetail messagePassword="I am a tiny string." name="I am a medium string.">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+        </RequestorIDDetail>
+        <Position altitude="I am a tiny string."
+            altitudeUnitOfMeasureCode="2" latitude="I am a tiny string."
+            longitude="I am a tiny string." positionAccuracyCode="2"/>
+        <BookingChannel primaryInd="true" type="2">
+            <CompanyName code="AI" codeContext="I am a tiny string."
+                department="Adventure department"
+                division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>
+        </BookingChannel>
+    </Source>
+    <Source agentDutyCode="I am a tiny string."
+        agentSine="I am a tiny string." airlineVendorID="LH"
+        airportCode="LGA" eRSP_UserID="I am a tiny string."
+        firstDepartPoint="I am a tiny string." iSOCountry="IR"
+        iSOCurrency="Example String Value"
+        pseudoCityCode="I am a tiny string." terminalID="I am a tiny string.">
+        <RequestorIDDetail messagePassword="I am a tiny string." name="I am a medium string.">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+        </RequestorIDDetail>
+        <Position altitude="I am a tiny string."
+            altitudeUnitOfMeasureCode="2" latitude="I am a tiny string."
+            longitude="I am a tiny string." positionAccuracyCode="2"/>
+        <BookingChannel primaryInd="true" type="2">
+            <CompanyName code="AI" codeContext="I am a tiny string."
+                department="Adventure department"
+                division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>
+        </BookingChannel>
+    </Source>
+    <Source agentDutyCode="I am a tiny string."
+        agentSine="I am a tiny string." airlineVendorID="LH"
+        airportCode="LGA" eRSP_UserID="I am a tiny string."
+        firstDepartPoint="I am a tiny string." iSOCountry="IR"
+        iSOCurrency="Example String Value"
+        pseudoCityCode="I am a tiny string." terminalID="I am a tiny string.">
+        <RequestorIDDetail messagePassword="I am a tiny string." name="I am a medium string.">
+            <Identifier company="Acme" instance="i0987654321"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+        </RequestorIDDetail>
+        <Position altitude="I am a tiny string."
+            altitudeUnitOfMeasureCode="2" latitude="I am a tiny string."
+            longitude="I am a tiny string." positionAccuracyCode="2"/>
+        <BookingChannel primaryInd="true" type="2">
+            <CompanyName code="AI" codeContext="I am a tiny string."
+                department="Adventure department"
+                division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>
+        </BookingChannel>
+    </Source>
+</POS>

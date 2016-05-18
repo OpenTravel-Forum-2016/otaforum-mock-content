@@ -1,0 +1,8 @@
+{
+  "TaxRegistrationDetails" : {
+    "value" : null,
+    "taxID" : "I am a tiny string.",
+    "recipientName" : "I am a tiny string.",
+    "recipientAddress" : "I am a short string."
+  }
+}

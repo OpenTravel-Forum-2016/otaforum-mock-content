@@ -1,0 +1,31 @@
+{
+  "TelephoneDetail" : {
+    "@type" : "TelephoneDetail",
+    "role" : "Home",
+    "countryAccessCode" : "Example String Value",
+    "areaCityCode" : "Example String Value",
+    "phoneNumber" : "2358878",
+    "extension" : "Example String Value",
+    "id" : "telephone_1",
+    "pIN" : "I am a tiny string.",
+    "remark" : "Example String Value",
+    "defaultInd" : true,
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    },
+    "PhoneLocationType" : {
+      "value" : "Brand reservations office"
+    },
+    "PhoneTechType" : {
+      "value" : "Voice"
+    },
+    "PhoneUseType" : {
+      "value" : "Contact"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Alliance xmlns="http://www.opentravel.org/OTM/profile/v0"
+    id="alliance_1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/profile/v0 ../../Profile_0_0_0.xsd">
+    <Member code="AI" codeContext="I am a tiny string."
+        companyName="MemberCompany" department="Adventure department"
+        division="Travel Division" memberCode="co1" shortName="Adventure Inc"/>
+    <Member code="AI" codeContext="I am a tiny string."
+        companyName="MemberCompany" department="Adventure department"
+        division="Travel Division" memberCode="co1" shortName="Adventure Inc"/>
+    <Member code="AI" codeContext="I am a tiny string."
+        companyName="MemberCompany" department="Adventure department"
+        division="Travel Division" memberCode="co1" shortName="Adventure Inc"/>
+    <EffectiveExpireDate effective="2011-01-24" expire="2011-07-04" expireDateExclusiveInd="true"/>
+    <Identifier company="Acme" instance="i0987654321"
+        system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+</Alliance>

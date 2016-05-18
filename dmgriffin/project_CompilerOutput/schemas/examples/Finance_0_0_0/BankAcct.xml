@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BankAcct xmlns="http://www.opentravel.org/OTM/finance/v0"
+    checkNumber="I am a tiny string." checksAcceptedInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v0 ../../Finance_0_0_0.xsd">
+    <PrivacyGroup optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+    <BankAcctName>I am a short string.</BankAcctName>
+    <BankAcctNumber authenticationMethod="SecurityCode"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning DocURL="http://www.w3.org/2001/XMLSchema" code="2"
+            language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Complete"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Advisory" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </BankAcctNumber>
+    <BankID authenticationMethod="MagneticStripe"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning
+            DocURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+            code="2" language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Incomplete"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Application error" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </BankID>
+    <Type Description="Visa" accountCode="I am a short string."
+        id="bankAccountType_1" listBankAccountType="Savings"
+        listBankAccountTypeExtension="listBankAccountType_Other_Value"
+        name="Example String Value" uRL="http://www.w3.org/2001/XMLSchema"/>
+</BankAcct>

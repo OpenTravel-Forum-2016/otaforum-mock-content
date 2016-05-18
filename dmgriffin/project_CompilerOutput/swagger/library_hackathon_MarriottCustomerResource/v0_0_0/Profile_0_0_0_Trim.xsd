@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/profile/v0"
+    version="0.0.0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00"
+    xmlns:prof="http://www.opentravel.org/OTM/profile/v0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:LibraryName>Profile</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                <otm:SourceFile>/Profile_0_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T16:11:12.217-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:complexType name="LoyaltyProgram">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Identifies a membership or loyalty program offered by the company by name of the program.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength0to32</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">LoyaltyProgram</otm:OTA2Entity>
+                <otm:Equivalent context="profile">LoyaltyProgramType</otm:Equivalent>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2:Empty">
+                <xsd:attribute name="programCode"
+                    type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Identification of the loyalty program by code.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to16</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="profile">ProgramCode</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="loyaltyLevel"
+                    type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Indicates special privileges in program assigned to individual.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to16</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="profile">LoyaltyLevel</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="id" type="xsd:ID" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">A unique reference for a loyalty program within this message.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="profile">RPH</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="codeContext"
+                    type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Identifies the source authority for the code.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="primaryInd" type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">When true, indicates this is the primary loyalty program and when absent or false, indicates this is not the primary loyalty program.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}boolean</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="singleVendorIndGroupInd"
+                    type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Present and true Indicates the program is part of an alliance, otherwise it is a single vendor.</xsd:documentation>
+                        <xsd:documentation source="Implementer">AttributeGroup: SingleVendorIndGroup</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+</xsd:schema>

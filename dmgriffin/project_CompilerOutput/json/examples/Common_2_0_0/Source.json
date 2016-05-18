@@ -1,0 +1,48 @@
+{
+  "Source" : {
+    "@type" : "Source",
+    "agentSine" : "I am a tiny string.",
+    "pseudoCityCode" : "I am a tiny string.",
+    "iSOCountry" : "IR",
+    "iSOCurrency" : "Example String Value",
+    "agentDutyCode" : "I am a tiny string.",
+    "airlineVendorID" : "LH",
+    "airportCode" : "LGA",
+    "firstDepartPoint" : "I am a tiny string.",
+    "eRSP_UserID" : "I am a tiny string.",
+    "terminalID" : "I am a tiny string.",
+    "RequestorIDDetail" : {
+      "@type" : "RequestorIDDetail",
+      "messagePassword" : "I am a tiny string.",
+      "name" : "I am a medium string.",
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.w3.org/2001/XMLSchema",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    },
+    "Position" : {
+      "value" : null,
+      "latitude" : "I am a tiny string.",
+      "longitude" : "I am a tiny string.",
+      "altitude" : "I am a tiny string.",
+      "altitudeUnitOfMeasureCode" : "2",
+      "positionAccuracyCode" : "2"
+    },
+    "BookingChannel" : {
+      "@type" : "BookingChannel",
+      "type" : "2",
+      "primaryInd" : true,
+      "CompanyName" : {
+        "value" : "Travel Adventure Partners Incorporated",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }
+    }
+  }
+}

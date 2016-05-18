@@ -1,0 +1,41 @@
+{
+  "OrganizationMemberName" : {
+    "@type" : "OrganizationMemberName",
+    "ID_LevelTitle" : {
+      "value" : null,
+      "id" : "employee_1",
+      "level" : "I am a tiny string.",
+      "title" : "I am a short string.",
+      "status" : "Active",
+      "description" : "I am a short string.",
+      "employer" : "I am a tiny string."
+    },
+    "Person_Name" : {
+      "@type" : "Person_Name",
+      "type" : "Alternate",
+      "language" : "???",
+      "defaultInd" : true,
+      "Prefix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Given" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "Middle" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "SurnamePrefix" : "I am a tiny string.",
+      "Surname" : "I am a short string.",
+      "Suffix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Title" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Person_Document" : {
+        "@type" : "Person_Document",
+        "DocType" : {
+          "value" : "NaturalizationCertificate"
+        }
+      },
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "Yes",
+        "shareSyncInd" : "No",
+        "optInStatus" : "OptedIn",
+        "optInDate" : "2011-01-24T09:45:00",
+        "optOutDate" : "2011-07-04T14:15:00"
+      }
+    }
+  }
+}

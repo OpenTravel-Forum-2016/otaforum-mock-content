@@ -1,0 +1,7 @@
+{
+  "Currency_Amount" : {
+    "value" : 80000.0,
+    "currencyCode" : "USD",
+    "decimalPlaces" : 2
+  }
+}

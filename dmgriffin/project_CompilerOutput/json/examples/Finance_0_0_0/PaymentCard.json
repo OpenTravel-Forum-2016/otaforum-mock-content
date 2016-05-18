@@ -1,0 +1,522 @@
+{
+  "PaymentCardDetail" : {
+    "@type" : "PaymentCardDetail",
+    "id" : "paymentCard_1",
+    "effectiveDate" : "2011-01-24",
+    "expireDate" : "2011-07-04",
+    "countryOfIssue" : "US",
+    "companyCardReference" : "Abc123",
+    "remark" : "I am a short string.",
+    "secureInd" : true,
+    "extendedPaymentInd" : true,
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    },
+    "CardCode" : "AX",
+    "CardType" : {
+      "value" : "I am a short string.",
+      "issuerCode" : "I am a short string.",
+      "Description" : "Visa",
+      "name" : "Example String Value",
+      "uRL" : "http://www.w3.org/2001/XMLSchema",
+      "id" : "paymentCardTypeIssuer_1"
+    },
+    "Issuer" : {
+      "value" : "I am a short string.",
+      "Description" : "Visa",
+      "name" : "Example String Value",
+      "uRL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+      "id" : "codeExternal_1"
+    },
+    "CardHolderName" : "I am a short string.",
+    "CardNumber" : {
+      "@type" : "CardNumber",
+      "encryptionKey" : "Example String Value",
+      "encryptionKeyMethod" : "Example String Value",
+      "encryptionMethod" : "Example String Value",
+      "encryptedValue" : "Example String Value",
+      "mask" : "Example String Value",
+      "token" : "Example String Value",
+      "tokenProviderID" : "Example String Value",
+      "authenticationMethod" : "SecurityCode",
+      "PlainText" : "Example String Value",
+      "Warning" : {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Advisory",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.w3.org/2001/XMLSchema",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Complete",
+        "statusExtension" : "status_Other_Value"
+      }
+    },
+    "AuthenticationVerification" : {
+      "@type" : "AuthenticationVerification",
+      "encryptionKey" : "Example String Value",
+      "encryptionKeyMethod" : "Example String Value",
+      "encryptionMethod" : "Example String Value",
+      "encryptedValue" : "Example String Value",
+      "mask" : "Example String Value",
+      "token" : "Example String Value",
+      "tokenProviderID" : "Example String Value",
+      "authenticationMethod" : "MagneticStripe",
+      "PlainText" : "Example String Value",
+      "Warning" : {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Application error",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Incomplete",
+        "statusExtension" : "status_Other_Value"
+      }
+    },
+    "MagneticStripe" : [ {
+      "@type" : "MagneticStripe",
+      "encryptionKey" : "Example String Value",
+      "encryptionKeyMethod" : "Example String Value",
+      "encryptionMethod" : "Example String Value",
+      "encryptedValue" : "Example String Value",
+      "mask" : "Example String Value",
+      "token" : "Example String Value",
+      "tokenProviderID" : "Example String Value",
+      "authenticationMethod" : "SecurityCode",
+      "PlainText" : "Example String Value",
+      "Warning" : {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Authentication",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.w3.org/2001/XMLSchema",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Not processed",
+        "statusExtension" : "status_Other_Value"
+      }
+    }, {
+      "@type" : "MagneticStripe",
+      "encryptionKey" : "Example String Value",
+      "encryptionKeyMethod" : "Example String Value",
+      "encryptionMethod" : "Example String Value",
+      "encryptedValue" : "Example String Value",
+      "mask" : "Example String Value",
+      "token" : "Example String Value",
+      "tokenProviderID" : "Example String Value",
+      "authenticationMethod" : "MagneticStripe",
+      "PlainText" : "Example String Value",
+      "Warning" : {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Authentication timeout",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Unknown",
+        "statusExtension" : "status_Other_Value"
+      }
+    }, {
+      "@type" : "MagneticStripe",
+      "encryptionKey" : "Example String Value",
+      "encryptionKeyMethod" : "Example String Value",
+      "encryptionMethod" : "Example String Value",
+      "encryptedValue" : "Example String Value",
+      "mask" : "Example String Value",
+      "token" : "Example String Value",
+      "tokenProviderID" : "Example String Value",
+      "authenticationMethod" : "SecurityCode",
+      "PlainText" : "Example String Value",
+      "Warning" : {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Authorization",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.w3.org/2001/XMLSchema",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Complete",
+        "statusExtension" : "status_Other_Value"
+      }
+    } ],
+    "CardHolderId" : {
+      "value" : "guid12345",
+      "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    },
+    "Person_Name" : {
+      "@type" : "Person_Name",
+      "type" : "Alternate",
+      "language" : "???",
+      "defaultInd" : true,
+      "Prefix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Given" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "Middle" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "SurnamePrefix" : "I am a tiny string.",
+      "Surname" : "I am a short string.",
+      "Suffix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Title" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Person_Document" : {
+        "@type" : "Person_Document",
+        "DocType" : {
+          "value" : "NaturalizationCertificate"
+        }
+      },
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "Inherit",
+        "shareSyncInd" : "Yes",
+        "optInStatus" : "OptedOut",
+        "optInDate" : "2011-12-05T06:00:00",
+        "optOutDate" : "2011-01-24T09:45:00"
+      }
+    },
+    "AddressDetail" : {
+      "@type" : "AddressDetail",
+      "role" : "Home",
+      "language" : "en",
+      "type" : "CLT",
+      "use" : "AUT",
+      "validInd" : true,
+      "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "BldgRoom" : [ {
+        "value" : "Bldg H",
+        "buldingInd" : true
+      }, {
+        "value" : "Bldg H",
+        "buldingInd" : true
+      } ],
+      "Number" : {
+        "value" : "563",
+        "streetNmbrSuffix" : "B",
+        "streetDirection" : "NNW",
+        "ruralRouteNmbr" : "88",
+        "pO_Box" : "98567499"
+      },
+      "Street" : "I am a short string.",
+      "City" : "I am a short string.",
+      "County" : "I am a short string.",
+      "StateProv" : {
+        "value" : "TX",
+        "name" : "Texas"
+      },
+      "Country" : {
+        "value" : "IR",
+        "name" : "Ireland"
+      },
+      "PostalCode" : "I am a short string.",
+      "Remark" : "Example String Value",
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "No",
+        "shareSyncInd" : "Inherit",
+        "optInStatus" : "Unknown",
+        "optInDate" : "2011-07-04T14:15:00",
+        "optOutDate" : "2011-12-05T06:00:00"
+      }
+    },
+    "Telephone" : [ {
+      "@type" : "TelephoneDetail",
+      "role" : "Home",
+      "countryAccessCode" : "Example String Value",
+      "areaCityCode" : "Example String Value",
+      "phoneNumber" : "2358878",
+      "extension" : "Example String Value",
+      "id" : "telephone_1",
+      "pIN" : "I am a tiny string.",
+      "remark" : "Example String Value",
+      "defaultInd" : true,
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "Yes",
+        "shareSyncInd" : "No",
+        "optInStatus" : "OptedIn",
+        "optInDate" : "2011-01-24T09:45:00",
+        "optOutDate" : "2011-07-04T14:15:00"
+      },
+      "PhoneLocationType" : {
+        "value" : "Brand reservations office"
+      },
+      "PhoneTechType" : {
+        "value" : "Voice"
+      },
+      "PhoneUseType" : {
+        "value" : "Contact"
+      }
+    }, {
+      "@type" : "TelephoneDetail",
+      "role" : "Office",
+      "countryAccessCode" : "Example String Value",
+      "areaCityCode" : "Example String Value",
+      "phoneNumber" : "2358878",
+      "extension" : "Example String Value",
+      "id" : "telephone_2",
+      "pIN" : "I am a tiny string.",
+      "remark" : "Example String Value",
+      "defaultInd" : true,
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "Inherit",
+        "shareSyncInd" : "Yes",
+        "optInStatus" : "OptedOut",
+        "optInDate" : "2011-12-05T06:00:00",
+        "optOutDate" : "2011-01-24T09:45:00"
+      },
+      "PhoneLocationType" : {
+        "value" : "Central reservations office"
+      },
+      "PhoneTechType" : {
+        "value" : "Fax"
+      },
+      "PhoneUseType" : {
+        "value" : "Daytime contact"
+      }
+    }, {
+      "@type" : "TelephoneDetail",
+      "role" : "Mobile",
+      "countryAccessCode" : "Example String Value",
+      "areaCityCode" : "Example String Value",
+      "phoneNumber" : "2358878",
+      "extension" : "Example String Value",
+      "id" : "telephone_3",
+      "pIN" : "I am a tiny string.",
+      "remark" : "Example String Value",
+      "defaultInd" : true,
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "No",
+        "shareSyncInd" : "Inherit",
+        "optInStatus" : "Unknown",
+        "optInDate" : "2011-07-04T14:15:00",
+        "optOutDate" : "2011-12-05T06:00:00"
+      },
+      "PhoneLocationType" : {
+        "value" : "Home"
+      },
+      "PhoneTechType" : {
+        "value" : "Pager"
+      },
+      "PhoneUseType" : {
+        "value" : "Emergency contact"
+      }
+    } ],
+    "Email" : [ {
+      "value" : "I am a medium string.",
+      "emailType" : "2",
+      "remark" : "Example String Value",
+      "textFormat" : "I am a short string.",
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00",
+      "validInd" : true,
+      "defaultInd" : true
+    }, {
+      "value" : "I am a medium string.",
+      "emailType" : "2",
+      "remark" : "Example String Value",
+      "textFormat" : "I am a short string.",
+      "shareMarketInd" : "Inherit",
+      "shareSyncInd" : "Yes",
+      "optInStatus" : "OptedOut",
+      "optInDate" : "2011-12-05T06:00:00",
+      "optOutDate" : "2011-01-24T09:45:00",
+      "validInd" : true,
+      "defaultInd" : true
+    }, {
+      "value" : "I am a medium string.",
+      "emailType" : "2",
+      "remark" : "Example String Value",
+      "textFormat" : "I am a short string.",
+      "shareMarketInd" : "No",
+      "shareSyncInd" : "Inherit",
+      "optInStatus" : "Unknown",
+      "optInDate" : "2011-07-04T14:15:00",
+      "optOutDate" : "2011-12-05T06:00:00",
+      "validInd" : true,
+      "defaultInd" : true
+    } ],
+    "CustomerLoyalty" : [ {
+      "value" : null,
+      "id" : "customerLoyalty_1",
+      "programID" : "I am a short string.",
+      "membershipID" : "I am a tiny string.",
+      "travelSector" : "2",
+      "vendorCode" : "I am a tiny string.",
+      "allianceLoyaltyLevelName" : "I am a short string.",
+      "customerType" : "I am a tiny string.",
+      "customerValue" : "I am a tiny string.",
+      "password" : "I am a tiny string.",
+      "loyalLevel" : "I am a tiny string.",
+      "loyalLevelCode" : 1234,
+      "singleVendorInd" : "SingleVndr",
+      "SignupDate" : "2011-12-05",
+      "EffectiveDate" : "2011-01-24",
+      "ExpireDate" : "2011-07-04",
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00",
+      "codeContext" : "I am a tiny string.",
+      "expireDateExclusiveIndicatorInd" : true,
+      "primaryLoyaltyIndicatorInd" : true
+    }, {
+      "value" : null,
+      "id" : "customerLoyalty_2",
+      "programID" : "I am a short string.",
+      "membershipID" : "I am a tiny string.",
+      "travelSector" : "2",
+      "vendorCode" : "I am a tiny string.",
+      "allianceLoyaltyLevelName" : "I am a short string.",
+      "customerType" : "I am a tiny string.",
+      "customerValue" : "I am a tiny string.",
+      "password" : "I am a tiny string.",
+      "loyalLevel" : "I am a tiny string.",
+      "loyalLevelCode" : 2345,
+      "singleVendorInd" : "Alliance",
+      "SignupDate" : "2011-12-05",
+      "EffectiveDate" : "2011-01-24",
+      "ExpireDate" : "2011-07-04",
+      "shareMarketInd" : "Inherit",
+      "shareSyncInd" : "Yes",
+      "optInStatus" : "OptedOut",
+      "optInDate" : "2011-12-05T06:00:00",
+      "optOutDate" : "2011-01-24T09:45:00",
+      "codeContext" : "I am a tiny string.",
+      "expireDateExclusiveIndicatorInd" : true,
+      "primaryLoyaltyIndicatorInd" : true
+    }, {
+      "value" : null,
+      "id" : "customerLoyalty_3",
+      "programID" : "I am a short string.",
+      "membershipID" : "I am a tiny string.",
+      "travelSector" : "2",
+      "vendorCode" : "I am a tiny string.",
+      "allianceLoyaltyLevelName" : "I am a short string.",
+      "customerType" : "I am a tiny string.",
+      "customerValue" : "I am a tiny string.",
+      "password" : "I am a tiny string.",
+      "loyalLevel" : "I am a tiny string.",
+      "loyalLevelCode" : 3456,
+      "singleVendorInd" : "SingleVndr",
+      "SignupDate" : "2011-12-05",
+      "EffectiveDate" : "2011-01-24",
+      "ExpireDate" : "2011-07-04",
+      "shareMarketInd" : "No",
+      "shareSyncInd" : "Inherit",
+      "optInStatus" : "Unknown",
+      "optInDate" : "2011-07-04T14:15:00",
+      "optOutDate" : "2011-12-05T06:00:00",
+      "codeContext" : "I am a tiny string.",
+      "expireDateExclusiveIndicatorInd" : true,
+      "primaryLoyaltyIndicatorInd" : true
+    } ],
+    "SignatureOnFile" : {
+      "@type" : "SignatureOnFile",
+      "signatureOnFileInd" : true,
+      "Date_EffectiveExpire" : {
+        "value" : null,
+        "effective" : "2011-12-05",
+        "expire" : "2011-01-24",
+        "expireDateExclusiveInd" : true
+      }
+    },
+    "ThreeDomainSecurity" : {
+      "@type" : "ThreeDomainSecurity",
+      "ThreeDomainSecurity_Gateway" : {
+        "@type" : "ThreeDomainSecurity_Gateway",
+        "eCI" : "A",
+        "merchantID" : "Example String Value",
+        "processorID" : "Example String Value",
+        "uRL" : "http://www.w3.org/2001/XMLSchema",
+        "AuthenticationVerification" : {
+          "@type" : "AuthenticationVerification",
+          "encryptionKey" : "Example String Value",
+          "encryptionKeyMethod" : "Example String Value",
+          "encryptionMethod" : "Example String Value",
+          "encryptedValue" : "Example String Value",
+          "mask" : "Example String Value",
+          "token" : "Example String Value",
+          "tokenProviderID" : "Example String Value",
+          "authenticationMethod" : "MagneticStripe",
+          "PlainText" : "Example String Value",
+          "Warning" : {
+            "value" : "I am a medium string.",
+            "language" : "eng",
+            "type" : "Business rule",
+            "typeExtension" : "type_Other_Value",
+            "shortText" : "I am a short string.",
+            "code" : "2",
+            "DocURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+            "tag" : "I am a medium string.",
+            "recordID" : "I am a short string.",
+            "nodeList" : "I am a medium string.",
+            "status" : "Incomplete",
+            "statusExtension" : "status_Other_Value"
+          }
+        },
+        "TransactionPassword" : {
+          "@type" : "TransactionPassword",
+          "encryptionKey" : "Example String Value",
+          "encryptionKeyMethod" : "Example String Value",
+          "encryptionMethod" : "Example String Value",
+          "encryptedValue" : "Example String Value",
+          "mask" : "Example String Value",
+          "token" : "Example String Value",
+          "tokenProviderID" : "Example String Value",
+          "authenticationMethod" : "SecurityCode",
+          "PlainText" : "Example String Value",
+          "Warning" : {
+            "value" : "I am a medium string.",
+            "language" : "eng",
+            "type" : "No implementation",
+            "typeExtension" : "type_Other_Value",
+            "shortText" : "I am a short string.",
+            "code" : "2",
+            "DocURL" : "http://www.w3.org/2001/XMLSchema",
+            "tag" : "I am a medium string.",
+            "recordID" : "I am a short string.",
+            "nodeList" : "I am a medium string.",
+            "status" : "Not processed",
+            "statusExtension" : "status_Other_Value"
+          }
+        }
+      },
+      "ThreeDomainSecurity_Results" : {
+        "@type" : "ThreeDomainSecurity_Results",
+        "cAVV" : "Example String Value",
+        "pAResStatus" : "A",
+        "signatureVerfication" : "Example String Value",
+        "transactionID" : "Example String Value",
+        "xID" : "Example String Value"
+      }
+    }
+  }
+}

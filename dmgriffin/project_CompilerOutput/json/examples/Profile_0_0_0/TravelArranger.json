@@ -1,0 +1,25 @@
+{
+  "TravelArranger" : {
+    "@type" : "TravelArranger",
+    "type" : "I am a tiny string.",
+    "remark" : "I am a short string.",
+    "id" : "travelArranger_1",
+    "defaultInd" : true,
+    "CompanyName" : {
+      "value" : "Travel Adventure Partners Incorporated",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    },
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    }
+  }
+}

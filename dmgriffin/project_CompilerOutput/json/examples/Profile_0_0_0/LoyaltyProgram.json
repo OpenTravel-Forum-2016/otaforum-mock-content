@@ -1,0 +1,11 @@
+{
+  "LoyaltyProgram" : {
+    "value" : null,
+    "programCode" : "I am a tiny string.",
+    "loyaltyLevel" : "I am a tiny string.",
+    "id" : "loyaltyProgram_1",
+    "codeContext" : "I am a tiny string.",
+    "primaryInd" : true,
+    "singleVendorIndGroupInd" : true
+  }
+}

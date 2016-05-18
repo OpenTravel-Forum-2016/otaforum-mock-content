@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommentsDetail xmlns="http://www.opentravel.org/OTM/Common/v0"
+    language="eng" name="I am a short string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <TextualComment>I am a long string.</TextualComment>
+    <TextualComment>I am a long string.</TextualComment>
+    <TextualComment>I am a long string.</TextualComment>
+</CommentsDetail>

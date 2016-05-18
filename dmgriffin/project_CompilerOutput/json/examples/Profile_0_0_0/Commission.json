@@ -1,0 +1,15 @@
+{
+  "Commission" : {
+    "value" : null,
+    "planCode" : "I am a tiny string.",
+    "currency_Amount" : 80000.0,
+    "codeContext" : "I am a tiny string.",
+    "currencyCode" : "USD",
+    "decimalPlaces" : 2,
+    "shareMarketInd" : "Yes",
+    "shareSyncInd" : "No",
+    "optInStatus" : "OptedIn",
+    "optInDate" : "2011-01-24T09:45:00",
+    "optOutDate" : "2011-07-04T14:15:00"
+  }
+}

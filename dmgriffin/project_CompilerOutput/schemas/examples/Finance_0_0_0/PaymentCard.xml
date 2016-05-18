@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PaymentCardDetail xmlns="http://www.opentravel.org/OTM/finance/v0"
+    companyCardReference="Abc123" countryOfIssue="US"
+    effectiveDate="2011-01-24" expireDate="2011-07-04"
+    extendedPaymentInd="true" id="paymentCard_1"
+    remark="I am a short string." secureInd="true"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v0 ../../Finance_0_0_0.xsd">
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+    <CardCode>AX</CardCode>
+    <CardType Description="Visa" id="paymentCardTypeIssuer_1"
+        issuerCode="I am a short string." name="Example String Value" uRL="http://www.w3.org/2001/XMLSchema">I am a short string.</CardType>
+    <Issuer Description="Visa" id="codeExternal_1"
+        name="Example String Value" uRL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">I am a short string.</Issuer>
+    <CardHolderName>I am a short string.</CardHolderName>
+    <CardNumber authenticationMethod="SecurityCode"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning DocURL="http://www.w3.org/2001/XMLSchema" code="2"
+            language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Complete"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Advisory" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </CardNumber>
+    <AuthenticationVerification authenticationMethod="MagneticStripe"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning
+            DocURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+            code="2" language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Incomplete"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Application error" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </AuthenticationVerification>
+    <MagneticStripe authenticationMethod="SecurityCode"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning DocURL="http://www.w3.org/2001/XMLSchema" code="2"
+            language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Not processed"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Authentication" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </MagneticStripe>
+    <MagneticStripe authenticationMethod="MagneticStripe"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning
+            DocURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+            code="2" language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Unknown"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Authentication timeout" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </MagneticStripe>
+    <MagneticStripe authenticationMethod="SecurityCode"
+        encryptedValue="Example String Value"
+        encryptionKey="Example String Value"
+        encryptionKeyMethod="Example String Value"
+        encryptionMethod="Example String Value"
+        mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+        <PlainText>Example String Value</PlainText>
+        <Warning DocURL="http://www.w3.org/2001/XMLSchema" code="2"
+            language="eng" nodeList="I am a medium string."
+            recordID="I am a short string."
+            shortText="I am a short string." status="Complete"
+            statusExtension="status_Other_Value"
+            tag="I am a medium string." type="Authorization" typeExtension="type_Other_Value">I am a medium string.</Warning>
+    </MagneticStripe>
+    <CardHolderId company="Acme" instance="i0987654321"
+        system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</CardHolderId>
+    <ota2:Person_Name defaultInd="true" language="???" type="Alternate">
+        <ota2:Prefix>Mr.</ota2:Prefix>
+        <ota2:Prefix>Mr.</ota2:Prefix>
+        <ota2:Prefix>Mr.</ota2:Prefix>
+        <ota2:Given>John</ota2:Given>
+        <ota2:Given>John</ota2:Given>
+        <ota2:Given>John</ota2:Given>
+        <ota2:Middle>I am a short string.</ota2:Middle>
+        <ota2:Middle>I am a short string.</ota2:Middle>
+        <ota2:Middle>I am a short string.</ota2:Middle>
+        <ota2:SurnamePrefix>I am a tiny string.</ota2:SurnamePrefix>
+        <ota2:Surname>Smith</ota2:Surname>
+        <ota2:Suffix>I am a tiny string.</ota2:Suffix>
+        <ota2:Suffix>I am a tiny string.</ota2:Suffix>
+        <ota2:Suffix>I am a tiny string.</ota2:Suffix>
+        <ota2:Title>I am a tiny string.</ota2:Title>
+        <ota2:Title>I am a tiny string.</ota2:Title>
+        <ota2:Title>I am a tiny string.</ota2:Title>
+        <ota2:Person_Document>
+            <ota2:DocType>NaturalizationCertificate</ota2:DocType>
+        </ota2:Person_Document>
+        <ota2:Privacy optInDate="2011-12-05T06:00:00"
+            optInStatus="OptedOut" optOutDate="2011-01-24T09:45:00"
+            shareMarketInd="Inherit" shareSyncInd="Yes"/>
+    </ota2:Person_Name>
+    <ota2:AddressDetail language="en" role="Home" type="CLT" use="AUT" validInd="true">
+        <ota2:AddressLine>I am a short string.</ota2:AddressLine>
+        <ota2:AddressLine>I am a short string.</ota2:AddressLine>
+        <ota2:AddressLine>I am a short string.</ota2:AddressLine>
+        <ota2:BldgRoom buldingInd="true">Bldg H</ota2:BldgRoom>
+        <ota2:BldgRoom buldingInd="true">Bldg H</ota2:BldgRoom>
+        <ota2:Number pO_Box="98567499" ruralRouteNmbr="88"
+            streetDirection="NNW" streetNmbrSuffix="B">563</ota2:Number>
+        <ota2:Street>Travers Street</ota2:Street>
+        <ota2:City>Dublin</ota2:City>
+        <ota2:County>Fairfax</ota2:County>
+        <ota2:StateProv name="Texas">TX</ota2:StateProv>
+        <ota2:Country name="Ireland">IR</ota2:Country>
+        <ota2:PostalCode>32165-9999</ota2:PostalCode>
+        <ota2:Remark>This address should be used for all official correspondences.</ota2:Remark>
+        <ota2:Privacy optInDate="2011-07-04T14:15:00"
+            optInStatus="Unknown" optOutDate="2011-12-05T06:00:00"
+            shareMarketInd="No" shareSyncInd="Inherit"/>
+    </ota2:AddressDetail>
+    <ota2:TelephoneDetail areaCityCode="Example String Value"
+        countryAccessCode="Example String Value" defaultInd="true"
+        extension="Example String Value" id="telephone_1"
+        pIN="I am a tiny string." phoneNumber="2358878"
+        remark="Example String Value" role="Home">
+        <ota2:Privacy optInDate="2011-01-24T09:45:00"
+            optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00"
+            shareMarketInd="Yes" shareSyncInd="No"/>
+        <ota2:PhoneLocationType>Brand reservations office</ota2:PhoneLocationType>
+        <ota2:PhoneTechType>Voice</ota2:PhoneTechType>
+        <ota2:PhoneUseType>Contact</ota2:PhoneUseType>
+    </ota2:TelephoneDetail>
+    <ota2:TelephoneDetail areaCityCode="Example String Value"
+        countryAccessCode="Example String Value" defaultInd="true"
+        extension="Example String Value" id="telephone_2"
+        pIN="I am a tiny string." phoneNumber="2358878"
+        remark="Example String Value" role="Office">
+        <ota2:Privacy optInDate="2011-12-05T06:00:00"
+            optInStatus="OptedOut" optOutDate="2011-01-24T09:45:00"
+            shareMarketInd="Inherit" shareSyncInd="Yes"/>
+        <ota2:PhoneLocationType>Central reservations office</ota2:PhoneLocationType>
+        <ota2:PhoneTechType>Fax</ota2:PhoneTechType>
+        <ota2:PhoneUseType>Daytime contact</ota2:PhoneUseType>
+    </ota2:TelephoneDetail>
+    <ota2:TelephoneDetail areaCityCode="Example String Value"
+        countryAccessCode="Example String Value" defaultInd="true"
+        extension="Example String Value" id="telephone_3"
+        pIN="I am a tiny string." phoneNumber="2358878"
+        remark="Example String Value" role="Mobile">
+        <ota2:Privacy optInDate="2011-07-04T14:15:00"
+            optInStatus="Unknown" optOutDate="2011-12-05T06:00:00"
+            shareMarketInd="No" shareSyncInd="Inherit"/>
+        <ota2:PhoneLocationType>Home</ota2:PhoneLocationType>
+        <ota2:PhoneTechType>Pager</ota2:PhoneTechType>
+        <ota2:PhoneUseType>Emergency contact</ota2:PhoneUseType>
+    </ota2:TelephoneDetail>
+    <Email defaultInd="true" emailType="2"
+        optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" remark="Example String Value"
+        shareMarketInd="Yes" shareSyncInd="No"
+        textFormat="I am a short string." validInd="true">I am a medium string.</Email>
+    <Email defaultInd="true" emailType="2"
+        optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+        optOutDate="2011-01-24T09:45:00" remark="Example String Value"
+        shareMarketInd="Inherit" shareSyncInd="Yes"
+        textFormat="I am a short string." validInd="true">I am a medium string.</Email>
+    <Email defaultInd="true" emailType="2"
+        optInDate="2011-07-04T14:15:00" optInStatus="Unknown"
+        optOutDate="2011-12-05T06:00:00" remark="Example String Value"
+        shareMarketInd="No" shareSyncInd="Inherit"
+        textFormat="I am a short string." validInd="true">I am a medium string.</Email>
+    <CustomerLoyalty EffectiveDate="2011-01-24" ExpireDate="2011-07-04"
+        SignupDate="2011-12-05"
+        allianceLoyaltyLevelName="I am a short string."
+        codeContext="I am a tiny string."
+        customerType="I am a tiny string."
+        customerValue="I am a tiny string."
+        expireDateExclusiveIndicatorInd="true" id="customerLoyalty_1"
+        loyalLevel="I am a tiny string." loyalLevelCode="1234"
+        membershipID="I am a tiny string."
+        optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" password="I am a tiny string."
+        primaryLoyaltyIndicatorInd="true"
+        programID="I am a short string." shareMarketInd="Yes"
+        shareSyncInd="No" singleVendorInd="SingleVndr" travelSector="2" vendorCode="I am a tiny string."/>
+    <CustomerLoyalty EffectiveDate="2011-01-24" ExpireDate="2011-07-04"
+        SignupDate="2011-12-05"
+        allianceLoyaltyLevelName="I am a short string."
+        codeContext="I am a tiny string."
+        customerType="I am a tiny string."
+        customerValue="I am a tiny string."
+        expireDateExclusiveIndicatorInd="true" id="customerLoyalty_2"
+        loyalLevel="I am a tiny string." loyalLevelCode="2345"
+        membershipID="I am a tiny string."
+        optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+        optOutDate="2011-01-24T09:45:00" password="I am a tiny string."
+        primaryLoyaltyIndicatorInd="true"
+        programID="I am a short string." shareMarketInd="Inherit"
+        shareSyncInd="Yes" singleVendorInd="Alliance" travelSector="2" vendorCode="I am a tiny string."/>
+    <CustomerLoyalty EffectiveDate="2011-01-24" ExpireDate="2011-07-04"
+        SignupDate="2011-12-05"
+        allianceLoyaltyLevelName="I am a short string."
+        codeContext="I am a tiny string."
+        customerType="I am a tiny string."
+        customerValue="I am a tiny string."
+        expireDateExclusiveIndicatorInd="true" id="customerLoyalty_3"
+        loyalLevel="I am a tiny string." loyalLevelCode="3456"
+        membershipID="I am a tiny string."
+        optInDate="2011-07-04T14:15:00" optInStatus="Unknown"
+        optOutDate="2011-12-05T06:00:00" password="I am a tiny string."
+        primaryLoyaltyIndicatorInd="true"
+        programID="I am a short string." shareMarketInd="No"
+        shareSyncInd="Inherit" singleVendorInd="SingleVndr"
+        travelSector="2" vendorCode="I am a tiny string."/>
+    <SignatureOnFile signatureOnFileInd="true">
+        <Date_EffectiveExpire effective="2011-12-05" expire="2011-01-24" expireDateExclusiveInd="true"/>
+    </SignatureOnFile>
+    <ThreeDomainSecurity>
+        <ThreeDomainSecurity_Gateway eCI="A"
+            merchantID="Example String Value"
+            processorID="Example String Value" uRL="http://www.w3.org/2001/XMLSchema">
+            <AuthenticationVerification
+                authenticationMethod="MagneticStripe"
+                encryptedValue="Example String Value"
+                encryptionKey="Example String Value"
+                encryptionKeyMethod="Example String Value"
+                encryptionMethod="Example String Value"
+                mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+                <PlainText>Example String Value</PlainText>
+                <Warning
+                    DocURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                    code="2" language="eng"
+                    nodeList="I am a medium string."
+                    recordID="I am a short string."
+                    shortText="I am a short string." status="Incomplete"
+                    statusExtension="status_Other_Value"
+                    tag="I am a medium string." type="Business rule" typeExtension="type_Other_Value">I am a medium string.</Warning>
+            </AuthenticationVerification>
+            <TransactionPassword authenticationMethod="SecurityCode"
+                encryptedValue="Example String Value"
+                encryptionKey="Example String Value"
+                encryptionKeyMethod="Example String Value"
+                encryptionMethod="Example String Value"
+                mask="Example String Value" token="Example String Value" tokenProviderID="Example String Value">
+                <PlainText>Example String Value</PlainText>
+                <Warning DocURL="http://www.w3.org/2001/XMLSchema"
+                    code="2" language="eng"
+                    nodeList="I am a medium string."
+                    recordID="I am a short string."
+                    shortText="I am a short string."
+                    status="Not processed"
+                    statusExtension="status_Other_Value"
+                    tag="I am a medium string." type="No implementation" typeExtension="type_Other_Value">I am a medium string.</Warning>
+            </TransactionPassword>
+        </ThreeDomainSecurity_Gateway>
+        <ThreeDomainSecurity_Results cAVV="Example String Value"
+            pAResStatus="A" signatureVerfication="Example String Value"
+            transactionID="Example String Value" xID="Example String Value"/>
+    </ThreeDomainSecurity>
+</PaymentCardDetail>

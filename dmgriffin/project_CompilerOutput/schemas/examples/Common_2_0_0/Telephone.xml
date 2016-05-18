@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TelephoneDetail xmlns="http://www.opentravel.org/OTM/Common/v2"
+    areaCityCode="Example String Value"
+    countryAccessCode="Example String Value" defaultInd="true"
+    extension="Example String Value" id="telephone_1"
+    pIN="I am a tiny string." phoneNumber="2358878"
+    remark="Example String Value" role="Home"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v2 ../../Common_2_0_0.xsd">
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+    <PhoneLocationType>Brand reservations office</PhoneLocationType>
+    <PhoneTechType>Voice</PhoneTechType>
+    <PhoneUseType>Contact</PhoneUseType>
+</TelephoneDetail>

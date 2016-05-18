@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClubMembership xmlns="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <Name code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</Name>
+    <MemberIdentifier>I am a short string.</MemberIdentifier>
+    <Date_EffectiveExpire effective="2011-01-24" expire="2011-07-04" expireDateExclusiveInd="true"/>
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+</ClubMembership>

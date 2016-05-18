@@ -1,0 +1,19 @@
+{
+  "Voucher" : {
+    "value" : null,
+    "seriesCode" : "I am a tiny string.",
+    "EffectiveDate" : "2011-01-24",
+    "ExpireDate" : "2011-07-04",
+    "billingNumber" : "I am a short string.",
+    "supplierIdentifier" : "guid12345",
+    "identifier" : "voucher_1",
+    "valueType" : "I am a tiny string.",
+    "url" : "http://www.w3.org/2001/XMLSchema",
+    "system" : "sysABC3344",
+    "company" : "Acme",
+    "instance" : "i0987654321",
+    "groupDaysApplyInd" : true,
+    "electronicIndicatorInd" : true,
+    "expireDateExclusiveInd" : true
+  }
+}

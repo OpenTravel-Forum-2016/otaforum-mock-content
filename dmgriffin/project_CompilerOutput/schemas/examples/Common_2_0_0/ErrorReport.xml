@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ErrorReport xmlns="http://www.opentravel.org/OTM/Common/v2"
+    altLangID="???" correlationID="I am a short string."
+    docURL="http://www.w3.org/2001/XMLSchema"
+    echoToken="I am a short string." errorCode="SessionFailure-100"
+    errorCodeExtension="errorCode_Other_Value"
+    errorMessage="SessionFailure-101"
+    errorMessageExtension="errorMessage_Other_Value" primaryLangID="???"
+    retransmissionIndicatorInd="true"
+    sequenceNmbr="Example String Value" severity="I am a short string."
+    status="NotProcessed" target="Test"
+    targetName="I am a short string." timeStamp="2011-01-24T09:45:00"
+    transactionIdentifier="Example String Value"
+    transactionStatusCode="Start" version="12"/>

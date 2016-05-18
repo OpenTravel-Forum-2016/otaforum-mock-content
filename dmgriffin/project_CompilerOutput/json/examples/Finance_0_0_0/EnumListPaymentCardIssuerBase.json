@@ -1,0 +1,6 @@
+{
+  "Enum_List_PaymentCardIssuer_Base" : {
+    "value" : "VISA"
+  },
+  "extension" : "Other_Value"
+}

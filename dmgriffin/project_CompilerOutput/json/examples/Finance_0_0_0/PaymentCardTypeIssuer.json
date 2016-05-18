@@ -1,0 +1,10 @@
+{
+  "PaymentCardType_Issuer" : {
+    "value" : "I am a short string.",
+    "issuerCode" : "I am a short string.",
+    "Description" : "Visa",
+    "name" : "Example String Value",
+    "uRL" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "codeExternal_1"
+  }
+}

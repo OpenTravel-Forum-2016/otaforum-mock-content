@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FormOfPayment xmlns="http://www.opentravel.org/OTM/finance/v0"
+    costCenterID="I am a tiny string."
+    guaranteeID="I am a short string." guaranteeIndicatorInd="true"
+    guaranteeTypeCode="2" id="formOfPayment_1"
+    paymentTransactionTypeCode="charge" remark="I am a short string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v0 ../../Finance_0_0_0.xsd">
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+</FormOfPayment>

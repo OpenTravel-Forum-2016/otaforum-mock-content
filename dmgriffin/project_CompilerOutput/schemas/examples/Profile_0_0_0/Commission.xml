@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Commission xmlns="http://www.opentravel.org/OTM/profile/v0"
+    codeContext="I am a tiny string." currencyCode="USD"
+    currency_Amount="80000" decimalPlaces="2"
+    optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+    optOutDate="2011-07-04T14:15:00" planCode="I am a tiny string."
+    shareMarketInd="Yes" shareSyncInd="No"/>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Alliance_Member xmlns="http://www.opentravel.org/OTM/profile/v0"
+    code="AI" codeContext="I am a tiny string."
+    companyName="MemberCompany" department="Adventure department"
+    division="Travel Division" memberCode="co1" shortName="Adventure Inc"/>

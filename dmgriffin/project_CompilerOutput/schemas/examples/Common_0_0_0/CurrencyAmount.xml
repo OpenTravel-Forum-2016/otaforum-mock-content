@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Currency_Amount xmlns="http://www.opentravel.org/OTM/Common/v0"
+    currencyCode="USD" decimalPlaces="2">80000</Currency_Amount>

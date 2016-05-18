@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/Common/v0"
+    version="0.0.0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:ProjectName>project.otp</otm:ProjectName>
+                <otm:LibraryName>OTA_SimpleTypes</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>FINAL</otm:LibraryStatus>
+                <otm:SourceFile>/OTA_SimpleTypes_0_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T16:11:12.037-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:simpleType name="String_AlphaNumeric">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Alpha Numeric string with no whitespace
+Minimum length of 0 and a maximum length of 4096</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_AlphaNumeric</otm:OTA2Entity>
+                <otm:Example context="OTA2">Abc123</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4096"/>
+            <xsd:pattern value="([0-9a-zA-Z]+)?"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Long">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A long string  
+Minimum length of 0 and a maximum length of 4096</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Long</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a long string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4096"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A string with a minimum length of 0 and a maximum length of 512.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a medium string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="512"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Short">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A short string  
+Minimum length of 0 and a maximum length of 128</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Short</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a short string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Tiny">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A tiny string  
+Minimum length of 0 and a maximum length of 32</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Tiny</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a tiny string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Character_One">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Single  character string
+Minimum length of 0 and a maximum length of 1</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Character_One</otm:OTA2Entity>
+                <otm:Example context="OTA2">A</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Text">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A string intended for free text 
+Minimum length of 0 and maximum length of 4096</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Text</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4096"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Code_Airline_IATA">
+        <xsd:annotation>
+            <xsd:documentation source="Description">IATA defined 2 character airline designator codes, (IATA Airline Coding Directory, Section 3)
+This type will not support  IATA 3 char airline designator codes. There are no IATA 3 char airline codes assigned at this time.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Code_Airline_IATA</otm:OTA2Entity>
+                <otm:Example context="OTA2">LH</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([a-zA-Z0-9]{2})?"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Code_Airport_IATA">
+        <xsd:annotation>
+            <xsd:documentation source="Description">IATA defined 3 char airport code or location identifier</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Code_Airport_IATA</otm:OTA2Entity>
+                <otm:Example context="OTA2">LGA</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([A-Z]{3})?"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Code_Country">
+        <xsd:annotation>
+            <xsd:documentation source="Description">ISO 2 char country code  - Preferred country code is the 2 character country code as defined in ISO 3166-1</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Code_Country</otm:OTA2Entity>
+                <otm:Example context="OTA2">US</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([a-zA-Z]{2})?"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Code_Language_ISO_3">
+        <xsd:annotation>
+            <xsd:documentation source="Description">ISO 3 char  language code defined in  ISO639-2</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Code_Language_ISO_3</otm:OTA2Entity>
+                <otm:Example context="OTA2">eng</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:language"/>
+    </xsd:simpleType>
+    
+</xsd:schema>

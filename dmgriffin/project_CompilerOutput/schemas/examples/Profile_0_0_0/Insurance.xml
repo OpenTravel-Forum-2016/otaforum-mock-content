@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Insurance xmlns="http://www.opentravel.org/OTM/profile/v0"
+    id="insurance_1" insuranceType="I am a short string."
+    policyNumber="I am a short string."
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/profile/v0 ../../Profile_0_0_0.xsd">
+    <ota2:Person_Name defaultInd="true" language="???" type="Alternate">
+        <ota2:Prefix>Mr.</ota2:Prefix>
+        <ota2:Prefix>Mr.</ota2:Prefix>
+        <ota2:Prefix>Mr.</ota2:Prefix>
+        <ota2:Given>John</ota2:Given>
+        <ota2:Given>John</ota2:Given>
+        <ota2:Given>John</ota2:Given>
+        <ota2:Middle>I am a short string.</ota2:Middle>
+        <ota2:Middle>I am a short string.</ota2:Middle>
+        <ota2:Middle>I am a short string.</ota2:Middle>
+        <ota2:SurnamePrefix>I am a tiny string.</ota2:SurnamePrefix>
+        <ota2:Surname>Smith</ota2:Surname>
+        <ota2:Suffix>I am a tiny string.</ota2:Suffix>
+        <ota2:Suffix>I am a tiny string.</ota2:Suffix>
+        <ota2:Suffix>I am a tiny string.</ota2:Suffix>
+        <ota2:Title>I am a tiny string.</ota2:Title>
+        <ota2:Title>I am a tiny string.</ota2:Title>
+        <ota2:Title>I am a tiny string.</ota2:Title>
+        <ota2:Person_Document>
+            <ota2:DocType>NaturalizationCertificate</ota2:DocType>
+        </ota2:Person_Document>
+        <ota2:Privacy optInDate="2011-01-24T09:45:00"
+            optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00"
+            shareMarketInd="Yes" shareSyncInd="No"/>
+    </ota2:Person_Name>
+    <Underwriter code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</Underwriter>
+    <EffectiveExpireDate effective="2011-01-24" expire="2011-07-04" expireDateExclusiveInd="true"/>
+    <Privacy optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+        optOutDate="2011-01-24T09:45:00" shareMarketInd="Inherit" shareSyncInd="Yes"/>
+    <CompanyName code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>
+</Insurance>

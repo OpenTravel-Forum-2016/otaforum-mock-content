@@ -1,0 +1,17 @@
+{
+  "PayloadStdAttributes" : {
+    "value" : null,
+    "echoToken" : "I am a short string.",
+    "timeStamp" : "2011-01-24T09:45:00",
+    "target" : "Test",
+    "targetName" : "I am a short string.",
+    "version" : 12.0,
+    "transactionIdentifier" : "Example String Value",
+    "sequenceNmbr" : "Example String Value",
+    "transactionStatusCode" : "Start",
+    "correlationID" : "I am a short string.",
+    "primaryLangID" : "???",
+    "altLangID" : "???",
+    "retransmissionIndicatorInd" : true
+  }
+}

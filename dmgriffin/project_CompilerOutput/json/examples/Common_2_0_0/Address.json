@@ -1,0 +1,46 @@
+{
+  "AddressDetail" : {
+    "@type" : "AddressDetail",
+    "role" : "Home",
+    "language" : "en",
+    "type" : "CLT",
+    "use" : "AUT",
+    "validInd" : true,
+    "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+    "BldgRoom" : [ {
+      "value" : "Bldg H",
+      "buldingInd" : true
+    }, {
+      "value" : "Bldg H",
+      "buldingInd" : true
+    } ],
+    "Number" : {
+      "value" : "563",
+      "streetNmbrSuffix" : "B",
+      "streetDirection" : "NNW",
+      "ruralRouteNmbr" : "88",
+      "pO_Box" : "98567499"
+    },
+    "Street" : "I am a short string.",
+    "City" : "I am a short string.",
+    "County" : "I am a short string.",
+    "StateProv" : {
+      "value" : "TX",
+      "name" : "Texas"
+    },
+    "Country" : {
+      "value" : "IR",
+      "name" : "Ireland"
+    },
+    "PostalCode" : "I am a short string.",
+    "Remark" : "Example String Value",
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    }
+  }
+}

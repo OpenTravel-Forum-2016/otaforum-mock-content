@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Agreements xmlns="http://www.opentravel.org/OTM/profile/v0"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/profile/v0 ../../Profile_0_0_0.xsd">
+    <Certification certId="cert546473834" effective="2011-01-24"
+        expire="2011-07-04" expireDateExclusiveInd="true"
+        freeText="Certified fun." language="en" singleVendorIndGroupInd="true"/>
+    <Certification certId="cert546473834" effective="2011-12-05"
+        expire="2011-01-24" expireDateExclusiveInd="true"
+        freeText="Certified fun." language="en" singleVendorIndGroupInd="true"/>
+    <Certification certId="cert546473834" effective="2011-07-04"
+        expire="2011-12-05" expireDateExclusiveInd="true"
+        freeText="Certified fun." language="en" singleVendorIndGroupInd="true"/>
+    <Alliance id="alliance_1">
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <EffectiveExpireDate effective="2011-01-24" expire="2011-07-04" expireDateExclusiveInd="true"/>
+        <Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    </Alliance>
+    <Alliance id="alliance_2">
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <EffectiveExpireDate effective="2011-12-05" expire="2011-01-24" expireDateExclusiveInd="true"/>
+        <Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
+    </Alliance>
+    <Alliance id="alliance_3">
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <Member code="AI" codeContext="I am a tiny string."
+            companyName="MemberCompany"
+            department="Adventure department" division="Travel Division"
+            memberCode="co1" shortName="Adventure Inc"/>
+        <EffectiveExpireDate effective="2011-07-04" expire="2011-12-05" expireDateExclusiveInd="true"/>
+        <Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    </Alliance>
+    <Commission codeContext="I am a tiny string." currencyCode="USD"
+        currency_Amount="80000" decimalPlaces="2"
+        optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" planCode="I am a tiny string."
+        shareMarketInd="Yes" shareSyncInd="No"/>
+    <Commission codeContext="I am a tiny string." currencyCode="USD"
+        currency_Amount="80000" decimalPlaces="2"
+        optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+        optOutDate="2011-01-24T09:45:00" planCode="I am a tiny string."
+        shareMarketInd="Inherit" shareSyncInd="Yes"/>
+    <Commission codeContext="I am a tiny string." currencyCode="USD"
+        currency_Amount="80000" decimalPlaces="2"
+        optInDate="2011-07-04T14:15:00" optInStatus="Unknown"
+        optOutDate="2011-12-05T06:00:00" planCode="I am a tiny string."
+        shareMarketInd="No" shareSyncInd="Inherit"/>
+    <ota2:Text_Paragraph language="en" name="paragraph name" number="1234">
+        <ota2:Text language="en" textFormat="PlainText">Formatted text example.</ota2:Text>
+        <ota2:Text language="en" textFormat="HTML">Formatted text example.</ota2:Text>
+        <ota2:Text language="en" textFormat="PlainText">Formatted text example.</ota2:Text>
+        <ota2:Image>Example String Value</ota2:Image>
+        <ota2:Image>Example String Value</ota2:Image>
+        <ota2:Image>Example String Value</ota2:Image>
+        <ota2:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2:URL>
+        <ota2:URL>http://www.w3.org/2001/XMLSchema</ota2:URL>
+        <ota2:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2:URL>
+        <ota2:Paragraph_ListItem formattedText="Formatted text example."
+            language="en" listItem="1234" textFormat="HTML"/>
+        <ota2:Paragraph_ListItem formattedText="Formatted text example."
+            language="en" listItem="2345" textFormat="PlainText"/>
+        <ota2:Paragraph_ListItem formattedText="Formatted text example."
+            language="en" listItem="3456" textFormat="HTML"/>
+        <ota2:DateTimeStamp create="2011-07-04T14:15:00"
+            creatorID="c123456789" lastModifierID="m987654321"
+            lastModify="2011-12-05T06:00:00" purge="2011-01-24">2011-01-24T09:45:00</ota2:DateTimeStamp>
+    </ota2:Text_Paragraph>
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+</Agreements>

@@ -1,0 +1,8 @@
+{
+  "SocialMedia" : {
+    "value" : null,
+    "type" : "I am a short string.",
+    "userName" : "I am a short string.",
+    "preferredContactInd" : true
+  }
+}

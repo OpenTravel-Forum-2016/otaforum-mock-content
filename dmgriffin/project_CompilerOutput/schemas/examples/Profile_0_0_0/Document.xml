@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://www.opentravel.org/OTM/profile/v0"
+    birthCountry="IR" birthDate="2011-01-24"
+    birthPlace="I am a short string." contactName="I am a short string."
+    docHolderNationality="IR" docID="I am a short string."
+    docIssueAuthority="I am a short string." docIssueCountry="IR"
+    docIssueLocation="I am a short string."
+    docIssueStateProv="Example String Value" gender="Male"
+    holderType="Infant" postalCode="I am a tiny string."
+    remark="I am a short string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/profile/v0 ../../Profile_0_0_0.xsd">
+    <DocLimitations>I am a short string.</DocLimitations>
+    <DocLimitations>I am a short string.</DocLimitations>
+    <DocLimitations>I am a short string.</DocLimitations>
+    <AdditionalName>I am a short string.</AdditionalName>
+    <AdditionalName>I am a short string.</AdditionalName>
+    <AdditionalName>I am a short string.</AdditionalName>
+    <EffectiveExpireDate effective="2011-07-04" expire="2011-12-05" expireDateExclusiveInd="true"/>
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+    <DocType>NaturalizationCertificate</DocType>
+</Document>

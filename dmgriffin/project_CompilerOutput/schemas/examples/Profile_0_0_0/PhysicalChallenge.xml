@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhysicalChallenge xmlns="http://www.opentravel.org/OTM/profile/v0"
+    code="I am a tiny string." physicallyChallengedInd="true">I am a long string.</PhysicalChallenge>

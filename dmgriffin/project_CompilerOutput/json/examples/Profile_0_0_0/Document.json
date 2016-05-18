@@ -1,0 +1,38 @@
+{
+  "Document" : {
+    "@type" : "Document",
+    "docIssueAuthority" : "I am a short string.",
+    "docIssueLocation" : "I am a short string.",
+    "docID" : "I am a short string.",
+    "gender" : "Male",
+    "birthDate" : "2011-01-24",
+    "docIssueStateProv" : "Example String Value",
+    "docIssueCountry" : "IR",
+    "birthCountry" : "IR",
+    "birthPlace" : "I am a short string.",
+    "docHolderNationality" : "IR",
+    "contactName" : "I am a short string.",
+    "holderType" : "Infant",
+    "remark" : "I am a short string.",
+    "postalCode" : "I am a tiny string.",
+    "DocLimitations" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+    "AdditionalName" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+    "EffectiveExpireDate" : {
+      "value" : null,
+      "effective" : "2011-07-04",
+      "expire" : "2011-12-05",
+      "expireDateExclusiveInd" : true
+    },
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    },
+    "DocType" : {
+      "value" : "NaturalizationCertificate"
+    }
+  }
+}

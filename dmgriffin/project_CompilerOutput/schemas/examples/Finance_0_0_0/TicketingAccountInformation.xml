@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TicketingAccountInformation
+    xmlns="http://www.opentravel.org/OTM/finance/v0"
+    clientReference="I am a short string."
+    companyNumber="I am a tiny string."
+    costCenter="I am a short string." number="I am a tiny string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v0 ../../Finance_0_0_0.xsd">
+    <TaxRegistrationDetails recipientAddress="I am a short string."
+        recipientName="I am a tiny string." taxID="I am a tiny string."/>
+</TicketingAccountInformation>

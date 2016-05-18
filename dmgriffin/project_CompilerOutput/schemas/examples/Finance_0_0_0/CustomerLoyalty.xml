@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomerLoyalty xmlns="http://www.opentravel.org/OTM/finance/v0"
+    EffectiveDate="2011-07-04" ExpireDate="2011-12-05"
+    SignupDate="2011-01-24"
+    allianceLoyaltyLevelName="I am a short string."
+    codeContext="I am a tiny string." customerType="I am a tiny string."
+    customerValue="I am a tiny string."
+    expireDateExclusiveIndicatorInd="true" id="customerLoyalty_1"
+    loyalLevel="I am a tiny string." loyalLevelCode="1234"
+    membershipID="I am a tiny string." optInDate="2011-01-24T09:45:00"
+    optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00"
+    password="I am a tiny string." primaryLoyaltyIndicatorInd="true"
+    programID="I am a short string." shareMarketInd="Yes"
+    shareSyncInd="No" singleVendorInd="SingleVndr" travelSector="2" vendorCode="I am a tiny string."/>
