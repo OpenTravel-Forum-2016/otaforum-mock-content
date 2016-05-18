@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<E_RFPDetail xmlns="http://www.opentravel.org/OTM/product/eRFP/v1"
-    comments="Example String Value"
+<E_RFP xmlns="http://www.opentravel.org/OTM/product/eRFP/v1"
     xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1" xmlns:prod-0100="http://www.opentravel.org/OTM/product/v1">
     <Identifier company="{company}" instance="{instance}"
         system="{system}" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
@@ -21,30 +20,14 @@
         <PreferredContactMethod>Fax</PreferredContactMethod>
     </RequestInfo>
     <Contacts>
-        <ContactPerson comments="I am a long string." primaryInd="true">
+        <Contact comments="I am a long string." primaryInd="true">
             <Identifier company="Acme" instance="i0987654321"
                 system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
-            <ota2-0100:PersonID id="person_1">
-                <ota2-0100:Identifier company="Acme"
-                    instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0100:Identifier>
-                <ota2-0100:OtherID company="Acme" instance="i0987654321"
-                    system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0100:OtherID>
-                <ota2-0100:OtherID company="Acme" instance="i0987654321"
-                    system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0100:OtherID>
-            </ota2-0100:PersonID>
-        </ContactPerson>
-        <ContactPerson comments="I am a long string." primaryInd="true">
+        </Contact>
+        <Contact comments="I am a long string." primaryInd="true">
             <Identifier company="Acme" instance="i0987654321"
-                system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</Identifier>
-            <ota2-0100:PersonID id="person_2">
-                <ota2-0100:Identifier company="Acme"
-                    instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0100:Identifier>
-                <ota2-0100:OtherID company="Acme" instance="i0987654321"
-                    system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0100:OtherID>
-                <ota2-0100:OtherID company="Acme" instance="i0987654321"
-                    system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0100:OtherID>
-            </ota2-0100:PersonID>
-        </ContactPerson>
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+        </Contact>
     </Contacts>
     <Dates comments="Example String Value" flexibleInd="true">
         <ota2-0100:DateTimeSpanWindows>
@@ -63,18 +46,42 @@
         <BudgetedRoomRate currencyCode="USD" decimalPlaces="2">80000</BudgetedRoomRate>
         <StayDay dayNumber="1">
             <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomTypeID roomTypeId="roomType_1"/>
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_1">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
             </StayDayRoom>
             <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomTypeID roomTypeId="roomType_2"/>
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_2">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
             </StayDayRoom>
         </StayDay>
         <StayDay dayNumber="1">
             <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomTypeID roomTypeId="roomType_3"/>
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_3">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
             </StayDayRoom>
             <StayDayRoom numberOfUnits="75" occupancyType="Single">
-                <prod-0100:RoomTypeID roomTypeId="roomType_4"/>
+                <prod-0100:RoomType bedTypeCode="K1"
+                    nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_4">
+                    <ota2-0100:CommentsDetail language="eng" name="I am a short string.">
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                        <ota2-0100:TextualComment>I am a long string.</ota2-0100:TextualComment>
+                    </ota2-0100:CommentsDetail>
+                </prod-0100:RoomType>
             </StayDayRoom>
         </StayDay>
         <ReservationMethod>Electronic rooming list</ReservationMethod>
@@ -118,7 +125,4 @@
         </EventDay>
         <FoodAndBeveragesBudget currencyCode="USD" decimalPlaces="2">80000</FoodAndBeveragesBudget>
     </EventBlock>
-    <AdditionalInfo aVNeedsInd="true" attachDocumentInd="true"
-        billingInfoInd="true" contractualRequirementsInd="true"
-        decisionFactorsInd="true" otherSuppliersInd="true" thirdPartyPlannerInd="true"/>
-</E_RFPDetail>
+</E_RFP>

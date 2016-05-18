@@ -1,9 +1,8 @@
 {
-  "E_RFPDetail" : {
-    "@type" : "E_RFP_Detail",
-    "comments" : "Example String Value",
+  "E_RFPSummary" : {
+    "@type" : "E_RFP",
     "Identifier" : {
-      "value" : "guid54321",
+      "value" : "guid12345",
       "url" : "http://www.w3.org/2001/XMLSchema",
       "system" : "{system}",
       "company" : "{company}",
@@ -58,7 +57,7 @@
     "Contacts" : {
       "@type" : "Contacts",
       "Contact" : [ {
-        "@type" : "Contact_Person",
+        "@type" : "Contact",
         "comments" : "I am a long string.",
         "primaryInd" : true,
         "Identifier" : {
@@ -67,65 +66,17 @@
           "system" : "sysABC3344",
           "company" : "Acme",
           "instance" : "i0987654321"
-        },
-        "PersonIdentifier" : {
-          "@type" : "Person_ID",
-          "id" : "person_1",
-          "Identifier" : {
-            "value" : "guid12345",
-            "url" : "http://www.w3.org/2001/XMLSchema",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          },
-          "OtherID" : [ {
-            "value" : "guid12345",
-            "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          }, {
-            "value" : "guid12345",
-            "url" : "http://www.w3.org/2001/XMLSchema",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          } ]
         }
       }, {
-        "@type" : "Contact_Person",
+        "@type" : "Contact",
         "comments" : "I am a long string.",
         "primaryInd" : true,
         "Identifier" : {
           "value" : "guid12345",
-          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "url" : "http://www.w3.org/2001/XMLSchema",
           "system" : "sysABC3344",
           "company" : "Acme",
           "instance" : "i0987654321"
-        },
-        "PersonIdentifier" : {
-          "@type" : "Person_ID",
-          "id" : "person_2",
-          "Identifier" : {
-            "value" : "guid12345",
-            "url" : "http://www.w3.org/2001/XMLSchema",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          },
-          "OtherID" : [ {
-            "value" : "guid12345",
-            "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          }, {
-            "value" : "guid12345",
-            "url" : "http://www.w3.org/2001/XMLSchema",
-            "system" : "sysABC3344",
-            "company" : "Acme",
-            "instance" : "i0987654321"
-          } ]
         }
       } ]
     },
@@ -176,17 +127,35 @@
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeIdentifier" : {
-            "@type" : "RoomType_ID",
-            "roomTypeId" : "roomType_1"
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_1",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
           }
         }, {
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeIdentifier" : {
-            "@type" : "RoomType_ID",
-            "roomTypeId" : "roomType_2"
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_2",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
           }
         } ]
       }, {
@@ -196,17 +165,35 @@
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeIdentifier" : {
-            "@type" : "RoomType_ID",
-            "roomTypeId" : "roomType_3"
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_3",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
           }
         }, {
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeIdentifier" : {
-            "@type" : "RoomType_ID",
-            "roomTypeId" : "roomType_4"
+          "RoomTypeSummary" : {
+            "@type" : "RoomType",
+            "roomTypeId" : "roomType_4",
+            "roomTypeCode" : "STD",
+            "bedTypeCode" : "K1",
+            "nonSmokingInd" : true,
+            "CommentsDetail" : {
+              "@type" : "Comments_Detail",
+              "name" : "I am a short string.",
+              "language" : "eng",
+              "TextualComment" : [ "I am a long string.", "I am a long string." ]
+            }
           }
         } ]
       } ],
@@ -312,16 +299,6 @@
         "currencyCode" : "USD",
         "decimalPlaces" : 2
       }
-    },
-    "AdditionalInfo" : {
-      "value" : null,
-      "attachDocumentInd" : true,
-      "aVNeedsInd" : true,
-      "decisionFactorsInd" : true,
-      "contractualRequirementsInd" : true,
-      "billingInfoInd" : true,
-      "otherSuppliersInd" : true,
-      "thirdPartyPlannerInd" : true
     }
   }
 }
