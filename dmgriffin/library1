@@ -8,6 +8,9 @@
     <Namespace>http://opentravel.org/local/dmgri807/mmm/v0</Namespace>
     <Prefix>m</Prefix>
     <Name>library_hackathon</Name>
+    <Import fileHints="otm://Opentravel/Common_0_0_0.otm"
+        namespace="http://www.opentravel.org/OTM/Common/v0" prefix="ota2"/>
+    <Import namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
     <Context
         applicationContext="http://opentravel.org/local/dmgri807/mmm/v0" context="m"/>
     
@@ -15,10 +18,50 @@
         <Documentation>
             <Description>Marriott's extension of the Open Travel Customer</Description>
         </Documentation>
+        <Extension extends="ota2:Person"/>
         <Aliases/>
         <ID/>
-        <Summary/>
+        <Summary>
+            <Element name="MIRewardsNumber" repeat="0" type="xsd:string"/>
+        </Summary>
         <Detail/>
     </BusinessObject>
+    <Resource abstract="false" basePath="/MarriottCustomers"
+        businessObjectRef="MarriottCustomer" firstClass="true" name="MarriottCustomerResource">
+        <ParamGroup facetName="MarriottCustomer_ID" idGroup="true" name="ID">
+            <Parameter fieldName="id" location="Header"/>
+            <Parameter fieldName="Identifier" location="Path"/>
+            <Parameter fieldName="url" location="Header"/>
+            <Parameter fieldName="system" location="Header"/>
+            <Parameter fieldName="company" location="Header"/>
+            <Parameter fieldName="instance" location="Header"/>
+        </ParamGroup>
+        <ActionFacet label="SubstitutionGroup" referenceRepeat="0" referenceType="Required"/>
+        <ActionFacet label="ID" referenceFacet="ID" referenceRepeat="0" referenceType="Required"/>
+        <ActionFacet label="Summary" referenceFacet="Summary"
+            referenceRepeat="0" referenceType="Required"/>
+        <Action actionId="Get" common="false">
+            <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/{Identifier}"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="MarriottCustomerResource_ID" statusCodes="200"/>
+        </Action>
+        <Action actionId="Create" common="false">
+            <ActionRequest httpMethod="POST"
+                mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                paramGroup="ID" pathTemplate="/{Identifier}" payloadType="MarriottCustomerResource_SubstitutionGroup"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="MarriottCustomerResource_SubstitutionGroup" statusCodes="201"/>
+        </Action>
+        <Action actionId="Update" common="false">
+            <ActionRequest httpMethod="PUT" mimeTypes="" paramGroup="ID" pathTemplate="/{Identifier}"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                payloadType="MarriottCustomerResource_SubstitutionGroup" statusCodes="200"/>
+        </Action>
+        <Action actionId="Delete" common="false">
+            <ActionRequest httpMethod="DELETE" mimeTypes=""
+                paramGroup="ID" pathTemplate="/{Identifier}"/>
+            <ActionResponse mimeTypes="" statusCodes="200"/>
+        </Action>
+    </Resource>
     
 </Library>

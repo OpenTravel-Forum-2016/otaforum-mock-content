@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MarriottCustomerIdentifier id="marriottCustomer_1" xmlns="http://opentravel.org/local/dmgri807/mmm/v0">
+    <Identifier company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    <OtherID company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</OtherID>
+    <OtherID company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</OtherID>
+    <OtherID company="Acme" instance="i0987654321" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</OtherID>
+</MarriottCustomerIdentifier>
