@@ -3,7 +3,7 @@
     "@type" : "E_RFP_Detail",
     "comments" : "Example String Value",
     "Identifier" : {
-      "value" : "guid12345",
+      "value" : "guid54321",
       "url" : "http://www.w3.org/2001/XMLSchema",
       "system" : "{system}",
       "company" : "{company}",
