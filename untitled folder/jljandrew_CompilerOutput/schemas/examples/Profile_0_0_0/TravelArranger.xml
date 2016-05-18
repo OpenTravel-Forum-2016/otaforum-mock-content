@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TravelArranger xmlns="http://www.opentravel.org/OTM/profile/v0"
+    defaultInd="true" id="travelArranger_1"
+    remark="I am a short string." type="I am a tiny string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/profile/v0 ../../Profile_0_0_0.xsd">
+    <CompanyName code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+</TravelArranger>

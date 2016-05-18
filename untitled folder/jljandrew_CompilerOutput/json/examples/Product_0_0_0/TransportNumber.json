@@ -1,0 +1,8 @@
+{
+  "TransportNumberDetail" : {
+    "@type" : "TransportNumberDetail",
+    "carrier" : "I am a tiny string.",
+    "number" : "I am a tiny string.",
+    "operatingCarrier" : "I am a tiny string."
+  }
+}

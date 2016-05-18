@@ -1,0 +1,101 @@
+{
+  "AvailabilityRS" : {
+    "@type" : "AvailabilityRS",
+    "version" : 0,
+    "timeStamp" : "2016-05-18T15:17:37.851-04:00",
+    "Result" : {
+      "@type" : "Result",
+      "Errors" : [ {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Advisory",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.w3.org/2001/XMLSchema",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Complete",
+        "statusExtension" : "status_Other_Value"
+      }, {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Application error",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Incomplete",
+        "statusExtension" : "status_Other_Value"
+      }, {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Authentication",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.w3.org/2001/XMLSchema",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Not processed",
+        "statusExtension" : "status_Other_Value"
+      } ],
+      "Warnings" : [ {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Authentication timeout",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Unknown",
+        "statusExtension" : "status_Other_Value"
+      }, {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Authorization",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.w3.org/2001/XMLSchema",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Complete",
+        "statusExtension" : "status_Other_Value"
+      }, {
+        "value" : "I am a medium string.",
+        "language" : "eng",
+        "type" : "Business rule",
+        "typeExtension" : "type_Other_Value",
+        "shortText" : "I am a short string.",
+        "code" : "2",
+        "DocURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "tag" : "I am a medium string.",
+        "recordID" : "I am a short string.",
+        "nodeList" : "I am a medium string.",
+        "status" : "Incomplete",
+        "statusExtension" : "status_Other_Value"
+      } ],
+      "Status" : {
+        "value" : "Not processed"
+      }
+    },
+    "ArrivalPointDetail" : {
+      "@type" : "ArrivalPointDetail",
+      "code" : "I am a tiny string.",
+      "openingTime" : "09:45:00",
+      "closingTime" : "14:15:00",
+      "kioskInd" : true,
+      "curbSideBaggageCheckInd" : true
+    }
+  }
+}

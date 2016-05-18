@@ -1,0 +1,10 @@
+{
+  "ThreeDomainSecurity_Results" : {
+    "@type" : "ThreeDomainSecurity_Results",
+    "cAVV" : "Example String Value",
+    "pAResStatus" : "A",
+    "signatureVerfication" : "Example String Value",
+    "transactionID" : "Example String Value",
+    "xID" : "Example String Value"
+  }
+}

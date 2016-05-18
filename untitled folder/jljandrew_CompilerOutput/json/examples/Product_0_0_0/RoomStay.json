@@ -1,0 +1,191 @@
+{
+  "RoomStaySummary" : {
+    "@type" : "RoomStay",
+    "id" : "roomStay_1",
+    "RoomType" : [ {
+      "@type" : "RoomType",
+      "roomTypeId" : "roomType_1",
+      "roomTypeCode" : "STD",
+      "bedTypeCode" : "K1",
+      "nonSmokingInd" : true,
+      "CommentsDetail" : {
+        "@type" : "CommentsDetail",
+        "name" : "I am a short string.",
+        "language" : "eng",
+        "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+      }
+    }, {
+      "@type" : "RoomType",
+      "roomTypeId" : "roomType_2",
+      "roomTypeCode" : "STD",
+      "bedTypeCode" : "K1",
+      "nonSmokingInd" : true,
+      "CommentsDetail" : {
+        "@type" : "CommentsDetail",
+        "name" : "I am a short string.",
+        "language" : "eng",
+        "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+      }
+    }, {
+      "@type" : "RoomType",
+      "roomTypeId" : "roomType_3",
+      "roomTypeCode" : "STD",
+      "bedTypeCode" : "K1",
+      "nonSmokingInd" : true,
+      "CommentsDetail" : {
+        "@type" : "CommentsDetail",
+        "name" : "I am a short string.",
+        "language" : "eng",
+        "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+      }
+    } ],
+    "RatePlan" : [ {
+      "@type" : "RatePlanDetail",
+      "ratePlanId" : "ratePlan_1",
+      "ratePlanCode" : "I am a tiny string.",
+      "CommentsDetail" : {
+        "@type" : "CommentsDetail",
+        "name" : "I am a short string.",
+        "language" : "eng",
+        "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+      },
+      "MealsIncluded" : {
+        "value" : "I am a short string.",
+        "mealPlanCodes" : "I am a tiny string.",
+        "breakfastInd" : true,
+        "lunchInd" : true,
+        "dinnerInd" : true
+      }
+    }, {
+      "@type" : "RatePlanDetail",
+      "ratePlanId" : "ratePlan_2",
+      "ratePlanCode" : "I am a tiny string.",
+      "CommentsDetail" : {
+        "@type" : "CommentsDetail",
+        "name" : "I am a short string.",
+        "language" : "eng",
+        "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+      },
+      "MealsIncluded" : {
+        "value" : "I am a short string.",
+        "mealPlanCodes" : "I am a tiny string.",
+        "breakfastInd" : true,
+        "lunchInd" : true,
+        "dinnerInd" : true
+      }
+    }, {
+      "@type" : "RatePlanDetail",
+      "ratePlanId" : "ratePlan_3",
+      "ratePlanCode" : "I am a tiny string.",
+      "CommentsDetail" : {
+        "@type" : "CommentsDetail",
+        "name" : "I am a short string.",
+        "language" : "eng",
+        "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+      },
+      "MealsIncluded" : {
+        "value" : "I am a short string.",
+        "mealPlanCodes" : "I am a tiny string.",
+        "breakfastInd" : true,
+        "lunchInd" : true,
+        "dinnerInd" : true
+      }
+    } ],
+    "RoomRate" : [ {
+      "@type" : "RoomRateDetail",
+      "roomRateId" : "roomRate_1",
+      "effectiveDate" : "2011-01-24",
+      "expireDate" : "2011-07-04",
+      "promotionCode" : "I am a tiny string.",
+      "ratePlanCode" : "I am a tiny string.",
+      "roomTypeCode" : "I am a tiny string.",
+      "expireDateExclusiveInd" : true,
+      "Rate2" : {
+        "value" : 12.0,
+        "amountBeforeTax" : 23.0,
+        "currencyCode" : "USD"
+      },
+      "BasicPropertyInfoDetail" : {
+        "@type" : "BasicPropertyInfoDetail",
+        "code" : "CHIDT",
+        "name" : "ABC Hotel",
+        "cityCode" : "CHI",
+        "chainCode" : "AA",
+        "chainName" : "XYZ Chain",
+        "brandCode" : "BB",
+        "brandName" : "BB Brand"
+      }
+    }, {
+      "@type" : "RoomRateDetail",
+      "roomRateId" : "roomRate_2",
+      "effectiveDate" : "2011-12-05",
+      "expireDate" : "2011-01-24",
+      "promotionCode" : "I am a tiny string.",
+      "ratePlanCode" : "I am a tiny string.",
+      "roomTypeCode" : "I am a tiny string.",
+      "expireDateExclusiveInd" : true,
+      "Rate2" : {
+        "value" : 34.0,
+        "amountBeforeTax" : 45.0,
+        "currencyCode" : "USD"
+      },
+      "BasicPropertyInfoDetail" : {
+        "@type" : "BasicPropertyInfoDetail",
+        "code" : "CHIDT",
+        "name" : "ABC Hotel",
+        "cityCode" : "CHI",
+        "chainCode" : "AA",
+        "chainName" : "XYZ Chain",
+        "brandCode" : "BB",
+        "brandName" : "BB Brand"
+      }
+    }, {
+      "@type" : "RoomRateDetail",
+      "roomRateId" : "roomRate_3",
+      "effectiveDate" : "2011-07-04",
+      "expireDate" : "2011-12-05",
+      "promotionCode" : "I am a tiny string.",
+      "ratePlanCode" : "I am a tiny string.",
+      "roomTypeCode" : "I am a tiny string.",
+      "expireDateExclusiveInd" : true,
+      "Rate2" : {
+        "value" : 12.0,
+        "amountBeforeTax" : 23.0,
+        "currencyCode" : "USD"
+      },
+      "BasicPropertyInfoDetail" : {
+        "@type" : "BasicPropertyInfoDetail",
+        "code" : "CHIDT",
+        "name" : "ABC Hotel",
+        "cityCode" : "CHI",
+        "chainCode" : "AA",
+        "chainName" : "XYZ Chain",
+        "brandCode" : "BB",
+        "brandName" : "BB Brand"
+      }
+    } ],
+    "GuestCount" : [ {
+      "value" : 1234,
+      "ageQualifyingCode" : "I am a tiny string.",
+      "age" : 2345
+    }, {
+      "value" : 3456,
+      "ageQualifyingCode" : "I am a tiny string.",
+      "age" : 4567
+    }, {
+      "value" : 1234,
+      "ageQualifyingCode" : "I am a tiny string.",
+      "age" : 2345
+    } ],
+    "BasicPropertyInfoDetail" : {
+      "@type" : "BasicPropertyInfoDetail",
+      "code" : "CHIDT",
+      "name" : "ABC Hotel",
+      "cityCode" : "CHI",
+      "chainCode" : "AA",
+      "chainName" : "XYZ Chain",
+      "brandCode" : "BB",
+      "brandName" : "BB Brand"
+    }
+  }
+}

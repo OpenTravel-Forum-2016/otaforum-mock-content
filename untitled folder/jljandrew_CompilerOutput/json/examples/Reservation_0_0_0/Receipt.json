@@ -1,0 +1,876 @@
+{
+  "ReceiptSummary" : {
+    "@type" : "Receipt",
+    "id" : "receipt_1",
+    "PaymentSummary" : {
+      "@type" : "Payment",
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.w3.org/2001/XMLSchema",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      },
+      "FormOfPayment" : [ {
+        "@type" : "FormOfPayment",
+        "id" : "formOfPayment_1",
+        "costCenterID" : "I am a tiny string.",
+        "paymentTransactionTypeCode" : "charge",
+        "guaranteeTypeCode" : "2",
+        "guaranteeID" : "I am a short string.",
+        "remark" : "I am a short string.",
+        "guaranteeIndicatorInd" : true,
+        "Privacy" : {
+          "value" : null,
+          "shareMarketInd" : "Yes",
+          "shareSyncInd" : "No",
+          "optInStatus" : "OptedIn",
+          "optInDate" : "2011-01-24T09:45:00",
+          "optOutDate" : "2011-07-04T14:15:00"
+        }
+      }, {
+        "@type" : "FormOfPayment",
+        "id" : "formOfPayment_2",
+        "costCenterID" : "I am a tiny string.",
+        "paymentTransactionTypeCode" : "reserve",
+        "guaranteeTypeCode" : "2",
+        "guaranteeID" : "I am a short string.",
+        "remark" : "I am a short string.",
+        "guaranteeIndicatorInd" : true,
+        "Privacy" : {
+          "value" : null,
+          "shareMarketInd" : "Inherit",
+          "shareSyncInd" : "Yes",
+          "optInStatus" : "OptedOut",
+          "optInDate" : "2011-12-05T06:00:00",
+          "optOutDate" : "2011-01-24T09:45:00"
+        }
+      }, {
+        "@type" : "FormOfPayment",
+        "id" : "formOfPayment_3",
+        "costCenterID" : "I am a tiny string.",
+        "paymentTransactionTypeCode" : "refund",
+        "guaranteeTypeCode" : "2",
+        "guaranteeID" : "I am a short string.",
+        "remark" : "I am a short string.",
+        "guaranteeIndicatorInd" : true,
+        "Privacy" : {
+          "value" : null,
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00"
+        }
+      } ],
+      "Person" : [ {
+        "@type" : "Person",
+        "id" : "person_1",
+        "gender" : "Male",
+        "maritalStatus_Enum" : "Annulled",
+        "birthDate" : "2011-01-24",
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        },
+        "OtherID" : [ {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }, {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }, {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        } ],
+        "Person_Name" : {
+          "@type" : "Person_Name",
+          "type" : "Alternate",
+          "language" : "???",
+          "defaultInd" : true,
+          "Prefix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Given" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "Middle" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "SurnamePrefix" : "I am a tiny string.",
+          "Surname" : "I am a short string.",
+          "Suffix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Title" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Person_Document" : {
+            "@type" : "Person_Document",
+            "DocType" : {
+              "value" : "NaturalizationCertificate"
+            }
+          },
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00"
+          }
+        },
+        "Address" : [ {
+          "@type" : "AddressDetail",
+          "role" : "Home",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00"
+          }
+        }, {
+          "@type" : "AddressDetail",
+          "role" : "Business",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "No",
+            "shareSyncInd" : "Inherit",
+            "optInStatus" : "Unknown",
+            "optInDate" : "2011-07-04T14:15:00",
+            "optOutDate" : "2011-12-05T06:00:00"
+          }
+        }, {
+          "@type" : "AddressDetail",
+          "role" : "Destination",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00"
+          }
+        } ],
+        "TelephoneDetail" : {
+          "@type" : "TelephoneDetail",
+          "role" : "Home",
+          "countryAccessCode" : "Example String Value",
+          "areaCityCode" : "Example String Value",
+          "phoneNumber" : "2358878",
+          "extension" : "Example String Value",
+          "id" : "telephone_1",
+          "pIN" : "I am a tiny string.",
+          "remark" : "Example String Value",
+          "defaultInd" : true,
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00"
+          },
+          "PhoneLocationType" : {
+            "value" : "Brand reservations office"
+          },
+          "PhoneTechType" : {
+            "value" : "Voice"
+          },
+          "PhoneUseType" : {
+            "value" : "Contact"
+          }
+        },
+        "Email" : [ {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00",
+          "validInd" : true,
+          "defaultInd" : true
+        }, {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "Yes",
+          "shareSyncInd" : "No",
+          "optInStatus" : "OptedIn",
+          "optInDate" : "2011-01-24T09:45:00",
+          "optOutDate" : "2011-07-04T14:15:00",
+          "validInd" : true,
+          "defaultInd" : true
+        }, {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "Inherit",
+          "shareSyncInd" : "Yes",
+          "optInStatus" : "OptedOut",
+          "optInDate" : "2011-12-05T06:00:00",
+          "optOutDate" : "2011-01-24T09:45:00",
+          "validInd" : true,
+          "defaultInd" : true
+        } ],
+        "Privacy" : {
+          "value" : null,
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00"
+        },
+        "Comments" : {
+          "value" : "Some fee text.",
+          "language" : "en"
+        }
+      }, {
+        "@type" : "Person",
+        "id" : "person_2",
+        "gender" : "Female",
+        "maritalStatus_Enum" : "Co-habiting",
+        "birthDate" : "2011-07-04",
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        },
+        "OtherID" : [ {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }, {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }, {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        } ],
+        "Person_Name" : {
+          "@type" : "Person_Name",
+          "type" : "Former",
+          "language" : "???",
+          "defaultInd" : true,
+          "Prefix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Given" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "Middle" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "SurnamePrefix" : "I am a tiny string.",
+          "Surname" : "I am a short string.",
+          "Suffix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Title" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Person_Document" : {
+            "@type" : "Person_Document",
+            "DocType" : {
+              "value" : "PassportCard"
+            }
+          },
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00"
+          }
+        },
+        "Address" : [ {
+          "@type" : "AddressDetail",
+          "role" : "Other",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00"
+          }
+        }, {
+          "@type" : "AddressDetail",
+          "role" : "Home",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "No",
+            "shareSyncInd" : "Inherit",
+            "optInStatus" : "Unknown",
+            "optInDate" : "2011-07-04T14:15:00",
+            "optOutDate" : "2011-12-05T06:00:00"
+          }
+        }, {
+          "@type" : "AddressDetail",
+          "role" : "Business",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00"
+          }
+        } ],
+        "TelephoneDetail" : {
+          "@type" : "TelephoneDetail",
+          "role" : "Office",
+          "countryAccessCode" : "Example String Value",
+          "areaCityCode" : "Example String Value",
+          "phoneNumber" : "2358878",
+          "extension" : "Example String Value",
+          "id" : "telephone_2",
+          "pIN" : "I am a tiny string.",
+          "remark" : "Example String Value",
+          "defaultInd" : true,
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00"
+          },
+          "PhoneLocationType" : {
+            "value" : "Central reservations office"
+          },
+          "PhoneTechType" : {
+            "value" : "Fax"
+          },
+          "PhoneUseType" : {
+            "value" : "Daytime contact"
+          }
+        },
+        "Email" : [ {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00",
+          "validInd" : true,
+          "defaultInd" : true
+        }, {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "Yes",
+          "shareSyncInd" : "No",
+          "optInStatus" : "OptedIn",
+          "optInDate" : "2011-01-24T09:45:00",
+          "optOutDate" : "2011-07-04T14:15:00",
+          "validInd" : true,
+          "defaultInd" : true
+        }, {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "Inherit",
+          "shareSyncInd" : "Yes",
+          "optInStatus" : "OptedOut",
+          "optInDate" : "2011-12-05T06:00:00",
+          "optOutDate" : "2011-01-24T09:45:00",
+          "validInd" : true,
+          "defaultInd" : true
+        } ],
+        "Privacy" : {
+          "value" : null,
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00"
+        },
+        "Comments" : {
+          "value" : "Some fee text.",
+          "language" : "en"
+        }
+      }, {
+        "@type" : "Person",
+        "id" : "person_3",
+        "gender" : "Unknown",
+        "maritalStatus_Enum" : "Divorced",
+        "birthDate" : "2011-12-05",
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        },
+        "OtherID" : [ {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }, {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        }, {
+          "value" : "guid12345",
+          "url" : "http://www.w3.org/2001/XMLSchema",
+          "system" : "sysABC3344",
+          "company" : "Acme",
+          "instance" : "i0987654321"
+        } ],
+        "Person_Name" : {
+          "@type" : "Person_Name",
+          "type" : "Maiden",
+          "language" : "???",
+          "defaultInd" : true,
+          "Prefix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Given" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "Middle" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "SurnamePrefix" : "I am a tiny string.",
+          "Surname" : "I am a short string.",
+          "Suffix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Title" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+          "Person_Document" : {
+            "@type" : "Person_Document",
+            "DocType" : {
+              "value" : "CrewMemberCertificate"
+            }
+          },
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00"
+          }
+        },
+        "Address" : [ {
+          "@type" : "AddressDetail",
+          "role" : "Destination",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00"
+          }
+        }, {
+          "@type" : "AddressDetail",
+          "role" : "Other",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "No",
+            "shareSyncInd" : "Inherit",
+            "optInStatus" : "Unknown",
+            "optInDate" : "2011-07-04T14:15:00",
+            "optOutDate" : "2011-12-05T06:00:00"
+          }
+        }, {
+          "@type" : "AddressDetail",
+          "role" : "Home",
+          "language" : "en",
+          "type" : "CLT",
+          "use" : "AUT",
+          "validInd" : true,
+          "AddressLine" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+          "BldgRoom" : [ {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          }, {
+            "value" : "Bldg H",
+            "buldingInd" : true
+          } ],
+          "Number" : {
+            "value" : "563",
+            "streetNmbrSuffix" : "B",
+            "streetDirection" : "NNW",
+            "ruralRouteNmbr" : "88",
+            "pO_Box" : "98567499"
+          },
+          "Street" : "I am a short string.",
+          "City" : "I am a short string.",
+          "County" : "I am a short string.",
+          "StateProv" : {
+            "value" : "TX",
+            "name" : "Texas"
+          },
+          "Country" : {
+            "value" : "IR",
+            "name" : "Ireland"
+          },
+          "PostalCode" : "I am a short string.",
+          "Remark" : "Example String Value",
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Yes",
+            "shareSyncInd" : "No",
+            "optInStatus" : "OptedIn",
+            "optInDate" : "2011-01-24T09:45:00",
+            "optOutDate" : "2011-07-04T14:15:00"
+          }
+        } ],
+        "TelephoneDetail" : {
+          "@type" : "TelephoneDetail",
+          "role" : "Mobile",
+          "countryAccessCode" : "Example String Value",
+          "areaCityCode" : "Example String Value",
+          "phoneNumber" : "2358878",
+          "extension" : "Example String Value",
+          "id" : "telephone_3",
+          "pIN" : "I am a tiny string.",
+          "remark" : "Example String Value",
+          "defaultInd" : true,
+          "Privacy" : {
+            "value" : null,
+            "shareMarketInd" : "Inherit",
+            "shareSyncInd" : "Yes",
+            "optInStatus" : "OptedOut",
+            "optInDate" : "2011-12-05T06:00:00",
+            "optOutDate" : "2011-01-24T09:45:00"
+          },
+          "PhoneLocationType" : {
+            "value" : "Home"
+          },
+          "PhoneTechType" : {
+            "value" : "Pager"
+          },
+          "PhoneUseType" : {
+            "value" : "Emergency contact"
+          }
+        },
+        "Email" : [ {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00",
+          "validInd" : true,
+          "defaultInd" : true
+        }, {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "Yes",
+          "shareSyncInd" : "No",
+          "optInStatus" : "OptedIn",
+          "optInDate" : "2011-01-24T09:45:00",
+          "optOutDate" : "2011-07-04T14:15:00",
+          "validInd" : true,
+          "defaultInd" : true
+        }, {
+          "value" : "I am a medium string.",
+          "emailType" : "2",
+          "remark" : "Example String Value",
+          "textFormat" : "I am a short string.",
+          "shareMarketInd" : "Inherit",
+          "shareSyncInd" : "Yes",
+          "optInStatus" : "OptedOut",
+          "optInDate" : "2011-12-05T06:00:00",
+          "optOutDate" : "2011-01-24T09:45:00",
+          "validInd" : true,
+          "defaultInd" : true
+        } ],
+        "Privacy" : {
+          "value" : null,
+          "shareMarketInd" : "No",
+          "shareSyncInd" : "Inherit",
+          "optInStatus" : "Unknown",
+          "optInDate" : "2011-07-04T14:15:00",
+          "optOutDate" : "2011-12-05T06:00:00"
+        },
+        "Comments" : {
+          "value" : "Some fee text.",
+          "language" : "en"
+        }
+      } ],
+      "OfferRef" : [ "a111", "a222", "a333" ],
+      "Amount" : {
+        "value" : 80000.0,
+        "currencyCode" : "USD",
+        "decimalPlaces" : 2
+      }
+    }
+  }
+}

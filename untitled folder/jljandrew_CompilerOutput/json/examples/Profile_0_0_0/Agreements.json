@@ -1,0 +1,259 @@
+{
+  "Agreements" : {
+    "@type" : "Agreements",
+    "Certification" : [ {
+      "value" : null,
+      "certId" : "cert546473834",
+      "freeText" : "Certified fun.",
+      "language" : "en",
+      "effective" : "2011-01-24",
+      "expire" : "2011-07-04",
+      "singleVendorIndGroupInd" : true,
+      "expireDateExclusiveInd" : true
+    }, {
+      "value" : null,
+      "certId" : "cert546473834",
+      "freeText" : "Certified fun.",
+      "language" : "en",
+      "effective" : "2011-12-05",
+      "expire" : "2011-01-24",
+      "singleVendorIndGroupInd" : true,
+      "expireDateExclusiveInd" : true
+    }, {
+      "value" : null,
+      "certId" : "cert546473834",
+      "freeText" : "Certified fun.",
+      "language" : "en",
+      "effective" : "2011-07-04",
+      "expire" : "2011-12-05",
+      "singleVendorIndGroupInd" : true,
+      "expireDateExclusiveInd" : true
+    } ],
+    "Alliance" : [ {
+      "@type" : "Alliance",
+      "id" : "alliance_1",
+      "Member" : [ {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }, {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }, {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      } ],
+      "EffectiveExpireDate" : {
+        "value" : null,
+        "effective" : "2011-01-24",
+        "expire" : "2011-07-04",
+        "expireDateExclusiveInd" : true
+      },
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.w3.org/2001/XMLSchema",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    }, {
+      "@type" : "Alliance",
+      "id" : "alliance_2",
+      "Member" : [ {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }, {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }, {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      } ],
+      "EffectiveExpireDate" : {
+        "value" : null,
+        "effective" : "2011-12-05",
+        "expire" : "2011-01-24",
+        "expireDateExclusiveInd" : true
+      },
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    }, {
+      "@type" : "Alliance",
+      "id" : "alliance_3",
+      "Member" : [ {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }, {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      }, {
+        "value" : null,
+        "memberCode" : "co1",
+        "companyName" : "MemberCompany",
+        "division" : "Travel Division",
+        "department" : "Adventure department",
+        "shortName" : "Adventure Inc",
+        "code" : "AI",
+        "codeContext" : "I am a tiny string."
+      } ],
+      "EffectiveExpireDate" : {
+        "value" : null,
+        "effective" : "2011-07-04",
+        "expire" : "2011-12-05",
+        "expireDateExclusiveInd" : true
+      },
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.w3.org/2001/XMLSchema",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    } ],
+    "Commission" : [ {
+      "value" : null,
+      "planCode" : "I am a tiny string.",
+      "currency_Amount" : 80000.0,
+      "codeContext" : "I am a tiny string.",
+      "currencyCode" : "USD",
+      "decimalPlaces" : 2,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    }, {
+      "value" : null,
+      "planCode" : "I am a tiny string.",
+      "currency_Amount" : 80000.0,
+      "codeContext" : "I am a tiny string.",
+      "currencyCode" : "USD",
+      "decimalPlaces" : 2,
+      "shareMarketInd" : "Inherit",
+      "shareSyncInd" : "Yes",
+      "optInStatus" : "OptedOut",
+      "optInDate" : "2011-12-05T06:00:00",
+      "optOutDate" : "2011-01-24T09:45:00"
+    }, {
+      "value" : null,
+      "planCode" : "I am a tiny string.",
+      "currency_Amount" : 80000.0,
+      "codeContext" : "I am a tiny string.",
+      "currencyCode" : "USD",
+      "decimalPlaces" : 2,
+      "shareMarketInd" : "No",
+      "shareSyncInd" : "Inherit",
+      "optInStatus" : "Unknown",
+      "optInDate" : "2011-07-04T14:15:00",
+      "optOutDate" : "2011-12-05T06:00:00"
+    } ],
+    "Text_Paragraph" : {
+      "@type" : "Text_Paragraph",
+      "name" : "paragraph name",
+      "number" : 1234,
+      "language" : "en",
+      "Text" : [ {
+        "value" : "Formatted text example.",
+        "language" : "en",
+        "textFormat" : "PlainText"
+      }, {
+        "value" : "Formatted text example.",
+        "language" : "en",
+        "textFormat" : "HTML"
+      }, {
+        "value" : "Formatted text example.",
+        "language" : "en",
+        "textFormat" : "PlainText"
+      } ],
+      "Image" : [ "Example String Value", "Example String Value", "Example String Value" ],
+      "URL" : [ "http://www.OpenTravel.org/ns/OTA2/Common_v01_00", "http://www.w3.org/2001/XMLSchema", "http://www.OpenTravel.org/ns/OTA2/Common_v01_00" ],
+      "Paragraph_ListItem" : [ {
+        "value" : null,
+        "listItem" : 1234,
+        "formattedText" : "Formatted text example.",
+        "language" : "en",
+        "textFormat" : "HTML"
+      }, {
+        "value" : null,
+        "listItem" : 2345,
+        "formattedText" : "Formatted text example.",
+        "language" : "en",
+        "textFormat" : "PlainText"
+      }, {
+        "value" : null,
+        "listItem" : 3456,
+        "formattedText" : "Formatted text example.",
+        "language" : "en",
+        "textFormat" : "HTML"
+      } ],
+      "DateTimeStamp" : {
+        "value" : "2011-01-24T09:45:00",
+        "create" : "2011-07-04T14:15:00",
+        "creatorID" : "c123456789",
+        "lastModify" : "2011-12-05T06:00:00",
+        "lastModifierID" : "m987654321",
+        "purge" : "2011-01-24"
+      }
+    },
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    }
+  }
+}

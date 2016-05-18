@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Journey xmlns="http://www.opentravel.org/OTM/product/v0"
+    duration="PT1004199059S" id="journey_1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <Segment arrivalDateTime="2010-12-31T11:55:00"
+        departureDateTime="2010-12-31T11:55:00" duration="PT130S"
+        id="segment_1" numberOfStops="1234">
+        <DeparturePointDetail closingTime="14:15:00"
+            code="I am a tiny string." curbSideBaggageCheckInd="true"
+            kioskInd="true" openingTime="09:45:00"/>
+        <TransportNumberDetail carrier="I am a tiny string."
+            number="I am a tiny string." operatingCarrier="I am a tiny string."/>
+        <ArrivalPointDetail closingTime="09:45:00"
+            code="I am a tiny string." curbSideBaggageCheckInd="true"
+            kioskInd="true" openingTime="06:00:00"/>
+        <ClassOfServiceDetail code="I am a tiny string." count="2345" name="I am a short string."/>
+        <ClassOfServiceDetail code="I am a tiny string." count="3456" name="I am a short string."/>
+        <ClassOfServiceDetail code="I am a tiny string." count="4567" name="I am a short string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_1" name="I am a tiny string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_2" name="I am a tiny string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_3" name="I am a tiny string."/>
+    </Segment>
+    <Segment arrivalDateTime="2010-12-31T11:55:00"
+        departureDateTime="2010-12-31T11:55:00" duration="PT2M10S"
+        id="segment_2" numberOfStops="1234">
+        <DeparturePointDetail closingTime="06:00:00"
+            code="I am a tiny string." curbSideBaggageCheckInd="true"
+            kioskInd="true" openingTime="14:15:00"/>
+        <TransportNumberDetail carrier="I am a tiny string."
+            number="I am a tiny string." operatingCarrier="I am a tiny string."/>
+        <ArrivalPointDetail closingTime="14:15:00"
+            code="I am a tiny string." curbSideBaggageCheckInd="true"
+            kioskInd="true" openingTime="09:45:00"/>
+        <ClassOfServiceDetail code="I am a tiny string." count="2345" name="I am a short string."/>
+        <ClassOfServiceDetail code="I am a tiny string." count="3456" name="I am a short string."/>
+        <ClassOfServiceDetail code="I am a tiny string." count="4567" name="I am a short string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_4" name="I am a tiny string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_5" name="I am a tiny string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_6" name="I am a tiny string."/>
+    </Segment>
+    <Segment arrivalDateTime="2010-12-31T11:55:00"
+        departureDateTime="2010-12-31T11:55:00" duration="P1DT2S"
+        id="segment_3" numberOfStops="1234">
+        <DeparturePointDetail closingTime="09:45:00"
+            code="I am a tiny string." curbSideBaggageCheckInd="true"
+            kioskInd="true" openingTime="06:00:00"/>
+        <TransportNumberDetail carrier="I am a tiny string."
+            number="I am a tiny string." operatingCarrier="I am a tiny string."/>
+        <ArrivalPointDetail closingTime="06:00:00"
+            code="I am a tiny string." curbSideBaggageCheckInd="true"
+            kioskInd="true" openingTime="14:15:00"/>
+        <ClassOfServiceDetail code="I am a tiny string." count="2345" name="I am a short string."/>
+        <ClassOfServiceDetail code="I am a tiny string." count="3456" name="I am a short string."/>
+        <ClassOfServiceDetail code="I am a tiny string." count="4567" name="I am a short string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_7" name="I am a tiny string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_8" name="I am a tiny string."/>
+        <AncillaryProductDetail code="I am a tiny string."
+            description="I am a long string." id="ancillaryProduct_9" name="I am a tiny string."/>
+    </Segment>
+</Journey>

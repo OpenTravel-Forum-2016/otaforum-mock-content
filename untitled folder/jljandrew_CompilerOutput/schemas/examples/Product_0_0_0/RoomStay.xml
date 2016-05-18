@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RoomStay xmlns="http://www.opentravel.org/OTM/product/v0"
+    id="roomStay_1" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_1">
+        <ota2:CommentsDetail language="eng" name="I am a short string.">
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        </ota2:CommentsDetail>
+    </RoomType>
+    <RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_2">
+        <ota2:CommentsDetail language="eng" name="I am a short string.">
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        </ota2:CommentsDetail>
+    </RoomType>
+    <RoomType bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD" roomTypeId="roomType_3">
+        <ota2:CommentsDetail language="eng" name="I am a short string.">
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        </ota2:CommentsDetail>
+    </RoomType>
+    <RatePlanDetail ratePlanCode="I am a tiny string." ratePlanId="ratePlan_1">
+        <ota2:CommentsDetail language="eng" name="I am a short string.">
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        </ota2:CommentsDetail>
+        <MealsIncluded breakfastInd="true" dinnerInd="true"
+            lunchInd="true" mealPlanCodes="I am a tiny string.">I am a short string.</MealsIncluded>
+    </RatePlanDetail>
+    <RatePlanDetail ratePlanCode="I am a tiny string." ratePlanId="ratePlan_2">
+        <ota2:CommentsDetail language="eng" name="I am a short string.">
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        </ota2:CommentsDetail>
+        <MealsIncluded breakfastInd="true" dinnerInd="true"
+            lunchInd="true" mealPlanCodes="I am a tiny string.">I am a short string.</MealsIncluded>
+    </RatePlanDetail>
+    <RatePlanDetail ratePlanCode="I am a tiny string." ratePlanId="ratePlan_3">
+        <ota2:CommentsDetail language="eng" name="I am a short string.">
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+            <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        </ota2:CommentsDetail>
+        <MealsIncluded breakfastInd="true" dinnerInd="true"
+            lunchInd="true" mealPlanCodes="I am a tiny string.">I am a short string.</MealsIncluded>
+    </RatePlanDetail>
+    <RoomRateDetail effectiveDate="2011-01-24" expireDate="2011-07-04"
+        expireDateExclusiveInd="true"
+        promotionCode="I am a tiny string."
+        ratePlanCode="I am a tiny string." roomRateId="roomRate_1" roomTypeCode="I am a tiny string.">
+        <Rate2 amountBeforeTax="23" currencyCode="USD">12</Rate2>
+        <BasicPropertyInfoDetail brandCode="BB" brandName="BB Brand"
+            chainCode="AA" chainName="XYZ Chain" cityCode="CHI"
+            code="CHIDT" name="ABC Hotel"/>
+    </RoomRateDetail>
+    <RoomRateDetail effectiveDate="2011-12-05" expireDate="2011-01-24"
+        expireDateExclusiveInd="true"
+        promotionCode="I am a tiny string."
+        ratePlanCode="I am a tiny string." roomRateId="roomRate_2" roomTypeCode="I am a tiny string.">
+        <Rate2 amountBeforeTax="45" currencyCode="USD">34</Rate2>
+        <BasicPropertyInfoDetail brandCode="BB" brandName="BB Brand"
+            chainCode="AA" chainName="XYZ Chain" cityCode="CHI"
+            code="CHIDT" name="ABC Hotel"/>
+    </RoomRateDetail>
+    <RoomRateDetail effectiveDate="2011-07-04" expireDate="2011-12-05"
+        expireDateExclusiveInd="true"
+        promotionCode="I am a tiny string."
+        ratePlanCode="I am a tiny string." roomRateId="roomRate_3" roomTypeCode="I am a tiny string.">
+        <Rate2 amountBeforeTax="23" currencyCode="USD">12</Rate2>
+        <BasicPropertyInfoDetail brandCode="BB" brandName="BB Brand"
+            chainCode="AA" chainName="XYZ Chain" cityCode="CHI"
+            code="CHIDT" name="ABC Hotel"/>
+    </RoomRateDetail>
+    <GuestCount age="2345" ageQualifyingCode="I am a tiny string.">1234</GuestCount>
+    <GuestCount age="4567" ageQualifyingCode="I am a tiny string.">3456</GuestCount>
+    <GuestCount age="2345" ageQualifyingCode="I am a tiny string.">1234</GuestCount>
+    <BasicPropertyInfoDetail brandCode="BB" brandName="BB Brand"
+        chainCode="AA" chainName="XYZ Chain" cityCode="CHI" code="CHIDT" name="ABC Hotel"/>
+</RoomStay>

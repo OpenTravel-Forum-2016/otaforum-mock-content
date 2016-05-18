@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreeDomainSecurity_Results
+    xmlns="http://www.opentravel.org/OTM/finance/v0"
+    cAVV="Example String Value" pAResStatus="A"
+    signatureVerfication="Example String Value"
+    transactionID="Example String Value" xID="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v0 ../../Finance_0_0_0.xsd"/>

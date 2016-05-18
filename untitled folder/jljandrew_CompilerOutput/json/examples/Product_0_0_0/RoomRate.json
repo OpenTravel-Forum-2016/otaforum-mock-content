@@ -1,0 +1,27 @@
+{
+  "RoomRateDetail" : {
+    "@type" : "RoomRateDetail",
+    "roomRateId" : "roomRate_1",
+    "effectiveDate" : "2011-01-24",
+    "expireDate" : "2011-07-04",
+    "promotionCode" : "I am a tiny string.",
+    "ratePlanCode" : "I am a tiny string.",
+    "roomTypeCode" : "I am a tiny string.",
+    "expireDateExclusiveInd" : true,
+    "Rate2" : {
+      "value" : 12.0,
+      "amountBeforeTax" : 23.0,
+      "currencyCode" : "USD"
+    },
+    "BasicPropertyInfoDetail" : {
+      "@type" : "BasicPropertyInfoDetail",
+      "code" : "CHIDT",
+      "name" : "ABC Hotel",
+      "cityCode" : "CHI",
+      "chainCode" : "AA",
+      "chainName" : "XYZ Chain",
+      "brandCode" : "BB",
+      "brandName" : "BB Brand"
+    }
+  }
+}

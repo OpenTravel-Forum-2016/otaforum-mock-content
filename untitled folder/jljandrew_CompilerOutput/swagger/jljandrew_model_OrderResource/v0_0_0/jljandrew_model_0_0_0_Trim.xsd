@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://opentravel.org/local/jandj002/ext/v0"
+    version="0.0.0"
+    xmlns:jj="http://opentravel.org/local/jandj002/ext/v0"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:LibraryName>jljandrew_model</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                <otm:SourceFile>/jljandrew_model.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T15:17:40.626-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:element name="SubstitutionGroup" type="jj:SubstitutionGroup"/>
+    
+    <xsd:complexType name="SubstitutionGroup">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Specifies a cancellation penalty of the hotel facility.</xsd:documentation>
+            <xsd:documentation source="Description">Specifies a cancellation penalty of the hotel facility.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">CancelPenalty</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="1" ref="OrderSummary" xmlns="http://www.opentravel.org/OTM/order/v0"/>
+            <xsd:element minOccurs="0" ref="Deadline" xmlns="http://www.opentravel.org/OTM/order/v0">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifies the date/time for when a reservation must be canceled by to avoid a penalty.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AmountPercent" type="ota2:AmountPercent">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifes the cancel penalty by amount or percent.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="100" minOccurs="0" ref="ota2:CommentsSubGrp">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Comments pertaining to the cancel penalty.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+</xsd:schema>

@@ -1,0 +1,15 @@
+{
+  "Email" : {
+    "value" : "I am a medium string.",
+    "emailType" : "2",
+    "remark" : "Example String Value",
+    "textFormat" : "I am a short string.",
+    "shareMarketInd" : "Yes",
+    "shareSyncInd" : "No",
+    "optInStatus" : "OptedIn",
+    "optInDate" : "2011-01-24T09:45:00",
+    "optOutDate" : "2011-07-04T14:15:00",
+    "validInd" : true,
+    "defaultInd" : true
+  }
+}

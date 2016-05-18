@@ -1,0 +1,23 @@
+{
+  "Guarantee" : {
+    "@type" : "Guarantee",
+    "FormOfPaymentSummary" : {
+      "@type" : "FormOfPayment",
+      "id" : "formOfPayment_1",
+      "costCenterID" : "I am a tiny string.",
+      "paymentTransactionTypeCode" : "charge",
+      "guaranteeTypeCode" : "2",
+      "guaranteeID" : "I am a short string.",
+      "remark" : "I am a short string.",
+      "guaranteeIndicatorInd" : true,
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "Yes",
+        "shareSyncInd" : "No",
+        "optInStatus" : "OptedIn",
+        "optInDate" : "2011-01-24T09:45:00",
+        "optOutDate" : "2011-07-04T14:15:00"
+      }
+    }
+  }
+}

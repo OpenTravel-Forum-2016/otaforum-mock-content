@@ -1,0 +1,16 @@
+{
+  "RailAccommDetailSummary" : {
+    "@type" : "RailAccommDetail",
+    "id" : "railAccommDetail_1",
+    "deck" : "Regular-OneLevelOnly",
+    "carNumber" : 1234,
+    "AccommodationClassEnum" : {
+      "value" : "HardCompartmentClass"
+    },
+    "Compartment" : {
+      "value" : null,
+      "number" : 2345,
+      "position" : "CloseToRestaurantCar"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdateNotif xmlns="http://www.opentravel.org/OTM/reservation/v0"
+    timeStamp="2016-05-18T15:17:39.571-04:00" version="0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/reservation/v0 ../Reservation_0_0_0_Trim.xsd">
+    <ReservationIdentifier>
+        <ResId source="I am a short string."
+            sourceContext="I am a short string." type="I am a tiny string.">I am a short string.</ResId>
+    </ReservationIdentifier>
+</UpdateNotif>

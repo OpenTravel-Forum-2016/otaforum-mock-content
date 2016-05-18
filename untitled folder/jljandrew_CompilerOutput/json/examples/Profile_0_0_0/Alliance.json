@@ -1,0 +1,47 @@
+{
+  "Alliance" : {
+    "@type" : "Alliance",
+    "id" : "alliance_1",
+    "Member" : [ {
+      "value" : null,
+      "memberCode" : "co1",
+      "companyName" : "MemberCompany",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    }, {
+      "value" : null,
+      "memberCode" : "co1",
+      "companyName" : "MemberCompany",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    }, {
+      "value" : null,
+      "memberCode" : "co1",
+      "companyName" : "MemberCompany",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    } ],
+    "EffectiveExpireDate" : {
+      "value" : null,
+      "effective" : "2011-01-24",
+      "expire" : "2011-07-04",
+      "expireDateExclusiveInd" : true
+    },
+    "Identifier" : {
+      "value" : "guid12345",
+      "url" : "http://www.w3.org/2001/XMLSchema",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    }
+  }
+}

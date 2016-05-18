@@ -1,0 +1,141 @@
+{
+  "swagger": "2.0",
+  "x-otm-resource": {
+    "namespace": "http://opentravel.org/local/jandj002/ext/v0",
+    "localName": "OrderResource"
+  },
+  "info": {
+    "title": "OrderResource",
+    "x-otm-library": {
+      "ResourceName": "OrderResource",
+      "LibraryName": "jljandrew_model",
+      "LibraryVersion": "0.0.0",
+      "LibraryStatus": "DRAFT",
+      "SourceFile": "/jljandrew_model.otm",
+      "CompilerVersion": "4.0-SNAPSHOT",
+      "CompileDate": "2016-05-18T15:17:40.614-0400"
+    },
+    "version": "0.0.0"
+  },
+  "host": "127.0.0.1",
+  "basePath": "/Orders",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/{id}": {
+      "get": {
+        "summary": "OrderResource - Get",
+        "operationId": "Get",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Identifier for the order.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "Order_0_0_0_Trim.schema.json#/definitions/OrderID"
+            },
+            "x-xml-schema": {
+              "$ref": "Order_0_0_0_Trim.xsd#/OrderID"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "OrderResource - Update",
+        "operationId": "Update",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Identifier for the order.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "jljandrew_model_0_0_0_Trim.schema.json#/definitions/SubstitutionGroup"
+            },
+            "x-xml-schema": {
+              "$ref": "jljandrew_model_0_0_0_Trim.xsd#/SubstitutionGroup"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "OrderResource - Delete",
+        "operationId": "Delete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Identifier for the order.",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/": {
+      "post": {
+        "summary": "OrderResource - Create",
+        "operationId": "Create",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "Order",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "Order_0_0_0_Trim.schema.json#/definitions/Order"
+            },
+            "x-xml-schema": {
+              "$ref": "Order_0_0_0_Trim.xsd#/Order"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "schema": {
+              "$ref": "jljandrew_model_0_0_0_Trim.schema.json#/definitions/SubstitutionGroup"
+            },
+            "x-xml-schema": {
+              "$ref": "jljandrew_model_0_0_0_Trim.xsd#/SubstitutionGroup"
+            }
+          }
+        }
+      }
+    }
+  }
+}

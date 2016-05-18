@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RestStopDetail xmlns="http://www.opentravel.org/OTM/product/v0"
+    code="I am a tiny string." description="I am a long string."
+    name="I am a short string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd"/>

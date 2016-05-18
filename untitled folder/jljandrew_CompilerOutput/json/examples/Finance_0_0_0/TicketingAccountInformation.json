@@ -1,0 +1,15 @@
+{
+  "TicketingAccountInformation" : {
+    "@type" : "TicketingAccountInformation",
+    "number" : "I am a tiny string.",
+    "costCenter" : "I am a short string.",
+    "companyNumber" : "I am a tiny string.",
+    "clientReference" : "I am a short string.",
+    "TaxRegistrationDetails" : {
+      "value" : null,
+      "taxID" : "I am a tiny string.",
+      "recipientName" : "I am a tiny string.",
+      "recipientAddress" : "I am a short string."
+    }
+  }
+}

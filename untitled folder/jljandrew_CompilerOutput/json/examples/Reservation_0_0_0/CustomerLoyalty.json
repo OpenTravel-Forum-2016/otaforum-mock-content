@@ -1,0 +1,7 @@
+{
+  "CustomerLoyaltySummary" : {
+    "@type" : "CustomerLoyalty",
+    "programId" : "customerLoyalty_1",
+    "membershipId" : "I am a tiny string."
+  }
+}

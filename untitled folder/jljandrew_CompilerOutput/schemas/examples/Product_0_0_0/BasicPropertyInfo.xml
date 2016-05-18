@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BasicPropertyInfoDetail
+    xmlns="http://www.opentravel.org/OTM/product/v0" brandCode="BB"
+    brandName="BB Brand" chainCode="AA" chainName="XYZ Chain"
+    cityCode="CHI" code="CHIDT" name="ABC Hotel"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd"/>

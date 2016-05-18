@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TransportNumberDetail xmlns="http://www.opentravel.org/OTM/product/v0"
+    carrier="I am a tiny string." number="I am a tiny string."
+    operatingCarrier="I am a tiny string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd"/>

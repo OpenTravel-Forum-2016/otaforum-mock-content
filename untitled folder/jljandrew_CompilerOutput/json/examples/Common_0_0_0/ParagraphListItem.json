@@ -1,0 +1,9 @@
+{
+  "Paragraph_ListItem" : {
+    "value" : null,
+    "listItem" : 1234,
+    "formattedText" : "Formatted text example.",
+    "language" : "en",
+    "textFormat" : "PlainText"
+  }
+}

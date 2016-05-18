@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Person_Name xmlns="http://www.opentravel.org/OTM/Common/v0"
+    defaultInd="true" language="???" type="Alternate"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <Prefix>Mr.</Prefix>
+    <Prefix>Mr.</Prefix>
+    <Prefix>Mr.</Prefix>
+    <Given>John</Given>
+    <Given>John</Given>
+    <Given>John</Given>
+    <Middle>I am a short string.</Middle>
+    <Middle>I am a short string.</Middle>
+    <Middle>I am a short string.</Middle>
+    <SurnamePrefix>I am a tiny string.</SurnamePrefix>
+    <Surname>Smith</Surname>
+    <Suffix>I am a tiny string.</Suffix>
+    <Suffix>I am a tiny string.</Suffix>
+    <Suffix>I am a tiny string.</Suffix>
+    <Title>I am a tiny string.</Title>
+    <Title>I am a tiny string.</Title>
+    <Title>I am a tiny string.</Title>
+    <Person_Document>
+        <DocType>NaturalizationCertificate</DocType>
+    </Person_Document>
+    <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+</Person_Name>

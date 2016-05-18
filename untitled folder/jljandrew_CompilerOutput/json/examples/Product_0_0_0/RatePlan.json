@@ -1,0 +1,20 @@
+{
+  "RatePlanDetail" : {
+    "@type" : "RatePlanDetail",
+    "ratePlanId" : "ratePlan_1",
+    "ratePlanCode" : "I am a tiny string.",
+    "CommentsDetail" : {
+      "@type" : "CommentsDetail",
+      "name" : "I am a short string.",
+      "language" : "eng",
+      "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+    },
+    "MealsIncluded" : {
+      "value" : "I am a short string.",
+      "mealPlanCodes" : "I am a tiny string.",
+      "breakfastInd" : true,
+      "lunchInd" : true,
+      "dinnerInd" : true
+    }
+  }
+}

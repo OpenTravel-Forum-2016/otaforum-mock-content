@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/reservation/v0"
+    version="0.0.0" xmlns:order="http://www.opentravel.org/OTM/order/v0"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:ota2msg="http://opentravel.org/common/message/v02"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00"
+    xmlns:prof="http://www.opentravel.org/OTM/profile/v0"
+    xmlns:res="http://www.opentravel.org/OTM/reservation/v0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:ProjectName>jljandrew.otp</otm:ProjectName>
+                <otm:LibraryName>Reservation</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                <otm:SourceFile>/Reservation_0_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T15:17:40.426-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://opentravel.org/common/message/v02" schemaLocation="built-ins/OTA2_Message_v2.0.0.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/order/v0" schemaLocation="Order_0_0_0_Trim.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/profile/v0" schemaLocation="Profile_0_0_0_Trim.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:element name="ReservationSubGrp" type="res:Reservation_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Reservation</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="ReservationID"
+        substitutionGroup="res:ReservationSubGrp" type="res:Reservation_ID"/>
+    <xsd:element name="ReservationIdentifier"
+        substitutionGroup="res:ReservationSubGrp" type="res:Reservation_ID"/>
+    <xsd:element name="Reservation"
+        substitutionGroup="res:ReservationID" type="res:Reservation"/>
+    <xsd:element name="ReservationSummary"
+        substitutionGroup="res:ReservationSubGrp" type="res:Reservation"/>
+    <xsd:element name="ReservationDetail"
+        substitutionGroup="res:Reservation" type="res:Reservation_Detail"/>
+    
+    <xsd:element name="ReservationQueryUpdate" type="res:Reservation_Query_Update"/>
+    <xsd:element name="ReservationQueryRetrieve" type="res:Reservation_Query_Retrieve"/>
+    
+    <xsd:complexType name="Reservation_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Reservation</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ResId" type="ota2:ReservationId">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifies the reservation or cancellation number for the reservation.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Reservation">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Reservation</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="res:Reservation_ID">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="99" minOccurs="1" ref="order:OfferConfirmed">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">A collection of confirmed offers.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="99" minOccurs="1" ref="res:ReceiptSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Receipt for the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="TimeSpan" type="ota2:TimeSpan">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Specifies the start date and end date that covers the whole reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="20" minOccurs="0" ref="prof:PersonCustomer">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Guest details.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Summary"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Reservation_Detail">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Reservation</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="res:Reservation">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="30" minOccurs="0" ref="ota2:CommentsSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Comments pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Detail"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Reservation_Query_Update">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Reservation</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="99" minOccurs="1" ref="order:OfferConfirmed">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">ID of a Confirmed Offer  that is to be cancelled</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="99" minOccurs="1" ref="prof:PersonCustomer">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">If only Customer_ID is present then the customer is to be removed other wise this customer is being added.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="ResId" type="ota2:ReservationId">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">The reservation or cancellation number for the reservation.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Reservation_Query_Retrieve">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Reservation</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ResId" type="ota2:ReservationId">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifies the reservation or cancellation number for the reservation.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="ReceiptSubGrp" type="res:Receipt_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Receipt</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="ReceiptID" substitutionGroup="res:ReceiptSubGrp" type="res:Receipt_ID"/>
+    <xsd:element name="ReceiptIdentifier"
+        substitutionGroup="res:ReceiptSubGrp" type="res:Receipt_ID"/>
+    <xsd:element name="Receipt" substitutionGroup="res:ReceiptID" type="res:Receipt"/>
+    <xsd:element name="ReceiptSummary"
+        substitutionGroup="res:ReceiptSubGrp" type="res:Receipt"/>
+    
+    <xsd:complexType name="Receipt_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Receipt</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:attribute name="id" type="xsd:ID" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">The verification number.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Receipt">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Receipt</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="res:Receipt_ID">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="order:PaymentSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Payment details for the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="CreateRQ"
+        substitutionGroup="ota2msg:OTA2_Request_Payload" type="res:Create_RQ"/>
+    
+    <xsd:complexType name="Create_RQ">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Create</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Request_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="order:OrderSubGrp"/>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="CreateRS"
+        substitutionGroup="ota2msg:OTA2_Response_Payload" type="res:Create_RS"/>
+    
+    <xsd:complexType name="Create_RS">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Create</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Response_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:Result">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">When present indicates that errors or warnings occurred during processing.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="CreateNotif"
+        substitutionGroup="ota2msg:OTA2_Notif_Payload" type="res:Create_Notif"/>
+    
+    <xsd:complexType name="Create_Notif">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Create</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Notif_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationIdentifier">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="RetrieveRQ"
+        substitutionGroup="ota2msg:OTA2_Request_Payload" type="res:Retrieve_RQ"/>
+    
+    <xsd:complexType name="Retrieve_RQ">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Retrieve</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Request_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationIdentifier">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="RetrieveRS"
+        substitutionGroup="ota2msg:OTA2_Response_Payload" type="res:Retrieve_RS"/>
+    
+    <xsd:complexType name="Retrieve_RS">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Retrieve</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Response_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:Result">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">When present indicates that errors or warnings occurred during processing.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="UpdateRQ"
+        substitutionGroup="ota2msg:OTA2_Request_Payload" type="res:Update_RQ"/>
+    
+    <xsd:complexType name="Update_RQ">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Update</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Request_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationQueryUpdate">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="UpdateRS"
+        substitutionGroup="ota2msg:OTA2_Response_Payload" type="res:Update_RS"/>
+    
+    <xsd:complexType name="Update_RS">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Update</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Response_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:Result">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">When present indicates that errors or warnings occurred during processing.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="UpdateNotif"
+        substitutionGroup="ota2msg:OTA2_Notif_Payload" type="res:Update_Notif"/>
+    
+    <xsd:complexType name="Update_Notif">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Update</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Notif_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationIdentifier">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="FindRQ"
+        substitutionGroup="ota2msg:OTA2_Request_Payload" type="res:Find_RQ"/>
+    
+    <xsd:complexType name="Find_RQ">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Find</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Request_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationQueryRetrieve">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="FindRS"
+        substitutionGroup="ota2msg:OTA2_Response_Payload" type="res:Find_RS"/>
+    
+    <xsd:complexType name="Find_RS">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Operation">Reservation_Find</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2msg:OTA2_Response_Payload">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="res:ReservationSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information pertaining to the reservation.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:Result">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">When present indicates that errors or warnings occurred during processing.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+</xsd:schema>

@@ -1,0 +1,50 @@
+{
+  "Text_Paragraph" : {
+    "@type" : "Text_Paragraph",
+    "name" : "paragraph name",
+    "number" : 1234,
+    "language" : "en",
+    "Text" : [ {
+      "value" : "Formatted text example.",
+      "language" : "en",
+      "textFormat" : "PlainText"
+    }, {
+      "value" : "Formatted text example.",
+      "language" : "en",
+      "textFormat" : "HTML"
+    }, {
+      "value" : "Formatted text example.",
+      "language" : "en",
+      "textFormat" : "PlainText"
+    } ],
+    "Image" : [ "Example String Value", "Example String Value", "Example String Value" ],
+    "URL" : [ "http://www.w3.org/2001/XMLSchema", "http://www.OpenTravel.org/ns/OTA2/Common_v01_00", "http://www.w3.org/2001/XMLSchema" ],
+    "Paragraph_ListItem" : [ {
+      "value" : null,
+      "listItem" : 1234,
+      "formattedText" : "Formatted text example.",
+      "language" : "en",
+      "textFormat" : "HTML"
+    }, {
+      "value" : null,
+      "listItem" : 2345,
+      "formattedText" : "Formatted text example.",
+      "language" : "en",
+      "textFormat" : "PlainText"
+    }, {
+      "value" : null,
+      "listItem" : 3456,
+      "formattedText" : "Formatted text example.",
+      "language" : "en",
+      "textFormat" : "HTML"
+    } ],
+    "DateTimeStamp" : {
+      "value" : "2011-01-24T09:45:00",
+      "create" : "2011-07-04T14:15:00",
+      "creatorID" : "c123456789",
+      "lastModify" : "2011-12-05T06:00:00",
+      "lastModifierID" : "m987654321",
+      "purge" : "2011-01-24"
+    }
+  }
+}

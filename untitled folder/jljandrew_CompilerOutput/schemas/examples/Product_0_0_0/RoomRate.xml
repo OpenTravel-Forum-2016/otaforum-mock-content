@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RoomRateDetail xmlns="http://www.opentravel.org/OTM/product/v0"
+    effectiveDate="2011-01-24" expireDate="2011-07-04"
+    expireDateExclusiveInd="true" promotionCode="I am a tiny string."
+    ratePlanCode="I am a tiny string." roomRateId="roomRate_1"
+    roomTypeCode="I am a tiny string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <Rate2 amountBeforeTax="23" currencyCode="USD">12</Rate2>
+    <BasicPropertyInfoDetail brandCode="BB" brandName="BB Brand"
+        chainCode="AA" chainName="XYZ Chain" cityCode="CHI" code="CHIDT" name="ABC Hotel"/>
+</RoomRateDetail>

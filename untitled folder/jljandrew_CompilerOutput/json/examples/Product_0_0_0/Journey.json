@@ -1,0 +1,200 @@
+{
+  "JourneySummary" : {
+    "@type" : "Journey",
+    "id" : "journey_1",
+    "duration" : "PT1004199059S",
+    "Segment" : [ {
+      "@type" : "Segment",
+      "id" : "segment_1",
+      "departureDateTime" : "2010-12-31T11:55:00",
+      "arrivalDateTime" : "2010-12-31T11:55:00",
+      "numberOfStops" : 1234,
+      "duration" : "PT130S",
+      "DeparturePointDetail" : {
+        "@type" : "DeparturePointDetail",
+        "code" : "I am a tiny string.",
+        "openingTime" : "09:45:00",
+        "closingTime" : "14:15:00",
+        "kioskInd" : true,
+        "curbSideBaggageCheckInd" : true
+      },
+      "TransportNumberDetail" : {
+        "@type" : "TransportNumberDetail",
+        "carrier" : "I am a tiny string.",
+        "number" : "I am a tiny string.",
+        "operatingCarrier" : "I am a tiny string."
+      },
+      "ArrivalPointDetail" : {
+        "@type" : "ArrivalPointDetail",
+        "code" : "I am a tiny string.",
+        "openingTime" : "06:00:00",
+        "closingTime" : "09:45:00",
+        "kioskInd" : true,
+        "curbSideBaggageCheckInd" : true
+      },
+      "ClassOfService" : [ {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 2345,
+        "name" : "I am a short string."
+      }, {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 3456,
+        "name" : "I am a short string."
+      }, {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 4567,
+        "name" : "I am a short string."
+      } ],
+      "AncillaryProduct" : [ {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_1",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      }, {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_2",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      }, {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_3",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      } ]
+    }, {
+      "@type" : "Segment",
+      "id" : "segment_2",
+      "departureDateTime" : "2010-12-31T11:55:00",
+      "arrivalDateTime" : "2010-12-31T11:55:00",
+      "numberOfStops" : 1234,
+      "duration" : "PT2M10S",
+      "DeparturePointDetail" : {
+        "@type" : "DeparturePointDetail",
+        "code" : "I am a tiny string.",
+        "openingTime" : "14:15:00",
+        "closingTime" : "06:00:00",
+        "kioskInd" : true,
+        "curbSideBaggageCheckInd" : true
+      },
+      "TransportNumberDetail" : {
+        "@type" : "TransportNumberDetail",
+        "carrier" : "I am a tiny string.",
+        "number" : "I am a tiny string.",
+        "operatingCarrier" : "I am a tiny string."
+      },
+      "ArrivalPointDetail" : {
+        "@type" : "ArrivalPointDetail",
+        "code" : "I am a tiny string.",
+        "openingTime" : "09:45:00",
+        "closingTime" : "14:15:00",
+        "kioskInd" : true,
+        "curbSideBaggageCheckInd" : true
+      },
+      "ClassOfService" : [ {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 2345,
+        "name" : "I am a short string."
+      }, {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 3456,
+        "name" : "I am a short string."
+      }, {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 4567,
+        "name" : "I am a short string."
+      } ],
+      "AncillaryProduct" : [ {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_4",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      }, {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_5",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      }, {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_6",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      } ]
+    }, {
+      "@type" : "Segment",
+      "id" : "segment_3",
+      "departureDateTime" : "2010-12-31T11:55:00",
+      "arrivalDateTime" : "2010-12-31T11:55:00",
+      "numberOfStops" : 1234,
+      "duration" : "P1DT2S",
+      "DeparturePointDetail" : {
+        "@type" : "DeparturePointDetail",
+        "code" : "I am a tiny string.",
+        "openingTime" : "06:00:00",
+        "closingTime" : "09:45:00",
+        "kioskInd" : true,
+        "curbSideBaggageCheckInd" : true
+      },
+      "TransportNumberDetail" : {
+        "@type" : "TransportNumberDetail",
+        "carrier" : "I am a tiny string.",
+        "number" : "I am a tiny string.",
+        "operatingCarrier" : "I am a tiny string."
+      },
+      "ArrivalPointDetail" : {
+        "@type" : "ArrivalPointDetail",
+        "code" : "I am a tiny string.",
+        "openingTime" : "14:15:00",
+        "closingTime" : "06:00:00",
+        "kioskInd" : true,
+        "curbSideBaggageCheckInd" : true
+      },
+      "ClassOfService" : [ {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 2345,
+        "name" : "I am a short string."
+      }, {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 3456,
+        "name" : "I am a short string."
+      }, {
+        "@type" : "ClassOfServiceDetail",
+        "code" : "I am a tiny string.",
+        "count" : 4567,
+        "name" : "I am a short string."
+      } ],
+      "AncillaryProduct" : [ {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_7",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      }, {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_8",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      }, {
+        "@type" : "AncillaryProductDetail",
+        "id" : "ancillaryProduct_9",
+        "code" : "I am a tiny string.",
+        "name" : "I am a tiny string.",
+        "description" : "I am a long string."
+      } ]
+    } ]
+  }
+}

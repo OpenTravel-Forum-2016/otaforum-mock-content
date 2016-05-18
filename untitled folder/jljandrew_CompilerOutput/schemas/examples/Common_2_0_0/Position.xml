@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Position xmlns="http://www.opentravel.org/OTM/Common/v2"
+    altitude="I am a tiny string." altitudeUnitOfMeasureCode="2"
+    latitude="I am a tiny string." longitude="I am a tiny string." positionAccuracyCode="2"/>

@@ -1,0 +1,8 @@
+{
+  "AirEquipment" : {
+    "value" : "I am a tiny string.",
+    "airEquipType" : "Example String Value",
+    "AircraftTailNumber" : "Example String Value",
+    "changeofGaugeInd" : true
+  }
+}

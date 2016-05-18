@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns="http://www.opentravel.org/OTM/Common/v0" id="company_1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <Identifier company="Acme" instance="i0987654321"
+        system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+    <Name code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</Name>
+    <Name code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</Name>
+    <Name code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</Name>
+    <AddressDetail language="en" role="Home" type="CLT" use="AUT" validInd="true">
+        <AddressLine>I am a short string.</AddressLine>
+        <AddressLine>I am a short string.</AddressLine>
+        <AddressLine>I am a short string.</AddressLine>
+        <BldgRoom buldingInd="true">Bldg H</BldgRoom>
+        <BldgRoom buldingInd="true">Bldg H</BldgRoom>
+        <Number pO_Box="98567499" ruralRouteNmbr="88"
+            streetDirection="NNW" streetNmbrSuffix="B">563</Number>
+        <Street>Travers Street</Street>
+        <City>Dublin</City>
+        <County>Fairfax</County>
+        <StateProv name="Texas">TX</StateProv>
+        <Country name="Ireland">IR</Country>
+        <PostalCode>32165-9999</PostalCode>
+        <Remark>This address should be used for all official correspondences.</Remark>
+        <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+            optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+    </AddressDetail>
+    <AddressDetail language="en" role="Business" type="CLT" use="AUT" validInd="true">
+        <AddressLine>I am a short string.</AddressLine>
+        <AddressLine>I am a short string.</AddressLine>
+        <AddressLine>I am a short string.</AddressLine>
+        <BldgRoom buldingInd="true">Bldg H</BldgRoom>
+        <BldgRoom buldingInd="true">Bldg H</BldgRoom>
+        <Number pO_Box="98567499" ruralRouteNmbr="88"
+            streetDirection="NNW" streetNmbrSuffix="B">563</Number>
+        <Street>Travers Street</Street>
+        <City>Dublin</City>
+        <County>Fairfax</County>
+        <StateProv name="Texas">TX</StateProv>
+        <Country name="Ireland">IR</Country>
+        <PostalCode>32165-9999</PostalCode>
+        <Remark>This address should be used for all official correspondences.</Remark>
+        <Privacy optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+            optOutDate="2011-01-24T09:45:00" shareMarketInd="Inherit" shareSyncInd="Yes"/>
+    </AddressDetail>
+    <AddressDetail language="en" role="Destination" type="CLT" use="AUT" validInd="true">
+        <AddressLine>I am a short string.</AddressLine>
+        <AddressLine>I am a short string.</AddressLine>
+        <AddressLine>I am a short string.</AddressLine>
+        <BldgRoom buldingInd="true">Bldg H</BldgRoom>
+        <BldgRoom buldingInd="true">Bldg H</BldgRoom>
+        <Number pO_Box="98567499" ruralRouteNmbr="88"
+            streetDirection="NNW" streetNmbrSuffix="B">563</Number>
+        <Street>Travers Street</Street>
+        <City>Dublin</City>
+        <County>Fairfax</County>
+        <StateProv name="Texas">TX</StateProv>
+        <Country name="Ireland">IR</Country>
+        <PostalCode>32165-9999</PostalCode>
+        <Remark>This address should be used for all official correspondences.</Remark>
+        <Privacy optInDate="2011-07-04T14:15:00" optInStatus="Unknown"
+            optOutDate="2011-12-05T06:00:00" shareMarketInd="No" shareSyncInd="Inherit"/>
+    </AddressDetail>
+    <TelephoneDetail areaCityCode="Example String Value"
+        countryAccessCode="Example String Value" defaultInd="true"
+        extension="Example String Value" id="telephone_1"
+        pIN="I am a tiny string." phoneNumber="2358878"
+        remark="Example String Value" role="Home">
+        <Privacy optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+            optOutDate="2011-07-04T14:15:00" shareMarketInd="Yes" shareSyncInd="No"/>
+        <PhoneLocationType>Brand reservations office</PhoneLocationType>
+        <PhoneTechType>Voice</PhoneTechType>
+        <PhoneUseType>Contact</PhoneUseType>
+    </TelephoneDetail>
+    <TelephoneDetail areaCityCode="Example String Value"
+        countryAccessCode="Example String Value" defaultInd="true"
+        extension="Example String Value" id="telephone_2"
+        pIN="I am a tiny string." phoneNumber="2358878"
+        remark="Example String Value" role="Office">
+        <Privacy optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+            optOutDate="2011-01-24T09:45:00" shareMarketInd="Inherit" shareSyncInd="Yes"/>
+        <PhoneLocationType>Central reservations office</PhoneLocationType>
+        <PhoneTechType>Fax</PhoneTechType>
+        <PhoneUseType>Daytime contact</PhoneUseType>
+    </TelephoneDetail>
+    <TelephoneDetail areaCityCode="Example String Value"
+        countryAccessCode="Example String Value" defaultInd="true"
+        extension="Example String Value" id="telephone_3"
+        pIN="I am a tiny string." phoneNumber="2358878"
+        remark="Example String Value" role="Mobile">
+        <Privacy optInDate="2011-07-04T14:15:00" optInStatus="Unknown"
+            optOutDate="2011-12-05T06:00:00" shareMarketInd="No" shareSyncInd="Inherit"/>
+        <PhoneLocationType>Home</PhoneLocationType>
+        <PhoneTechType>Pager</PhoneTechType>
+        <PhoneUseType>Emergency contact</PhoneUseType>
+    </TelephoneDetail>
+    <Email defaultInd="true" emailType="2"
+        optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+        optOutDate="2011-07-04T14:15:00" remark="Example String Value"
+        shareMarketInd="Yes" shareSyncInd="No"
+        textFormat="I am a short string." validInd="true">I am a medium string.</Email>
+    <Email defaultInd="true" emailType="2"
+        optInDate="2011-12-05T06:00:00" optInStatus="OptedOut"
+        optOutDate="2011-01-24T09:45:00" remark="Example String Value"
+        shareMarketInd="Inherit" shareSyncInd="Yes"
+        textFormat="I am a short string." validInd="true">I am a medium string.</Email>
+    <Email defaultInd="true" emailType="2"
+        optInDate="2011-07-04T14:15:00" optInStatus="Unknown"
+        optOutDate="2011-12-05T06:00:00" remark="Example String Value"
+        shareMarketInd="No" shareSyncInd="Inherit"
+        textFormat="I am a short string." validInd="true">I am a medium string.</Email>
+    <URL defaultInd="true" type="I am a short string.">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</URL>
+    <URL defaultInd="true" type="I am a short string.">http://www.w3.org/2001/XMLSchema</URL>
+    <URL defaultInd="true" type="I am a short string.">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</URL>
+</Company>

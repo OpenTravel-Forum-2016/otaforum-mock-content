@@ -1,0 +1,28 @@
+{
+  "ClubMembership" : {
+    "@type" : "ClubMembership",
+    "Name" : {
+      "value" : "Travel Adventure Partners Incorporated",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    },
+    "MemberIdentifier" : "I am a short string.",
+    "Date_EffectiveExpire" : {
+      "value" : null,
+      "effective" : "2011-01-24",
+      "expire" : "2011-07-04",
+      "expireDateExclusiveInd" : true
+    },
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Yes",
+      "shareSyncInd" : "No",
+      "optInStatus" : "OptedIn",
+      "optInDate" : "2011-01-24T09:45:00",
+      "optOutDate" : "2011-07-04T14:15:00"
+    }
+  }
+}

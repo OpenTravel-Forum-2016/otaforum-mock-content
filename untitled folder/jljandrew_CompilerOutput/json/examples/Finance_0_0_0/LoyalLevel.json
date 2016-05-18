@@ -1,0 +1,7 @@
+{
+  "LoyalLevel" : {
+    "value" : "I am a tiny string.",
+    "loyalLevel" : "I am a tiny string.",
+    "loyalLevelCode" : 1234
+  }
+}

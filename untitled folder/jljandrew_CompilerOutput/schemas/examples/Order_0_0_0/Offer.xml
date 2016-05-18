@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Offer xmlns="http://www.opentravel.org/OTM/order/v0" offerId="offer_1"
+    vendor="I am a tiny string."
+    xmlns:prod="http://www.opentravel.org/OTM/product/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v0 ../../Order_0_0_0.xsd">
+    <Price currencyCode="USD" decimalPlaces="2">80000</Price>
+    <TermsAndConditions duration="1234" id="termsAndConditions_1"/>
+    <TermsAndConditions duration="2345" id="termsAndConditions_2"/>
+    <TermsAndConditions duration="3456" id="termsAndConditions_3"/>
+    <prod:ProductID>
+        <prod:Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</prod:Identifier>
+    </prod:ProductID>
+    <prod:ProductID>
+        <prod:Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</prod:Identifier>
+    </prod:ProductID>
+    <prod:ProductID>
+        <prod:Identifier company="Acme" instance="i0987654321"
+            system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</prod:Identifier>
+    </prod:ProductID>
+</Offer>

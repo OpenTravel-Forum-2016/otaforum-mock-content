@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MealsIncluded xmlns="http://www.opentravel.org/OTM/product/v0"
+    breakfastInd="true" dinnerInd="true" lunchInd="true" mealPlanCodes="I am a tiny string.">I am a short string.</MealsIncluded>

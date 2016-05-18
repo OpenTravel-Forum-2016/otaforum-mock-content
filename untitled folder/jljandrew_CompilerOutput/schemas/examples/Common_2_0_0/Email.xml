@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Email xmlns="http://www.opentravel.org/OTM/Common/v2" defaultInd="true"
+    emailType="2" optInDate="2011-01-24T09:45:00" optInStatus="OptedIn"
+    optOutDate="2011-07-04T14:15:00" remark="Example String Value"
+    shareMarketInd="Yes" shareSyncInd="No"
+    textFormat="I am a short string." validInd="true">I am a medium string.</Email>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoyaltyProgram xmlns="http://www.opentravel.org/OTM/profile/v0"
+    codeContext="I am a tiny string." id="loyaltyProgram_1"
+    loyaltyLevel="I am a tiny string." primaryInd="true"
+    programCode="I am a tiny string." singleVendorIndGroupInd="true"/>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/order/v0"
+    version="0.0.0" xmlns:fin="http://www.opentravel.org/OTM/finance/v0"
+    xmlns:order="http://www.opentravel.org/OTM/order/v0"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00"
+    xmlns:prod="http://www.opentravel.org/OTM/product/v0"
+    xmlns:prof="http://www.opentravel.org/OTM/profile/v0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:LibraryName>Order</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                <otm:SourceFile>/Order_0_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T15:17:40.725-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://www.opentravel.org/OTM/finance/v0" schemaLocation="Finance_0_0_0_Trim.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/product/v0" schemaLocation="Product_0_0_0_Trim.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/profile/v0" schemaLocation="Profile_0_0_0_Trim.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:element name="OfferSubGrp" type="order:Offer_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A product or products available at the given price and terms</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Offer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="OfferID" substitutionGroup="order:OfferSubGrp" type="order:Offer_ID"/>
+    <xsd:element name="OfferIdentifier"
+        substitutionGroup="order:OfferSubGrp" type="order:Offer_ID"/>
+    <xsd:element name="Offer" substitutionGroup="order:OfferID" type="order:Offer"/>
+    <xsd:element name="OfferSummary"
+        substitutionGroup="order:OfferSubGrp" type="order:Offer"/>
+    <xsd:element name="OfferConfirmed" substitutionGroup="order:Offer" type="order:Offer_Confirmed"/>
+    
+    <xsd:element name="OfferQuery" type="order:Offer_Query"/>
+    
+    <xsd:complexType name="Offer_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A product or products available at the given price and terms</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Offer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:attribute name="offerId" type="xsd:ID" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Identifier for the offer.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Offer">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A product or products available at the given price and terms</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Offer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="order:Offer_ID">
+                <xsd:sequence>
+                    <xsd:element minOccurs="1" name="Price" type="ota2:Currency_Amount">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Total price for all the products. Price may include itemized price information</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="25" minOccurs="0" ref="order:TermsAndConditionsSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Specifies the terms and conditions for this offer.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="30" minOccurs="0" ref="prod:ProductSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">One or more products that make up this offer.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Summary"/>
+                </xsd:sequence>
+                <xsd:attribute name="vendor" type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Specifies the vendor for this offer.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Offer_Confirmed">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A product or products available at the given price and terms</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Offer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="order:Offer">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="Description" type="ota2:String_Long">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">A description of the confirmed offer.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Custom"/>
+                </xsd:sequence>
+                <xsd:attribute name="confirmationId"
+                    type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">An identifier for the confirmed offer.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Offer_Query">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A product or products available at the given price and terms</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Offer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="2" minOccurs="1" ref="prod:ProductQueriesSubGrp">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Use 2 if requesting round trip Offers</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="OrderSubGrp" type="order:Order_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Order</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="OrderID" substitutionGroup="order:OrderSubGrp" type="order:Order_ID"/>
+    <xsd:element name="OrderIdentifier"
+        substitutionGroup="order:OrderSubGrp" type="order:Order_ID"/>
+    <xsd:element name="Order" substitutionGroup="order:OrderID" type="order:Order"/>
+    <xsd:element name="OrderSummary"
+        substitutionGroup="order:OrderSubGrp" type="order:Order"/>
+    
+    <xsd:complexType name="Order_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Order</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:attribute name="id" type="xsd:ID" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Identifier for the order.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Order">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Order</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="order:Order_ID">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="99" minOccurs="1" ref="order:OfferSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">One or more offers that make up this order.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="99" minOccurs="1" ref="prof:PersonCustomer">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Profile information for the customer.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="5" minOccurs="0" ref="order:PaymentSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Payment details for this order.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="TotalPrice" type="ota2:Currency_Amount">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Total price for the order.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="TermsAndConditionsSubGrp" type="order:TermsAndConditions_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The terms and conditions related to an offer.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">TermsAndConditions</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="TermsAndConditionsID"
+        substitutionGroup="order:TermsAndConditionsSubGrp" type="order:TermsAndConditions_ID"/>
+    <xsd:element name="TermsAndConditionsIdentifier"
+        substitutionGroup="order:TermsAndConditionsSubGrp" type="order:TermsAndConditions_ID"/>
+    <xsd:element name="TermsAndConditions"
+        substitutionGroup="order:TermsAndConditionsID" type="order:TermsAndConditions"/>
+    <xsd:element name="TermsAndConditionsSummary"
+        substitutionGroup="order:TermsAndConditionsSubGrp" type="order:TermsAndConditions"/>
+    <xsd:element name="TermsAndConditionsHospitality"
+        substitutionGroup="order:TermsAndConditions" type="order:TermsAndConditions_Hospitality"/>
+    
+    <xsd:complexType name="TermsAndConditions_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The terms and conditions related to an offer.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">TermsAndConditions</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:attribute name="id" type="xsd:ID" use="optional"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="TermsAndConditions">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The terms and conditions related to an offer.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">TermsAndConditions</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="order:TermsAndConditions_ID">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Summary"/>
+                </xsd:sequence>
+                <xsd:attribute name="duration"
+                    type="xsd:positiveInteger" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Specifies the duration of the trip.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="TermsAndConditions_Hospitality">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The terms and conditions related to an offer.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">TermsAndConditions</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="order:TermsAndConditions">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="order:Guarantee">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Guarantee information.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="order:CancelPenalty">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Specifies the cancellation penalty.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Custom"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="CancelPenalty" type="order:CancelPenalty"/>
+    
+    <xsd:complexType name="CancelPenalty">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Specifies a cancellation penalty of the hotel facility.</xsd:documentation>
+            <xsd:documentation source="Description">Specifies a cancellation penalty of the hotel facility.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">CancelPenalty</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="order:Deadline">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifies the date/time for when a reservation must be canceled by to avoid a penalty.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="AmountPercent" type="ota2:AmountPercent">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifes the cancel penalty by amount or percent.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="100" minOccurs="0" ref="ota2:CommentsSubGrp">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Comments pertaining to the cancel penalty.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="Guarantee" type="order:Guarantee"/>
+    
+    <xsd:complexType name="Guarantee">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Specifies guarantee information.</xsd:documentation>
+            <xsd:documentation source="Description">Specifies guarantee information.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Guarantee</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="fin:FormOfPaymentSubGrp">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Specifies payment information for the reservation guarantee.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="Deadline" type="order:Deadline"/>
+    
+    <xsd:complexType name="Deadline">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Cancellation deadline, absolute or relative.</xsd:documentation>
+            <xsd:documentation source="Description">Cancellation deadline, absolute or relative.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Deadline</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+        <xsd:attribute name="absoluteDeadline" type="ota2:DateTime" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Defines the absolute deadline. Either this or the offset attributes may be used.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="offsetUnitMultiplier"
+            type="xsd:positiveInteger" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">The number of units of DeadlineTimeUnit.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="offsetDropTime"
+            type="ota2:OffsetDropTime_Enum" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">An enumerated type indicating when the deadline drop time goes into effect.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="offSetTimeUnit" type="ota2:TimeUnit_Enum" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">The units of time, e.g.: days, hours, etc., that apply to the deadline.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:element name="PaymentSubGrp" type="order:Payment_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Payment information which may be related to one or more offers.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Payment</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="PaymentID"
+        substitutionGroup="order:PaymentSubGrp" type="order:Payment_ID"/>
+    <xsd:element name="PaymentIdentifier"
+        substitutionGroup="order:PaymentSubGrp" type="order:Payment_ID"/>
+    <xsd:element name="Payment" substitutionGroup="order:PaymentID" type="order:Payment"/>
+    <xsd:element name="PaymentSummary"
+        substitutionGroup="order:PaymentSubGrp" type="order:Payment"/>
+    
+    <xsd:complexType name="Payment_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Payment information which may be related to one or more offers.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Payment</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Identifier" type="ota2:Identifier">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Identifier for the payment.  Leave the identifier blank when making a new payment.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Payment">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Payment information which may be related to one or more offers.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Payment</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="order:Payment_ID">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="5" minOccurs="1" ref="fin:FormOfPaymentSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Specifies the form of payment.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="99" minOccurs="1" ref="ota2:PersonSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">The person making the payment.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="OfferRef" type="xsd:IDREFS">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">The offer that the payment is for.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="1" name="Amount" type="ota2:Currency_Amount">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Total payment amount</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+</xsd:schema>

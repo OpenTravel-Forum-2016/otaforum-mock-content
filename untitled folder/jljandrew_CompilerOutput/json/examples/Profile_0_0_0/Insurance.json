@@ -1,0 +1,65 @@
+{
+  "Insurance" : {
+    "@type" : "Insurance",
+    "insuranceType" : "I am a short string.",
+    "policyNumber" : "I am a short string.",
+    "id" : "insurance_1",
+    "Person_Name" : {
+      "@type" : "Person_Name",
+      "type" : "Alternate",
+      "language" : "???",
+      "defaultInd" : true,
+      "Prefix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Given" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "Middle" : [ "I am a short string.", "I am a short string.", "I am a short string." ],
+      "SurnamePrefix" : "I am a tiny string.",
+      "Surname" : "I am a short string.",
+      "Suffix" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Title" : [ "I am a tiny string.", "I am a tiny string.", "I am a tiny string." ],
+      "Person_Document" : {
+        "@type" : "Person_Document",
+        "DocType" : {
+          "value" : "NaturalizationCertificate"
+        }
+      },
+      "Privacy" : {
+        "value" : null,
+        "shareMarketInd" : "Yes",
+        "shareSyncInd" : "No",
+        "optInStatus" : "OptedIn",
+        "optInDate" : "2011-01-24T09:45:00",
+        "optOutDate" : "2011-07-04T14:15:00"
+      }
+    },
+    "Underwriter" : {
+      "value" : "Travel Adventure Partners Incorporated",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    },
+    "EffectiveExpireDate" : {
+      "value" : null,
+      "effective" : "2011-01-24",
+      "expire" : "2011-07-04",
+      "expireDateExclusiveInd" : true
+    },
+    "Privacy" : {
+      "value" : null,
+      "shareMarketInd" : "Inherit",
+      "shareSyncInd" : "Yes",
+      "optInStatus" : "OptedOut",
+      "optInDate" : "2011-12-05T06:00:00",
+      "optOutDate" : "2011-01-24T09:45:00"
+    },
+    "CompanyName" : {
+      "value" : "Travel Adventure Partners Incorporated",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    }
+  }
+}

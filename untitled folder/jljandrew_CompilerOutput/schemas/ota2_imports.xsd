@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opentravel.org/OTM/Common/v0" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xsd:include schemaLocation="CodeList_0_0_0.xsd"/>
+    <xsd:include schemaLocation="Common_0_0_0.xsd"/>
+    <xsd:include schemaLocation="OTA_SimpleTypes_0_0_0.xsd"/>
+    <xsd:include schemaLocation="built-ins/OTM_BuiltIns.xsd"/>
+</xsd:schema>

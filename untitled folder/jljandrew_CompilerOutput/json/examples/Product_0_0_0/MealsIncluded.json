@@ -1,0 +1,9 @@
+{
+  "MealsIncluded" : {
+    "value" : "I am a short string.",
+    "mealPlanCodes" : "I am a tiny string.",
+    "breakfastInd" : true,
+    "lunchInd" : true,
+    "dinnerInd" : true
+  }
+}

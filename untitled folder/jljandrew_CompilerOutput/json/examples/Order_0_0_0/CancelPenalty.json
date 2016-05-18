@@ -1,0 +1,35 @@
+{
+  "CancelPenalty" : {
+    "@type" : "CancelPenalty",
+    "Deadline" : {
+      "@type" : "Deadline",
+      "absoluteDeadline" : "2010-12-31T11:55:00Z",
+      "offsetUnitMultiplier" : 1234,
+      "offsetDropTime" : "Before arrival",
+      "offSetTimeUnit" : "Day"
+    },
+    "AmountPercent" : {
+      "value" : null,
+      "amount" : 5000.0,
+      "percent" : 5.0,
+      "currencyCode" : "Example String Value",
+      "decimalPlaces" : "2"
+    },
+    "Comments" : [ {
+      "@type" : "CommentsDetail",
+      "name" : "I am a short string.",
+      "language" : "eng",
+      "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+    }, {
+      "@type" : "CommentsDetail",
+      "name" : "I am a short string.",
+      "language" : "eng",
+      "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+    }, {
+      "@type" : "CommentsDetail",
+      "name" : "I am a short string.",
+      "language" : "eng",
+      "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+    } ]
+  }
+}

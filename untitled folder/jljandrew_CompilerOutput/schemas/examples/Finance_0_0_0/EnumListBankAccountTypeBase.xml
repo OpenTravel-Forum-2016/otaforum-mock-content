@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Enum_List_BankAccountType_Base
+    xmlns="http://www.opentravel.org/OTM/finance/v0" extension="Other_Value">Savings</Enum_List_BankAccountType_Base>

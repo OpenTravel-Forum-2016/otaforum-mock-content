@@ -1,0 +1,14 @@
+{
+  "RequestorIDDetail" : {
+    "@type" : "RequestorIDDetail",
+    "messagePassword" : "I am a tiny string.",
+    "name" : "I am a medium string.",
+    "Identifier" : {
+      "value" : "guid12345",
+      "url" : "http://www.w3.org/2001/XMLSchema",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    }
+  }
+}

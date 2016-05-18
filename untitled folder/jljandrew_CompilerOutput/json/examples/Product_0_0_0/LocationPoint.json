@@ -1,0 +1,10 @@
+{
+  "LocationPointDetail" : {
+    "@type" : "LocationPointDetail",
+    "code" : "I am a tiny string.",
+    "openingTime" : "09:45:00",
+    "closingTime" : "14:15:00",
+    "kioskInd" : true,
+    "curbSideBaggageCheckInd" : true
+  }
+}

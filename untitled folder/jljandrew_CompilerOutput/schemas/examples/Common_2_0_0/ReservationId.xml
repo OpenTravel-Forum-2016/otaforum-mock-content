@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReservationId xmlns="http://www.opentravel.org/OTM/Common/v2"
+    source="I am a short string." sourceContext="I am a short string." type="I am a tiny string.">I am a short string.</ReservationId>

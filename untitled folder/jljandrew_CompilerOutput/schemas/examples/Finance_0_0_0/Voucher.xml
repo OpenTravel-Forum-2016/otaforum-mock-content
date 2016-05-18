@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Voucher xmlns="http://www.opentravel.org/OTM/finance/v0"
+    EffectiveDate="2011-01-24" ExpireDate="2011-07-04"
+    billingNumber="I am a short string." company="Acme"
+    electronicIndicatorInd="true" expireDateExclusiveInd="true"
+    groupDaysApplyInd="true" identifier="voucher_1"
+    instance="i0987654321" seriesCode="I am a tiny string."
+    supplierIdentifier="guid12345" system="sysABC3344"
+    url="http://www.w3.org/2001/XMLSchema" valueType="I am a tiny string."/>

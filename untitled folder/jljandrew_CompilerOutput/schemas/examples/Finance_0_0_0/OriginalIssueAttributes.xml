@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OriginalIssueAttributes
+    xmlns="http://www.opentravel.org/OTM/finance/v0"
+    checkInhibitor="CheckDigit"
+    coupons="Example String Value Example String Value Example String Value"
+    issueDate="2011-01-24" issueIATA="I am a tiny string."
+    issuePlace="I am a tiny string." paymentForm="I am a tiny string." ticketNumber="I am a tiny string."/>

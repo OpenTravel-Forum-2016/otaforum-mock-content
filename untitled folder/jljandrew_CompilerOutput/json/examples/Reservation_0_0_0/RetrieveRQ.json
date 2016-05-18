@@ -1,0 +1,16 @@
+{
+  "RetrieveRQ" : {
+    "@type" : "RetrieveRQ",
+    "version" : 0,
+    "timeStamp" : "2016-05-18T15:17:34.899-04:00",
+    "ReservationIdentifier" : {
+      "@type" : "ReservationID",
+      "ResId" : {
+        "value" : "I am a short string.",
+        "type" : "I am a tiny string.",
+        "source" : "I am a short string.",
+        "sourceContext" : "I am a short string."
+      }
+    }
+  }
+}

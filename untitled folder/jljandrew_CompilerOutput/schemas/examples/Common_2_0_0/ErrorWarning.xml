@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ErrorWarning xmlns="http://www.opentravel.org/OTM/Common/v2"
+    DocURL="http://www.w3.org/2001/XMLSchema" code="2" language="eng"
+    nodeList="I am a medium string." recordID="I am a short string."
+    shortText="I am a short string." status="Complete"
+    statusExtension="status_Other_Value" tag="I am a medium string."
+    type="Advisory" typeExtension="type_Other_Value">I am a medium string.</ErrorWarning>

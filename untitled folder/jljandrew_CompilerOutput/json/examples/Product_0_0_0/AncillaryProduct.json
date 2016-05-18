@@ -1,0 +1,9 @@
+{
+  "AncillaryProductDetail" : {
+    "@type" : "AncillaryProductDetail",
+    "id" : "ancillaryProduct_1",
+    "code" : "I am a tiny string.",
+    "name" : "I am a tiny string.",
+    "description" : "I am a long string."
+  }
+}

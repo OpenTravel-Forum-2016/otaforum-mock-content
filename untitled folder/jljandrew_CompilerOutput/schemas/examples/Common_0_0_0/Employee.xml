@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee xmlns="http://www.opentravel.org/OTM/Common/v0"
+    description="I am a short string." employer="I am a tiny string."
+    id="employee_1" level="I am a tiny string." status="Active" title="I am a short string."/>

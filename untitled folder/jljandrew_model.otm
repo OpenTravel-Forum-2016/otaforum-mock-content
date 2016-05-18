@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library xmlns="http://www.OpenTravel.org/ns/OTA2/LibraryModel_v01_05"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.OpenTravel.org/ns/OTA2/LibraryModel_v01_05 OTA2_LibraryModel_v1.5.0.xsd">
+    
+    <VersionScheme>OTA2</VersionScheme>
+    <Status>Draft</Status>
+    <Namespace>http://opentravel.org/local/jandj002/ext/v0</Namespace>
+    <Prefix>jj</Prefix>
+    <Name>jljandrew_model</Name>
+    <Context
+        applicationContext="http://opentravel.org/local/jandj002/ext/v0" context="jj"/>
+    
+</Library>

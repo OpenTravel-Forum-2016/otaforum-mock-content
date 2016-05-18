@@ -1,0 +1,12 @@
+{
+  "RailPassengerCategory" : {
+    "value" : null,
+    "gender" : "Male",
+    "occupation" : "I am a short string.",
+    "passengerQualifyingInfo" : "I am a tiny string.",
+    "aDA_Requirement" : "Americans with Disabilities Act (ADA) compliance",
+    "aDA_RequirementExtension" : "aDA_Requirement_Other_Value",
+    "codeContext" : "I am a tiny string.",
+    "accompaniedByInfantInd" : true
+  }
+}

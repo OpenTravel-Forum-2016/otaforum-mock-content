@@ -1,0 +1,53 @@
+{
+  "OfferSummary" : {
+    "@type" : "Offer",
+    "offerId" : "offer_1",
+    "vendor" : "I am a tiny string.",
+    "Price" : {
+      "value" : 80000.0,
+      "currencyCode" : "USD",
+      "decimalPlaces" : 2
+    },
+    "TermsAndConditions" : [ {
+      "@type" : "TermsAndConditions",
+      "id" : "termsAndConditions_1",
+      "duration" : 1234
+    }, {
+      "@type" : "TermsAndConditions",
+      "id" : "termsAndConditions_2",
+      "duration" : 2345
+    }, {
+      "@type" : "TermsAndConditions",
+      "id" : "termsAndConditions_3",
+      "duration" : 3456
+    } ],
+    "Product" : [ {
+      "@type" : "ProductID",
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.w3.org/2001/XMLSchema",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    }, {
+      "@type" : "ProductID",
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    }, {
+      "@type" : "ProductID",
+      "Identifier" : {
+        "value" : "guid12345",
+        "url" : "http://www.w3.org/2001/XMLSchema",
+        "system" : "sysABC3344",
+        "company" : "Acme",
+        "instance" : "i0987654321"
+      }
+    } ]
+  }
+}

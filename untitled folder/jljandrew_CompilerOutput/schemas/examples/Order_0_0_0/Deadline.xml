@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deadline xmlns="http://www.opentravel.org/OTM/order/v0"
+    absoluteDeadline="2010-12-31T11:55:00Z" offSetTimeUnit="Day"
+    offsetDropTime="Before arrival" offsetUnitMultiplier="1234"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v0 ../../Order_0_0_0.xsd"/>

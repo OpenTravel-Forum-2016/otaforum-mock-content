@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomerLoyalty xmlns="http://www.opentravel.org/OTM/reservation/v0"
+    membershipId="I am a tiny string." programId="customerLoyalty_1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/reservation/v0 ../../Reservation_0_0_0.xsd"/>

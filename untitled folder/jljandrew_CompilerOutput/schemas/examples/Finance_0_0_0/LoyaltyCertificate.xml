@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoyaltyCertificate xmlns="http://www.opentravel.org/OTM/finance/v0"
+    EffectiveDate="2011-01-24" ExpireDate="2011-07-04"
+    certificateNumber="I am a tiny string."
+    expireDateExclusiveInd="true" format="Paper"
+    iD="loyaltyCertificate_1" iD_Context="I am a tiny string."
+    memberNumber="I am a tiny string." numberOfNights="1234"
+    programName="I am a short string." status="I am a tiny string."/>

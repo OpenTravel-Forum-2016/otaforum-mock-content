@@ -1,0 +1,12 @@
+{
+  "BasicPropertyInfoDetail" : {
+    "@type" : "BasicPropertyInfoDetail",
+    "code" : "CHIDT",
+    "name" : "ABC Hotel",
+    "cityCode" : "CHI",
+    "chainCode" : "AA",
+    "chainName" : "XYZ Chain",
+    "brandCode" : "BB",
+    "brandName" : "BB Brand"
+  }
+}

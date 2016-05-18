@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Order"
+    targetNamespace="http://www.opentravel.org/OTM/order/v0"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:order="http://www.opentravel.org/OTM/order/v0"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:ota2msg="http://opentravel.org/common/message/v02"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://www.opentravel.org/OTM/order/v0">
+            <xsd:annotation>
+                <xsd:appinfo>
+                    <otm:Library>
+                        <otm:ProjectName>jljandrew.otp</otm:ProjectName>
+                        <otm:ServiceName>Order</otm:ServiceName>
+                        <otm:LibraryName>Order</otm:LibraryName>
+                        <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                        <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                        <otm:SourceFile>/Order_0_0_0.otm</otm:SourceFile>
+                        <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                        <otm:CompileDate>2016-05-18T15:17:39.750-04:00</otm:CompileDate>
+                    </otm:Library>
+                </xsd:appinfo>
+            </xsd:annotation>
+            <xsd:include schemaLocation="Order_0_0_0_Trim.xsd"/>
+            <xsd:import
+                namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="built-ins/SOAP_envelope.xsd"/>
+            <xsd:import
+                namespace="http://opentravel.org/common/message/v02" schemaLocation="built-ins/OTA2_Message_v2.0.0.xsd"/>
+            <xsd:import
+                namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+    
+    <wsdl:message name="PlaceRQ">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="order:PlaceRQ" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="PlaceRS">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="order:PlaceRS" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="PlaceFault">
+        <wsdl:part element="env:Fault" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:portType name="OrderPortType">
+        <wsdl:operation name="Place">
+            <wsdl:input message="order:PlaceRQ"/>
+            <wsdl:output message="order:PlaceRS"/>
+            <wsdl:fault message="order:PlaceFault" name="PlaceFault"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    
+</wsdl:definitions>

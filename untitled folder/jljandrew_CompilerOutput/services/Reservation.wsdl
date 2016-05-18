@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Reservation"
+    targetNamespace="http://www.opentravel.org/OTM/reservation/v0"
+    xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:ota2msg="http://opentravel.org/common/message/v02"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00"
+    xmlns:res="http://www.opentravel.org/OTM/reservation/v0"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://www.opentravel.org/OTM/reservation/v0">
+            <xsd:annotation>
+                <xsd:appinfo>
+                    <otm:Library>
+                        <otm:ProjectName>jljandrew.otp</otm:ProjectName>
+                        <otm:ServiceName>Reservation</otm:ServiceName>
+                        <otm:LibraryName>Reservation</otm:LibraryName>
+                        <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                        <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                        <otm:SourceFile>/Reservation_0_0_0.otm</otm:SourceFile>
+                        <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                        <otm:CompileDate>2016-05-18T15:17:38.669-04:00</otm:CompileDate>
+                    </otm:Library>
+                </xsd:appinfo>
+            </xsd:annotation>
+            <xsd:include schemaLocation="Reservation_0_0_0_Trim.xsd"/>
+            <xsd:import
+                namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="built-ins/SOAP_envelope.xsd"/>
+            <xsd:import
+                namespace="http://opentravel.org/common/message/v02" schemaLocation="built-ins/OTA2_Message_v2.0.0.xsd"/>
+            <xsd:import
+                namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+    
+    <wsdl:message name="CreateRQ">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:CreateRQ" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="CreateRS">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:CreateRS" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="CreateNotif">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:CreateNotif" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="CreateFault">
+        <wsdl:part element="env:Fault" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="RetrieveRQ">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:RetrieveRQ" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="RetrieveRS">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:RetrieveRS" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="RetrieveFault">
+        <wsdl:part element="env:Fault" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="UpdateRQ">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:UpdateRQ" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="UpdateRS">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:UpdateRS" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="UpdateNotif">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:UpdateNotif" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="UpdateFault">
+        <wsdl:part element="env:Fault" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="FindRQ">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:FindRQ" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="FindRS">
+        <wsdl:part element="ota2msg:MessageHeader" name="header"/>
+        <wsdl:part element="res:FindRS" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:message name="FindFault">
+        <wsdl:part element="env:Fault" name="body"/>
+    </wsdl:message>
+    
+    <wsdl:portType name="ReservationPortType">
+        <wsdl:operation name="Create">
+            <wsdl:input message="res:CreateRQ"/>
+            <wsdl:output message="res:CreateRS"/>
+            <wsdl:fault message="res:CreateFault" name="CreateFault"/>
+        </wsdl:operation>
+        <wsdl:operation name="Retrieve">
+            <wsdl:input message="res:RetrieveRQ"/>
+            <wsdl:output message="res:RetrieveRS"/>
+            <wsdl:fault message="res:RetrieveFault" name="RetrieveFault"/>
+        </wsdl:operation>
+        <wsdl:operation name="Update">
+            <wsdl:input message="res:UpdateRQ"/>
+            <wsdl:output message="res:UpdateRS"/>
+            <wsdl:fault message="res:UpdateFault" name="UpdateFault"/>
+        </wsdl:operation>
+        <wsdl:operation name="Find">
+            <wsdl:input message="res:FindRQ"/>
+            <wsdl:output message="res:FindRS"/>
+            <wsdl:fault message="res:FindFault" name="FindFault"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    
+</wsdl:definitions>

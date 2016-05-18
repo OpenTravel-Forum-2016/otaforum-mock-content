@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/Common/v2"
+    version="2.0.0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1"
+    xmlns:ota2-0200="http://www.opentravel.org/OTM/Common/v2"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:ProjectName>jljandrew.otp</otm:ProjectName>
+                <otm:LibraryName>Common</otm:LibraryName>
+                <otm:LibraryVersion>2.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                <otm:SourceFile>/Common_2_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T15:17:40.440-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v1" schemaLocation="CodeList_1_0_0_Trim.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:simpleType name="Country_Code_ISO3166">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Specifies a 2 character country code as defined in ISO3166.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Country_Code_ISO3166</otm:OTA2Entity>
+                <otm:Equivalent context="Common">ISO3166</otm:Equivalent>
+                <otm:Example context="Common">IR</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-zA-Z]{2}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="GUID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A globally unique ID for an object. Objects will typically use the full identifier which includes system context information. This form should only be used when the system that recognizes the GUID is easily determined.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">GUID</otm:OTA2Entity>
+                <otm:Example context="Common">E5348603fk54390945486gkdfkdioe</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="ota2:String_Short"/>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="NameType">
+        <xsd:annotation>
+            <xsd:documentation source="Description">OTA Code list: Name Type	NAM	
+	1	Former
+	2	Nickname
+	3	Alternate
+	4	Maiden</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationClosed">NameType</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Alternate"/>
+            <xsd:enumeration value="Former"/>
+            <xsd:enumeration value="Maiden"/>
+            <xsd:enumeration value="Nickname"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="OptInStatus_Enum">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationClosed">OptInStatus_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="OptedIn">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Opted in.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="OptedOut">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Opted out.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="Unknown">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Opt in status is unknown.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="RuralRouteNumber">
+        <xsd:annotation>
+            <xsd:documentation source="Implementer">Example value: Imported5 = 2564</xsd:documentation>
+            <xsd:documentation source="Implementer">Example value: Imported4 = 2564</xsd:documentation>
+            <xsd:documentation source="Implementer">Example value: Imported2 = 2564</xsd:documentation>
+            <xsd:documentation source="Implementer">Example value: Imported67 = 2564</xsd:documentation>
+            <xsd:documentation source="Implementer">Example value: Imported123 = 2564</xsd:documentation>
+            <xsd:documentation source="Implementer">Example value: Imported34 = 2564</xsd:documentation>
+            <xsd:documentation source="Implementer">Example value: ca1 = 25645</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">RuralRouteNumber</otm:OTA2Entity>
+                <otm:Example context="Common">2564</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{1,5}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="StateProv_Code">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The standard code or abbreviation for the state, province, or region.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to8</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">StateProv_Code</otm:OTA2Entity>
+                <otm:Equivalent context="Common">StateProvCodeType</otm:Equivalent>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="8"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Telephone_Extension">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Extension to reach a specific party at the phone number</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Telephone_Extension</otm:OTA2Entity>
+                <otm:Equivalent context="Common">NumericStringLength1to5</otm:Equivalent>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{1,5}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Telephone_AreaCityCode">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Code assigned for telephones in a specific region, city, or area.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Telephone_AreaCityCode</otm:OTA2Entity>
+                <otm:Equivalent context="Common">NumericStringLength1to8</otm:Equivalent>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{1,8}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Telephone_Number">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Central office and subscriber number.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Telephone_Number</otm:OTA2Entity>
+                <otm:Example context="Common">2358878</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{7,20}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Telephone_CountryAccessCode">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Used for Numeric Strings length 1 to 3.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Telephone_CountryAccessCode</otm:OTA2Entity>
+                <otm:Equivalent context="Common">NumericStringLength1to3</otm:Equivalent>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{1,3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="YesNoInherit_Enum">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationClosed">YesNoInherit_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Yes"/>
+            <xsd:enumeration value="No"/>
+            <xsd:enumeration value="Inherit">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Value to be inherited from closest set ancestor.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="Address_BldgRoom">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A string with a minimum length of 0 and a maximum length of 512.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Address_BldgRoom</otm:OTA2Entity>
+                <otm:Example context="Common">Bldg H</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2:String">
+                <xsd:attribute name="buldingInd" type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">When true, the information is a building name.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Address_StreetNumber">
+        <xsd:annotation>
+            <xsd:documentation source="Implementer">Extension: StreetNmbrType</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Address_StreetNumber</otm:OTA2Entity>
+                <otm:Example context="Common">563</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2:String_Short">
+                <xsd:attribute name="streetNmbrSuffix"
+                    type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Usually a letter right after the street number (A in 66-A, B in 123-B etc).</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to8</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">StreetNmbrSuffix</otm:Equivalent>
+                            <otm:Example context="Common">B</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="streetDirection"
+                    type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Street direction of an address (e.g., N, E, S, NW, SW).</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to8</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">StreetDirection</otm:Equivalent>
+                            <otm:Example context="Common">NNW</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="ruralRouteNmbr"
+                    type="ota2-0200:RuralRouteNumber" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Numerical equivalent of a rural township as defined within a given area (e.g., 12, 99).</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}NumericStringLength1to5</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">RuralRouteNmbr</otm:Equivalent>
+                            <otm:Example context="Common">88</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="pO_Box" type="ota2:String_Short" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Defines a Post Office Box number.</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">98567499</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Country">
+        <xsd:annotation>
+            <xsd:documentation source="Description">ISO 3166 code for a country.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}ISO3166</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Country</otm:OTA2Entity>
+                <otm:Equivalent context="Common">CountryNameType</otm:Equivalent>
+                <otm:Example context="Common">IR</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0200:Country_Code_ISO3166">
+                <xsd:attribute name="name" type="ota2:String_Short" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The name or code of a country (e.g. as used in an address or to specify citizenship of a traveller).</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength0to64</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">Ireland</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Email">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Electronic email addresses, in IETF specified format.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to128</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Email</otm:OTA2Entity>
+                <otm:Equivalent context="Common">EmailType</otm:Equivalent>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2:String">
+                <xsd:attribute name="emailType"
+                    type="ota2-0200:Code_OTA" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Defines the purpose of the e-mail address (e.g. personal, business, listserve). Refer to OpenTravel Code List Email Address Type (EAT).</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">EmailType</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="remark" type="ota2:String_Text" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">A remark associated with the e-mail address.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to128</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">Remark</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="textFormat"
+                    type="ota2:String_Short" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Example: text/plain</xsd:documentation>
+                        <xsd:documentation source="Implementer">LocalAnonymousType: EmailType_TextFormat</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">TextFormat</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="shareMarketInd"
+                    type="ota2-0200:YesNoInherit_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Permission for sharing data for marketing purposes.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="shareSyncInd"
+                    type="ota2-0200:YesNoInherit_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Permission for sharing data for synchronization of information held by other travel service providers.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="optInStatus"
+                    type="ota2-0200:OptInStatus_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">If present and set to opt out, a customer has explicitly opted out of marketing communication. When set to opt out it overrides the ShareMarketInd.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="optInDate" type="xsd:dateTime" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The date and time of opt in.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="optOutDate" type="xsd:dateTime" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The date and time of opt out.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="validInd" type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">If true, this is a valid email address that has been system verified via a successful email transmission.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}boolean</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="defaultInd" type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">If true, this identifies this is the default email address.</xsd:documentation>
+                        <xsd:documentation source="Implementer">AttributeGroup: DefaultIndGroup</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Identifier">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Identifier provides the ability to create a globally unique identifier. For the identifier to be globally unique it must have a system provided identifier and the system must be identified using a global naming authority. System identification uses the domain naming system (DNS) to assure they are globally unique and should be an URL. The system provided ID will typically be a primary or surrogate key in a database.
+
+The URL, system and company attributes can be omitted only when the system context can be implied by a parent or ancestor element.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Identifier</otm:OTA2Entity>
+                <otm:Example context="Common">guid12345</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0200:GUID">
+                <xsd:attribute name="url" type="xsd:anyURI" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Uri of the creating system. The URI should be an URL and be globally unique. Should only be omitted when the context is clearly implied for the containing document.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="system" type="ota2:String_Short" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Name or identifier for the creating system.</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">sysABC3344</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="company" type="ota2:String_Short" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Name of the company that manages the reference system.</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">Acme</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="instance" type="ota2-0200:GUID" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The identification of a record as it exists at a point in time. An instance is used in update messages where the sender must assure the server that the update sent refers to the most recent modification level of the object being updated.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">Instance</otm:Equivalent>
+                            <otm:Example context="Common">i0987654321</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:element name="Person_Name" type="ota2-0200:Person_Name"/>
+    <xsd:element name="RelatedTraveler_Simple_Person_Name" type="ota2-0200:Person_Name"/>
+    
+    <xsd:simpleType name="Person_Name_Simple">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Full name.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Person_Name</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="ota2:String"/>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Person_Name_Simple_List">
+        <xsd:list itemType="ota2-0200:Person_Name_Simple"/>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="Person_Name">
+        <xsd:annotation>
+            <xsd:documentation source="Description">This provides name information for a person.</xsd:documentation>
+            <xsd:documentation source="Description">This provides name information for a person.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Person_Name</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="3" minOccurs="0" name="Prefix" type="ota2:String_Tiny">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Salutation of honorific (e.g. Mr., Mrs., Ms., Miss, Dr.)</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to16</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">NamePrefix</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="5" minOccurs="0" name="Given" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Given name, first name or names.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="5" minOccurs="0" name="Middle" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">The middle name of the person name.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0"
+                name="SurnamePrefix" type="ota2:String_Tiny">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">The surname prefix, e.g "van der", "von", "de".</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to16</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">SurnamePrefix</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="1" name="Surname" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Family name, last name. 
+Note: Simple form of person name should be used for the full name.
+May also be used for full name if the sending system does not have the ability to separate a full name into its parts, e.g. the surname element may be used to pass the full name.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="3" minOccurs="0" name="Suffix" type="ota2:String_Tiny">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Hold various name suffixes and letters (e.g. Jr., Sr., III, Ret., Esq.)</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="3" minOccurs="0" name="Title" type="ota2:String_Tiny">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Degree or honors (e.g., Ph.D., M.D.)</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="ota2-0200:Person_Document">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Document  information for verification purposes and also used for additional filtering for common names.</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}Document</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">Document</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="Privacy" type="ota2-0200:Privacy">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Allows for control of the sharing of data between parties.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="ota2-0200:NameType" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Type of name of the individual, such as former, nickname, alternate or alias name. Refer to OpenTravel Code List Name Type (NAM).</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">NameType</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="language" type="xsd:language" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">The language the name is represented in, e.g. an Eastern name versus a Western name.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}language</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">Language</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="defaultInd" type="xsd:boolean" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">If true, this is the default or primary name within a collection of names.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Privacy">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Allows for control of the sharing of data between parties.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Privacy</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2:Empty">
+                <xsd:attribute name="shareMarketInd"
+                    type="ota2-0200:YesNoInherit_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Permission for sharing data for marketing purposes.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="shareSyncInd"
+                    type="ota2-0200:YesNoInherit_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Permission for sharing data for synchronization of information held by other travel service providers.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="optInStatus"
+                    type="ota2-0200:OptInStatus_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">If present and set to opt out, a customer has explicitly opted out of marketing communication. When set to opt out it overrides the ShareMarketInd.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="optInDate" type="xsd:dateTime" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The date and time of opt in.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="optOutDate" type="xsd:dateTime" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The date and time of opt out.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="StateProv">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The standard code or abbreviation for the state, province, or region.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StateProvCodeType</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">StateProv</otm:OTA2Entity>
+                <otm:Equivalent context="Common">StateProvType</otm:Equivalent>
+                <otm:Example context="Common">TX</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0200:StateProv_Code">
+                <xsd:attribute name="name" type="ota2:String_Short" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">State, province, or region name or code needed to identify location.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength0to64</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">Texas</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:element name="TelephoneSubGrp" type="ota2-0200:Telephone">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information about a telephone number, including the actual number and its usage.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Telephone</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Telephone"
+        substitutionGroup="ota2-0200:TelephoneSubGrp" type="ota2-0200:Telephone"/>
+    <xsd:element name="TelephoneSummary"
+        substitutionGroup="ota2-0200:TelephoneSubGrp" type="ota2-0200:Telephone"/>
+    <xsd:element name="TelephoneDetail"
+        substitutionGroup="ota2-0200:Telephone" type="ota2-0200:Telephone_Detail"/>
+    
+    <xsd:simpleType name="Telephone_Simple">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A short string  
+Minimum length of 0 and a maximum length of 128</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Telephone</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="ota2:String_Short"/>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Telephone_Simple_List">
+        <xsd:list itemType="ota2-0200:Telephone_Simple"/>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="Telephone">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information about a telephone number, including the actual number and its usage.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Telephone</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Summary"/>
+        </xsd:sequence>
+        <xsd:attribute name="countryAccessCode"
+            type="ota2-0200:Telephone_CountryAccessCode" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Code assigned by telecommunications authorities for international country access identifier.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}NumericStringLength1to3</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">CountryAccessCode</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="areaCityCode"
+            type="ota2-0200:Telephone_AreaCityCode" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Code assigned for telephones in a specific region, city, or area.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}NumericStringLength1to8</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">AreaCityCode</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="phoneNumber"
+            type="ota2-0200:Telephone_Number" use="required">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Telephone number assigned to a single location.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">PhoneNumber</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="extension"
+            type="ota2-0200:Telephone_Extension" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Extension to reach a specific party at the phone number.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}NumericStringLength1to5</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">Extension</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="id" type="xsd:ID" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Used elsewhere in the message to reference a specific telephone number (including faxes).</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">RPH</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="role" type="ota2-0200:Enum_TelephoneRole_Base"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Telephone_Detail">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Information about a telephone number, including the actual number and its usage.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Telephone</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2-0200:Telephone">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="Privacy" type="ota2-0200:Privacy">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Allows for control of the sharing of data between parties.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="PhoneLocationType" type="ota2-0100:PhoneLocation_Enum">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Describes the location of the phone, such as Home, Office, Property Reservation Office, etc.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">PhoneLocationType</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="PhoneTechType" type="ota2-0100:PhoneTechType_Enum">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Indicates type of technology associated with this telephone number, such as Voice, Data, Fax, Pager, Mobile, TTY, etc.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">PhoneTechType</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="PhoneUseType" type="ota2-0100:PhoneUseType_Enum">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Describes the type of telephone number, in the context of its general use (e.g. Home, Business, Emergency Contact, Travel Arranger, Day, Evening). Refer to OpenTravel Code List Phone Use Type (PUT).</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">PhoneUseType</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Detail"/>
+                </xsd:sequence>
+                <xsd:attribute name="pIN" type="ota2:String_Tiny" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Additional codes used for pager or telephone access rights.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to8</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">PIN</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="remark" type="ota2:String_Text" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">A remark associated with the telephone number.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to128</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">Remark</otm:Equivalent>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="defaultInd" type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">When true, indicates a default value should be used.</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}boolean</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Enum_TelephoneRole">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Telephone</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0200:Enum_TelephoneRole_Open">
+                <xsd:attribute name="extension" type="ota2:String_EnumExtension"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="Enum_TelephoneRole_Base">
+        <xsd:restriction base="ota2-0200:Enum_TelephoneRole_Open">
+            <xsd:enumeration value="Home"/>
+            <xsd:enumeration value="Office"/>
+            <xsd:enumeration value="Mobile"/>
+            <xsd:enumeration value="Other"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Enum_TelephoneRole_Open">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Home"/>
+            <xsd:enumeration value="Office"/>
+            <xsd:enumeration value="Mobile"/>
+            <xsd:enumeration value="Other"/>
+            <xsd:enumeration value="Other_"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="Text_Free">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Textual information to provide descriptions and/or additional information.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="ValueWithAttributes">Text_Free</otm:OTA2Entity>
+                <otm:Equivalent context="Common">FreeTextType</otm:Equivalent>
+                <otm:Example context="Common">Some fee text.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2:String_Text">
+                <xsd:attribute name="language" type="xsd:language" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Language of the text.</xsd:documentation>
+                        <xsd:documentation source="Implementer">AttributeGroup: LanguageGroup</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">en</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:element name="Person_Document" type="ota2-0200:Person_Document"/>
+    
+    <xsd:simpleType name="Person_Document_Simple">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A string with a minimum length of 0 and a maximum length of 512.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Person_Document</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="ota2:String"/>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Person_Document_Simple_List">
+        <xsd:list itemType="ota2-0200:Person_Document_Simple"/>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="Person_Document">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Unique number assigned by authorities to document.</xsd:documentation>
+            <xsd:documentation source="Description">Unique number assigned by authorities to document.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Person_Document</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="DocType" type="ota2-0100:DocumentType_Enum">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Indicates the type of document (e.g. Passport, Military ID, Drivers License, national ID, Vaccination Certificate). Refer to OpenTravel Code List Document Type (DOC).</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">DocType</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="Code_OTA">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Used for codes in the OpenTravel Code tables. Possible values of this pattern are 1, 101, 1001, 101.EQP, 1001.EQP or 1001.EQP.X.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}string</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">Code_OTA</otm:OTA2Entity>
+                <otm:Equivalent context="Common">OTA_CodeType</otm:Equivalent>
+                <otm:Example context="Common">2</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9A-Z]{1,4}(\.[A-Z]{3}(\.X){0,1}){0,1}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:element name="PersonSubGrp" type="ota2-0200:Person_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Person</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="PersonID"
+        substitutionGroup="ota2-0200:PersonSubGrp" type="ota2-0200:Person_ID"/>
+    <xsd:element name="PersonIdentifier"
+        substitutionGroup="ota2-0200:PersonSubGrp" type="ota2-0200:Person_ID"/>
+    <xsd:element name="Person" substitutionGroup="ota2-0200:PersonID" type="ota2-0200:Person"/>
+    <xsd:element name="PersonSummary"
+        substitutionGroup="ota2-0200:PersonSubGrp" type="ota2-0200:Person"/>
+    
+    <xsd:element name="TravelerSubGrp" type="ota2-0200:Person_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Person</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="TravelerID"
+        substitutionGroup="ota2-0200:TravelerSubGrp" type="ota2-0200:Person_ID"/>
+    <xsd:element name="TravelerIdentifier"
+        substitutionGroup="ota2-0200:TravelerSubGrp" type="ota2-0200:Person_ID"/>
+    <xsd:element name="Traveler"
+        substitutionGroup="ota2-0200:TravelerID" type="ota2-0200:Person"/>
+    <xsd:element name="TravelerSummary"
+        substitutionGroup="ota2-0200:TravelerSubGrp" type="ota2-0200:Person"/>
+    
+    <xsd:complexType name="Person_ID">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Person</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="Identifier" type="ota2-0200:Identifier">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">An identifier used to uniquely reference an object in a system (e.g. an airline reservation reference, customer profile reference, booking confirmation number, or a reference to a previous availability quote).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="5" minOccurs="0" name="OtherID" type="ota2-0200:Identifier">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">These identifiers are assigned by systems other than the system that generated this record.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Provides a unique reference to this contact person.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">RPH</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Person">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">Person</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2-0200:Person_ID">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="1" ref="ota2-0200:Person_Name">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Name information for a person.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}PersonNameType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">PersonName</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="5" minOccurs="0" ref="ota2-0200:AddressSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information about an address that identifies a location for a specific purposes.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}AddressInfoType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">Address</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2-0200:TelephoneSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information about a telephone number, including the actual number and its usage.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Example value: p = 555-555-5555</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="5" minOccurs="0"
+                        name="Email" type="ota2-0200:Email">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Electronic email addresses, in IETF specified format.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}EmailType</xsd:documentation>
+                            <xsd:documentation source="Implementer">Example value: p = john.smith@email.com</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">Email</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="Privacy" type="ota2-0200:Privacy">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Allows for control of the sharing of data between parties.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="Comments" type="ota2-0200:Text_Free">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Textual information about the person.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+                <xsd:attribute name="gender"
+                    type="ota2-0100:Gender_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The gender of the person.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="maritalStatus_Enum"
+                    type="ota2-0100:MaritalStatus_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Specifies the marital status of the person.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="birthDate" type="xsd:date" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The birth date of the person.</xsd:documentation>
+                        <xsd:documentation source="Implementer">AttributeGroup: BirthDateGroup</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:element name="AddressSubGrp" type="ota2-0200:Address">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Provides address information. Unformatted addresses are captured using the simple facet.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Address</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="Address"
+        substitutionGroup="ota2-0200:AddressSubGrp" type="ota2-0200:Address"/>
+    <xsd:element name="AddressSummary"
+        substitutionGroup="ota2-0200:AddressSubGrp" type="ota2-0200:Address"/>
+    <xsd:element name="AddressDetail"
+        substitutionGroup="ota2-0200:Address" type="ota2-0200:Address_Detail"/>
+    
+    <xsd:simpleType name="Address_Simple">
+        <xsd:annotation>
+            <xsd:documentation source="Description">When the address is unformatted (FormattedInd="false") these lines will contain free form address details. When the address is formatted and street number and street name must be sent independently, the street number will be sent using StreetNmbr, and the street name will be sent in the first AddressLine occurrence.</xsd:documentation>
+            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to255</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Address</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="ota2:String_Long"/>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Address_Simple_List">
+        <xsd:list itemType="ota2-0200:Address_Simple"/>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="Address">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Provides address information. Unformatted addresses are captured using the simple facet.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Address</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="4" minOccurs="0" name="AddressLine" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Address in an unstructured format.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="2" minOccurs="0" name="BldgRoom" type="ota2-0200:Address_BldgRoom">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Building name, room, apartment, or suite number.</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}BldgRoom</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">BldgRoom</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Number" type="ota2-0200:Address_StreetNumber">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">May contain the street number and optionally the street name.</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StreetNmbr</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">StreetNmbr</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Street" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">May contain the street number when the Street number element is missing.</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to255</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">AddressLine</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="City" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">City (e.g., Dublin), town, or postal station (i.e., a postal service territory, often used in a military address).</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to64</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">CityName</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="County" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">County or Region Name (e.g., Fairfax).</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">County</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="StateProv" type="ota2-0200:StateProv">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">State or Province name (e.g., Texas).</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StateProvType</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">StateProv</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Country" type="ota2-0200:Country">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Country name (e.g., Ireland).</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}CountryNameType</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">CountryName</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="PostalCode" type="ota2:String_Short">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Post Office Code number.</xsd:documentation>
+                    <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to16</xsd:documentation>
+                    <xsd:appinfo>
+                        <otm:Equivalent context="Common">PostalCode</otm:Equivalent>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Summary"/>
+        </xsd:sequence>
+        <xsd:attribute name="role" type="ota2-0200:Enum_AddressRole_Base"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Address_Detail">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Provides address information. Unformatted addresses are captured using the simple facet.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Address</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="ota2-0200:Address">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="Remark" type="ota2:String_Text">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">A remark associated with this address.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to128</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">Remark</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="Privacy" type="ota2-0200:Privacy">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Allows for control of the sharing of address information between parties.</xsd:documentation>
+                            <xsd:documentation source="Implementer">AttributeGroup: PrivacyGroup</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint_Detail"/>
+                </xsd:sequence>
+                <xsd:attribute name="language" type="xsd:language" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Example: en</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://www.w3.org/2001/XMLSchema}language</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">Language</otm:Equivalent>
+                            <otm:Example context="Common">en</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="type" type="ota2-0200:Code_OTA" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Defines the type of address (e.g. home, business, other). Refer to OpenTravel Code List Communication Location Type (CLT).</xsd:documentation>
+                        <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Equivalent context="Common">Type</otm:Equivalent>
+                            <otm:Example context="Common">CLT</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="use" type="ota2-0200:Code_OTA" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Describes the use of the address (e.g. mailing, delivery, billing, etc.). Refer to OpenTravel Code List Address Use Type (AUT).</xsd:documentation>
+                        <xsd:appinfo>
+                            <otm:Example context="Common">AUT</otm:Example>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="validInd" type="xsd:boolean" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">If true, this is a valid and complete mailing address that has been verified through an address verification service or previously mailed materials have not been returned.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Enum_AddressRole">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">Address</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0200:Enum_AddressRole_Open">
+                <xsd:attribute name="extension" type="ota2:String_EnumExtension"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="Enum_AddressRole_Base">
+        <xsd:restriction base="ota2-0200:Enum_AddressRole_Open">
+            <xsd:enumeration value="Home"/>
+            <xsd:enumeration value="Business"/>
+            <xsd:enumeration value="Destination"/>
+            <xsd:enumeration value="Other"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Enum_AddressRole_Open">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Home"/>
+            <xsd:enumeration value="Business"/>
+            <xsd:enumeration value="Destination"/>
+            <xsd:enumeration value="Other"/>
+            <xsd:enumeration value="Other_"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:element name="ContactPerson" type="ota2-0200:ContactPerson"/>
+    
+    <xsd:complexType name="ContactPerson">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="CoreObject">ContactPerson</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="ota2-0200:PersonSubGrp">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">Information regarding the contact such as name, address, phone, etc.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+        </xsd:sequence>
+        <xsd:attribute name="contactType" type="ota2:String_Short" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Type of contact in the context of use for the travel experience; such as permanent, temporary, affiliation, travel arranger, etc.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="relation" type="ota2:String_Short" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Indicates the type of relationship with the person or company in the profile, such as Spouse, Child, Family, Business Associate, Interest Group, Medical, Security,Other, etc.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="communicationMethodCode"
+            type="ota2:Code_OTA" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Provides the preferred method of communication. Refer to OpenTravel Code list Distribution Type (DTB).</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="documentDistribMethodCode"
+            type="ota2:Code_OTA" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Indicates the method of distribution for the booking documentation. Refer to OpenTravel Code list Distribution Type (DTB).</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}OTA_CodeType</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="emergencyFlagInd" type="xsd:boolean" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">[LegacyDefaultValue: null]</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="defaultInd" type="xsd:boolean" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Indicates that the receiving system should assume the default value if the user specifies no overriding value or action.</xsd:documentation>
+                <xsd:documentation source="Implementer">AttributeGroup: DefaultIndGroup</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+</xsd:schema>

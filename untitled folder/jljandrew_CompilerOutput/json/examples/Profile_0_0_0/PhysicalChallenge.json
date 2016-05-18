@@ -1,0 +1,7 @@
+{
+  "PhysicalChallenge" : {
+    "value" : "I am a long string.",
+    "code" : "I am a tiny string.",
+    "physicallyChallengedInd" : true
+  }
+}

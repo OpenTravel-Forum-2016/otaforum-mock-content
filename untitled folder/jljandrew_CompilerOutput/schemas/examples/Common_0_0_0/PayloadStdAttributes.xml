@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PayloadStdAttributes xmlns="http://www.opentravel.org/OTM/Common/v0"
+    altLangID="???" correlationID="I am a short string."
+    echoToken="I am a short string." primaryLangID="???"
+    retransmissionIndicatorInd="true"
+    sequenceNmbr="Example String Value" target="Test"
+    targetName="I am a short string." timeStamp="2011-01-24T09:45:00"
+    transactionIdentifier="Example String Value"
+    transactionStatusCode="Start" version="12"/>

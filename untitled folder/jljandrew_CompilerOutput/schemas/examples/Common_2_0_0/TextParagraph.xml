@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Text_Paragraph xmlns="http://www.opentravel.org/OTM/Common/v2"
+    language="en" name="paragraph name" number="1234"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v2 ../../Common_2_0_0.xsd">
+    <Text language="en" textFormat="PlainText">Formatted text example.</Text>
+    <Text language="en" textFormat="HTML">Formatted text example.</Text>
+    <Text language="en" textFormat="PlainText">Formatted text example.</Text>
+    <Image>Example String Value</Image>
+    <Image>Example String Value</Image>
+    <Image>Example String Value</Image>
+    <URL>http://www.w3.org/2001/XMLSchema</URL>
+    <URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</URL>
+    <URL>http://www.w3.org/2001/XMLSchema</URL>
+    <Paragraph_ListItem formattedText="Formatted text example."
+        language="en" listItem="1234" textFormat="HTML"/>
+    <Paragraph_ListItem formattedText="Formatted text example."
+        language="en" listItem="2345" textFormat="PlainText"/>
+    <Paragraph_ListItem formattedText="Formatted text example."
+        language="en" listItem="3456" textFormat="HTML"/>
+    <DateTimeStamp create="2011-07-04T14:15:00" creatorID="c123456789"
+        lastModifierID="m987654321" lastModify="2011-12-05T06:00:00" purge="2011-01-24">2011-01-24T09:45:00</DateTimeStamp>
+</Text_Paragraph>

@@ -1,0 +1,12 @@
+{
+  "OriginalIssueAttributes" : {
+    "value" : null,
+    "ticketNumber" : "I am a tiny string.",
+    "issuePlace" : "I am a tiny string.",
+    "issueDate" : "2011-01-24",
+    "issueIATA" : "I am a tiny string.",
+    "paymentForm" : "I am a tiny string.",
+    "checkInhibitor" : "CheckDigit",
+    "coupons" : "Example String Value Example String Value Example String Value"
+  }
+}

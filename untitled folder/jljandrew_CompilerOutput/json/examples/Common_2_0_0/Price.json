@@ -1,0 +1,7 @@
+{
+  "Price" : {
+    "value" : 12.0,
+    "amountBeforeTax" : 23.0,
+    "currencyCode" : "USD"
+  }
+}

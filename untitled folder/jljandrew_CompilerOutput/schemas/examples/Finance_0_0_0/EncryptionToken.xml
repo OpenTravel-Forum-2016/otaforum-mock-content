@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EncryptionToken xmlns="http://www.opentravel.org/OTM/finance/v0"
+    authenticationMethod="SecurityCode"
+    encryptedValue="Example String Value"
+    encryptionKey="Example String Value"
+    encryptionKeyMethod="Example String Value"
+    encryptionMethod="Example String Value" mask="Example String Value"
+    token="Example String Value" tokenProviderID="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v0 ../../Finance_0_0_0.xsd">
+    <PlainText>Example String Value</PlainText>
+    <Warning DocURL="http://www.w3.org/2001/XMLSchema" code="2"
+        language="eng" nodeList="I am a medium string."
+        recordID="I am a short string." shortText="I am a short string."
+        status="Complete" statusExtension="status_Other_Value"
+        tag="I am a medium string." type="Advisory" typeExtension="type_Other_Value">I am a medium string.</Warning>
+</EncryptionToken>

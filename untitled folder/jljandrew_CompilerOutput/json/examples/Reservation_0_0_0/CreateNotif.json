@@ -1,0 +1,16 @@
+{
+  "CreateNotif" : {
+    "@type" : "CreateNotif",
+    "version" : 0,
+    "timeStamp" : "2016-05-18T15:17:34.879-04:00",
+    "ReservationIdentifier" : {
+      "@type" : "ReservationID",
+      "ResId" : {
+        "value" : "I am a short string.",
+        "type" : "I am a tiny string.",
+        "source" : "I am a short string.",
+        "sourceContext" : "I am a short string."
+      }
+    }
+  }
+}

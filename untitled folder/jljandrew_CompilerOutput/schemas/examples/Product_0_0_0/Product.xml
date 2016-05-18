@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductIdentifier xmlns="http://www.opentravel.org/OTM/product/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <Identifier company="Acme" instance="i0987654321"
+        system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+</ProductIdentifier>

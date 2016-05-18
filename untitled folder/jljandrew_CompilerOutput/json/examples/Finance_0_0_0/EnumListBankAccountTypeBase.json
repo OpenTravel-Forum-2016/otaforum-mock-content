@@ -1,0 +1,6 @@
+{
+  "Enum_List_BankAccountType_Base" : {
+    "value" : "Savings"
+  },
+  "extension" : "Other_Value"
+}

@@ -1,0 +1,28 @@
+{
+  "EncryptionToken" : {
+    "@type" : "EncryptionToken",
+    "encryptionKey" : "Example String Value",
+    "encryptionKeyMethod" : "Example String Value",
+    "encryptionMethod" : "Example String Value",
+    "encryptedValue" : "Example String Value",
+    "mask" : "Example String Value",
+    "token" : "Example String Value",
+    "tokenProviderID" : "Example String Value",
+    "authenticationMethod" : "SecurityCode",
+    "PlainText" : "Example String Value",
+    "Warning" : {
+      "value" : "I am a medium string.",
+      "language" : "eng",
+      "type" : "Advisory",
+      "typeExtension" : "type_Other_Value",
+      "shortText" : "I am a short string.",
+      "code" : "2",
+      "DocURL" : "http://www.w3.org/2001/XMLSchema",
+      "tag" : "I am a medium string.",
+      "recordID" : "I am a short string.",
+      "nodeList" : "I am a medium string.",
+      "status" : "Complete",
+      "statusExtension" : "status_Other_Value"
+    }
+  }
+}

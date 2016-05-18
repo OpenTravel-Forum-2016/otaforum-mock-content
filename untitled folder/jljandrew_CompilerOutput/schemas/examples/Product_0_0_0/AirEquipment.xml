@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AirEquipment xmlns="http://www.opentravel.org/OTM/product/v0"
+    AircraftTailNumber="Example String Value"
+    airEquipType="Example String Value" changeofGaugeInd="true">I am a tiny string.</AirEquipment>

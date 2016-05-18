@@ -1,0 +1,15 @@
+{
+  "OtherServiceInfo" : {
+    "@type" : "OtherServiceInfo",
+    "code" : "Example String Value",
+    "text" : "I am a short string.",
+    "Operator" : {
+      "value" : "Travel Adventure Partners Incorporated",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    }
+  }
+}

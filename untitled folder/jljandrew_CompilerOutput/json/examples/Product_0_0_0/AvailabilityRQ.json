@@ -1,0 +1,14 @@
+{
+  "AvailabilityRQ" : {
+    "@type" : "AvailabilityRQ",
+    "version" : 0,
+    "timeStamp" : "2016-05-18T15:17:37.843-04:00",
+    "ProductQueryAvailability" : {
+      "@type" : "ProductQueryAvailability",
+      "ProductQueriesIdentifier" : {
+        "@type" : "ProductQueriesID",
+        "id" : "productQueries_1"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailAccommDetail xmlns="http://www.opentravel.org/OTM/product/v0"
+    carNumber="1234" deck="Regular-OneLevelOnly" id="railAccommDetail_1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <AccommodationClassEnum>HardCompartmentClass</AccommodationClassEnum>
+    <Compartment number="2345" position="CloseToRestaurantCar"/>
+</RailAccommDetail>

@@ -1,0 +1,16 @@
+{
+  "LoyaltyCertificate" : {
+    "value" : null,
+    "iD" : "loyaltyCertificate_1",
+    "iD_Context" : "I am a tiny string.",
+    "certificateNumber" : "I am a tiny string.",
+    "memberNumber" : "I am a tiny string.",
+    "programName" : "I am a short string.",
+    "EffectiveDate" : "2011-01-24",
+    "ExpireDate" : "2011-07-04",
+    "numberOfNights" : 1234,
+    "format" : "Paper",
+    "status" : "I am a tiny string.",
+    "expireDateExclusiveInd" : true
+  }
+}

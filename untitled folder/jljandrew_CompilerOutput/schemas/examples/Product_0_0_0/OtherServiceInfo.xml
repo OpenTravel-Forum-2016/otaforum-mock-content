@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OtherServiceInfo xmlns="http://www.opentravel.org/OTM/product/v0"
+    code="Example String Value" text="I am a short string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <Operator code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</Operator>
+</OtherServiceInfo>

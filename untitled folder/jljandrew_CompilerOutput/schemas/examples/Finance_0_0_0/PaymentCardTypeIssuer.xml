@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PaymentCardType_Issuer xmlns="http://www.opentravel.org/OTM/finance/v0"
+    Description="Visa" id="codeExternal_1"
+    issuerCode="I am a short string." name="Example String Value" uRL="http://www.w3.org/2001/XMLSchema">I am a short string.</PaymentCardType_Issuer>

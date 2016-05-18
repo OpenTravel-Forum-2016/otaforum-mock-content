@@ -1,0 +1,12 @@
+{
+  "Alliance_Member" : {
+    "value" : null,
+    "memberCode" : "co1",
+    "companyName" : "MemberCompany",
+    "division" : "Travel Division",
+    "department" : "Adventure department",
+    "shortName" : "Adventure Inc",
+    "code" : "AI",
+    "codeContext" : "I am a tiny string."
+  }
+}

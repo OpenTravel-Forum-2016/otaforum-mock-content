@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookingChannel xmlns="http://www.opentravel.org/OTM/Common/v0"
+    primaryInd="true" type="2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <CompanyName code="AI" codeContext="I am a tiny string."
+        department="Adventure department" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>
+</BookingChannel>

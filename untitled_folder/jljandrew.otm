@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library xmlns="http://www.OpenTravel.org/ns/OTA2/LibraryModel_v01_05"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.OpenTravel.org/ns/OTA2/LibraryModel_v01_05 OTA2_LibraryModel_v1.5.0.xsd">
+    
+    <VersionScheme>OTA2</VersionScheme>
+    <Status>Draft</Status>
+    <Namespace>http://opentravel.org/local/jandj002/ext2/v0</Namespace>
+    <Prefix>jj</Prefix>
+    <Name>jljandrew</Name>
+    <Import fileHints="otm://Opentravel/Order_0_0_0.otm"
+        namespace="http://www.opentravel.org/OTM/order/v0" prefix="order"/>
+    <Context
+        applicationContext="http://opentravel.org/local/jandj002/ext2/v0" context="jj"/>
+    <Resource abstract="false" basePath="/Orders"
+        businessObjectRef="order:Order" firstClass="true" name="OrderResource">
+        <ParamGroup facetName="order:Order_ID" idGroup="true" name="ID">
+            <Parameter fieldName="id" location="Header"/>
+        </ParamGroup>
+        <ActionFacet basePayload="order:CancelPenalty"
+            label="SubstitutionGroup" referenceFacet="Summary"
+            referenceRepeat="0" referenceType="Required"/>
+        <ActionFacet label="ID" referenceFacet="ID" referenceRepeat="0" referenceType="Required"/>
+        <ActionFacet label="Summary" referenceFacet="Summary"
+            referenceRepeat="0" referenceType="Required"/>
+        <Action actionId="Get" common="false">
+            <ActionRequest httpMethod="GET" mimeTypes="" paramGroup="ID" pathTemplate="/"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML" statusCodes="200"/>
+        </Action>
+        <Action actionId="Create" common="false">
+            <ActionRequest httpMethod="POST"
+                mimeTypes="APPLICATION_JSON APPLICATION_XML"
+                pathTemplate="/" payloadType="OrderResource_Summary"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML" statusCodes="201"/>
+        </Action>
+        <Action actionId="Update" common="false">
+            <ActionRequest httpMethod="PUT" mimeTypes="" paramGroup="ID" pathTemplate="/"/>
+            <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML" statusCodes="200"/>
+        </Action>
+        <Action actionId="Delete" common="false">
+            <ActionRequest httpMethod="DELETE" mimeTypes=""
+                paramGroup="ID" pathTemplate="/"/>
+            <ActionResponse mimeTypes="" statusCodes="200"/>
+        </Action>
+    </Resource>
+    
+</Library>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Code_External xmlns="http://www.opentravel.org/OTM/Common/v2"
+    Description="Visa" id="codeExternal_1" name="Example String Value" uRL="http://www.w3.org/2001/XMLSchema">I am a short string.</Code_External>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailPassengerCategory
+    xmlns="http://www.opentravel.org/OTM/reservation/v0"
+    aDA_Requirement="Americans with Disabilities Act (ADA) compliance"
+    aDA_RequirementExtension="aDA_Requirement_Other_Value"
+    accompaniedByInfantInd="true" codeContext="I am a tiny string."
+    gender="Male" occupation="I am a short string." passengerQualifyingInfo="I am a tiny string."/>

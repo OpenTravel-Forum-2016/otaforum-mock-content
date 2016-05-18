@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/Common/v1"
+    version="1.0.0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:ota2-0100="http://www.opentravel.org/OTM/Common/v1"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:LibraryName>CodeList</otm:LibraryName>
+                <otm:LibraryVersion>1.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>FINAL</otm:LibraryStatus>
+                <otm:SourceFile>/CodeList_1_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T15:17:40.737-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:complexType name="DocumentType_Enum">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Defines the specific type of identification or certification document.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">DocumentType_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0100:DocumentType_Enum_Base">
+                <xsd:attribute name="extension" type="ota2:String_EnumExtension"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="DocumentType_Enum_Base">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Defines the specific type of identification or certification document.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">DocumentType_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="NaturalizationCertificate"/>
+            <xsd:enumeration value="PassportCard"/>
+            <xsd:enumeration value="CrewMemberCertificate"/>
+            <xsd:enumeration value="AirNexusCard"/>
+            <xsd:enumeration value="MerchantMariner"/>
+            <xsd:enumeration value="Non-standard"/>
+            <xsd:enumeration value="KnownTravelerNumber"/>
+            <xsd:enumeration value="RedressNumber"/>
+            <xsd:enumeration value="PermanentResidentCard"/>
+            <xsd:enumeration value="PilotsLicense"/>
+            <xsd:enumeration value="RefugeeTravelDocument"/>
+            <xsd:enumeration value="BorderCrossingCard"/>
+            <xsd:enumeration value="VerhicleRegistrationNumber"/>
+            <xsd:enumeration value="TaxexEmptionNumber"/>
+            <xsd:enumeration value="InsurancePolicyNumber"/>
+            <xsd:enumeration value="AlienRegistrationNumber"/>
+            <xsd:enumeration value="VaccinationCertificate"/>
+            <xsd:enumeration value="NationalIdentityDocument"/>
+            <xsd:enumeration value="DriversLicense"/>
+            <xsd:enumeration value="MilitaryIdentification"/>
+            <xsd:enumeration value="Passport"/>
+            <xsd:enumeration value="Visa"/>
+            <xsd:enumeration value="Other_"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Gender_Enum">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationClosed">Gender_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Male"/>
+            <xsd:enumeration value="Female"/>
+            <xsd:enumeration value="Unknown"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="MaritalStatus_Enum">
+        <xsd:annotation>
+            <xsd:documentation source="Description">The marital status of a person.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationClosed">MaritalStatus_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Annulled"/>
+            <xsd:enumeration value="Co-habiting"/>
+            <xsd:enumeration value="Divorced"/>
+            <xsd:enumeration value="Engaged"/>
+            <xsd:enumeration value="Married"/>
+            <xsd:enumeration value="Separated"/>
+            <xsd:enumeration value="Single"/>
+            <xsd:enumeration value="Widowed"/>
+            <xsd:enumeration value="Unknown"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="PhoneLocation_Enum">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Where the phone is located.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">PhoneLocation_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0100:PhoneLocation_Enum_Base">
+                <xsd:attribute name="extension" type="ota2:String_EnumExtension"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="PhoneLocation_Enum_Base">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Where the phone is located.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">PhoneLocation_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Brand reservations office"/>
+            <xsd:enumeration value="Central reservations office"/>
+            <xsd:enumeration value="Home"/>
+            <xsd:enumeration value="Managing company"/>
+            <xsd:enumeration value="Mobile"/>
+            <xsd:enumeration value="Office"/>
+            <xsd:enumeration value="Property direct"/>
+            <xsd:enumeration value="Property reservation Office"/>
+            <xsd:enumeration value="Sales office"/>
+            <xsd:enumeration value="Other_"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="PhoneUseType_Enum">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">PhoneUseType_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0100:PhoneUseType_Enum_Base">
+                <xsd:attribute name="extension" type="ota2:String_EnumExtension"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="PhoneUseType_Enum_Base">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">PhoneUseType_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Contact"/>
+            <xsd:enumeration value="Daytime contact"/>
+            <xsd:enumeration value="Emergency contact"/>
+            <xsd:enumeration value="Evening contact"/>
+            <xsd:enumeration value="Guest use"/>
+            <xsd:enumeration value="Mobile"/>
+            <xsd:enumeration value="Pickup contact"/>
+            <xsd:enumeration value="Toll free number"/>
+            <xsd:enumeration value="Travel arranger"/>
+            <xsd:enumeration value="Other_"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:complexType name="PhoneTechType_Enum">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Defines the technology associated with this phone number.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">PhoneTechType_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="ota2-0100:PhoneTechType_Enum_Base">
+                <xsd:attribute name="extension" type="ota2:String_EnumExtension"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="PhoneTechType_Enum_Base">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Defines the technology associated with this phone number.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationOpen">PhoneTechType_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Voice"/>
+            <xsd:enumeration value="Fax"/>
+            <xsd:enumeration value="Pager"/>
+            <xsd:enumeration value="TTY"/>
+            <xsd:enumeration value="Other_"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="EmployeeStatus_Enum">
+        <xsd:annotation>
+            <xsd:documentation source="Description">OTA Codelist: Employee Status	EMP	
+	1	Active
+	2	Retired
+	3	Leave
+	4	Terminated</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="EnumerationClosed">EmployeeStatus_Enum</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Active"/>
+            <xsd:enumeration value="Retired"/>
+            <xsd:enumeration value="Leave"/>
+            <xsd:enumeration value="Terminated"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+</xsd:schema>

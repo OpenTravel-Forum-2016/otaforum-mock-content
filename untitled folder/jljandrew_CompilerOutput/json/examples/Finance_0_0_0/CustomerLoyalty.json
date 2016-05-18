@@ -1,0 +1,28 @@
+{
+  "CustomerLoyalty" : {
+    "value" : null,
+    "id" : "customerLoyalty_1",
+    "programID" : "I am a short string.",
+    "membershipID" : "I am a tiny string.",
+    "travelSector" : "2",
+    "vendorCode" : "I am a tiny string.",
+    "allianceLoyaltyLevelName" : "I am a short string.",
+    "customerType" : "I am a tiny string.",
+    "customerValue" : "I am a tiny string.",
+    "password" : "I am a tiny string.",
+    "loyalLevel" : "I am a tiny string.",
+    "loyalLevelCode" : 1234,
+    "singleVendorInd" : "SingleVndr",
+    "SignupDate" : "2011-01-24",
+    "EffectiveDate" : "2011-07-04",
+    "ExpireDate" : "2011-12-05",
+    "shareMarketInd" : "Yes",
+    "shareSyncInd" : "No",
+    "optInStatus" : "OptedIn",
+    "optInDate" : "2011-01-24T09:45:00",
+    "optOutDate" : "2011-07-04T14:15:00",
+    "codeContext" : "I am a tiny string.",
+    "expireDateExclusiveIndicatorInd" : true,
+    "primaryLoyaltyIndicatorInd" : true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ClassOfServiceDetail" : {
+    "@type" : "ClassOfServiceDetail",
+    "code" : "I am a tiny string.",
+    "count" : 1234,
+    "name" : "I am a short string."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Certification" : {
+    "value" : null,
+    "certId" : "cert546473834",
+    "freeText" : "Certified fun.",
+    "language" : "en",
+    "effective" : "2011-01-24",
+    "expire" : "2011-07-04",
+    "singleVendorIndGroupInd" : true,
+    "expireDateExclusiveInd" : true
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AvailabilityRQ xmlns="http://www.opentravel.org/OTM/product/v0"
+    timeStamp="2016-05-18T15:17:31.580-04:00" version="0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <ProductQueryAvailability>
+        <ProductQueriesID id="productQueries_1"/>
+    </ProductQueryAvailability>
+</AvailabilityRQ>

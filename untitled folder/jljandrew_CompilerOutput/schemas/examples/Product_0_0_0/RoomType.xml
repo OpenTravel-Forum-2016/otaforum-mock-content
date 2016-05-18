@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RoomType xmlns="http://www.opentravel.org/OTM/product/v0"
+    bedTypeCode="K1" nonSmokingInd="true" roomTypeCode="STD"
+    roomTypeId="roomType_1"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v0 ../../Product_0_0_0.xsd">
+    <ota2:CommentsDetail language="eng" name="I am a short string.">
+        <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+        <ota2:TextualComment>I am a long string.</ota2:TextualComment>
+    </ota2:CommentsDetail>
+</RoomType>
