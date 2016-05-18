@@ -39,7 +39,8 @@
         <Action actionId="Update" common="false">
             <ActionRequest httpMethod="PUT"
                 mimeTypes="APPLICATION_XML APPLICATION_JSON"
-                paramGroup="ID" pathTemplate="/{system}/{company}/{instance}"/>
+                paramGroup="ID"
+                pathTemplate="/{system}/{company}/{instance}" payloadType="E_RFPResource_SubstitutionGroup"/>
             <ActionResponse mimeTypes="APPLICATION_JSON APPLICATION_XML"
                 payloadType="E_RFPResource_SubstitutionGroup" statusCodes="200"/>
         </Action>

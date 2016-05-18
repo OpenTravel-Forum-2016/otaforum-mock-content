@@ -1,6 +1,7 @@
 {
-  "E_RFPSummary" : {
-    "@type" : "E_RFP",
+  "E_RFPDetail" : {
+    "@type" : "E_RFP_Detail",
+    "comments" : "Example String Value",
     "Identifier" : {
       "value" : "guid12345",
       "url" : "http://www.w3.org/2001/XMLSchema",
@@ -67,12 +68,9 @@
           "company" : "Acme",
           "instance" : "i0987654321"
         },
-        "PersonSummary" : {
-          "@type" : "Person",
+        "PersonIdentifier" : {
+          "@type" : "Person_ID",
           "id" : "person_1",
-          "gender" : "Male",
-          "maritalStatus_Enum" : "Annulled",
-          "birthDate" : "2011-01-24",
           "Identifier" : {
             "value" : "guid12345",
             "url" : "http://www.w3.org/2001/XMLSchema",
@@ -92,141 +90,7 @@
             "system" : "sysABC3344",
             "company" : "Acme",
             "instance" : "i0987654321"
-          } ],
-          "Person_Name" : {
-            "@type" : "Person_Name",
-            "type" : "Alternate",
-            "language" : "???",
-            "defaultInd" : true,
-            "Prefix" : [ "I am a tiny string.", "I am a tiny string." ],
-            "Given" : [ "I am a short string.", "I am a short string." ],
-            "Middle" : [ "I am a short string.", "I am a short string." ],
-            "SurnamePrefix" : "I am a tiny string.",
-            "Surname" : "I am a short string.",
-            "Suffix" : [ "I am a tiny string.", "I am a tiny string." ],
-            "Title" : [ "I am a tiny string.", "I am a tiny string." ],
-            "Person_Document" : {
-              "@type" : "Person_Document",
-              "DocType" : {
-                "value" : "NaturalizationCertificate"
-              }
-            },
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Yes",
-              "shareSyncInd" : "No",
-              "optInStatus" : "OptedIn",
-              "optInDate" : "2011-01-24T09:45:00",
-              "optOutDate" : "2011-07-04T14:15:00"
-            }
-          },
-          "Address" : [ {
-            "@type" : "Address",
-            "role" : "Home",
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string."
-          }, {
-            "@type" : "Address",
-            "role" : "Business",
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string."
-          } ],
-          "TelephoneSummary" : {
-            "@type" : "Telephone",
-            "role" : "Home",
-            "countryAccessCode" : "Example String Value",
-            "areaCityCode" : "Example String Value",
-            "phoneNumber" : "2358878",
-            "extension" : "Example String Value",
-            "id" : "telephone_1"
-          },
-          "Email" : [ {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Inherit",
-            "shareSyncInd" : "Yes",
-            "optInStatus" : "OptedOut",
-            "optInDate" : "2011-12-05T06:00:00",
-            "optOutDate" : "2011-01-24T09:45:00",
-            "validInd" : true,
-            "defaultInd" : true
-          }, {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "No",
-            "shareSyncInd" : "Inherit",
-            "optInStatus" : "Unknown",
-            "optInDate" : "2011-07-04T14:15:00",
-            "optOutDate" : "2011-12-05T06:00:00",
-            "validInd" : true,
-            "defaultInd" : true
-          } ],
-          "Privacy" : {
-            "value" : null,
-            "shareMarketInd" : "Yes",
-            "shareSyncInd" : "No",
-            "optInStatus" : "OptedIn",
-            "optInDate" : "2011-01-24T09:45:00",
-            "optOutDate" : "2011-07-04T14:15:00"
-          },
-          "Comments" : {
-            "value" : "Some fee text.",
-            "language" : "en"
-          }
+          } ]
         }
       }, {
         "@type" : "Contact_Person",
@@ -239,12 +103,9 @@
           "company" : "Acme",
           "instance" : "i0987654321"
         },
-        "PersonSummary" : {
-          "@type" : "Person",
+        "PersonIdentifier" : {
+          "@type" : "Person_ID",
           "id" : "person_2",
-          "gender" : "Female",
-          "maritalStatus_Enum" : "Co-habiting",
-          "birthDate" : "2011-07-04",
           "Identifier" : {
             "value" : "guid12345",
             "url" : "http://www.w3.org/2001/XMLSchema",
@@ -264,141 +125,7 @@
             "system" : "sysABC3344",
             "company" : "Acme",
             "instance" : "i0987654321"
-          } ],
-          "Person_Name" : {
-            "@type" : "Person_Name",
-            "type" : "Former",
-            "language" : "???",
-            "defaultInd" : true,
-            "Prefix" : [ "I am a tiny string.", "I am a tiny string." ],
-            "Given" : [ "I am a short string.", "I am a short string." ],
-            "Middle" : [ "I am a short string.", "I am a short string." ],
-            "SurnamePrefix" : "I am a tiny string.",
-            "Surname" : "I am a short string.",
-            "Suffix" : [ "I am a tiny string.", "I am a tiny string." ],
-            "Title" : [ "I am a tiny string.", "I am a tiny string." ],
-            "Person_Document" : {
-              "@type" : "Person_Document",
-              "DocType" : {
-                "value" : "PassportCard"
-              }
-            },
-            "Privacy" : {
-              "value" : null,
-              "shareMarketInd" : "Inherit",
-              "shareSyncInd" : "Yes",
-              "optInStatus" : "OptedOut",
-              "optInDate" : "2011-12-05T06:00:00",
-              "optOutDate" : "2011-01-24T09:45:00"
-            }
-          },
-          "Address" : [ {
-            "@type" : "Address",
-            "role" : "Destination",
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string."
-          }, {
-            "@type" : "Address",
-            "role" : "Other",
-            "AddressLine" : [ "I am a short string.", "I am a short string." ],
-            "BldgRoom" : [ {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            }, {
-              "value" : "Bldg H",
-              "buldingInd" : true
-            } ],
-            "Number" : {
-              "value" : "563",
-              "streetNmbrSuffix" : "B",
-              "streetDirection" : "NNW",
-              "ruralRouteNmbr" : "88",
-              "pO_Box" : "98567499"
-            },
-            "Street" : "I am a short string.",
-            "City" : "I am a short string.",
-            "County" : "I am a short string.",
-            "StateProv" : {
-              "value" : "TX",
-              "name" : "Texas"
-            },
-            "Country" : {
-              "value" : "IR",
-              "name" : "Ireland"
-            },
-            "PostalCode" : "I am a short string."
-          } ],
-          "TelephoneSummary" : {
-            "@type" : "Telephone",
-            "role" : "Office",
-            "countryAccessCode" : "Example String Value",
-            "areaCityCode" : "Example String Value",
-            "phoneNumber" : "2358878",
-            "extension" : "Example String Value",
-            "id" : "telephone_2"
-          },
-          "Email" : [ {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "No",
-            "shareSyncInd" : "Inherit",
-            "optInStatus" : "Unknown",
-            "optInDate" : "2011-07-04T14:15:00",
-            "optOutDate" : "2011-12-05T06:00:00",
-            "validInd" : true,
-            "defaultInd" : true
-          }, {
-            "value" : "I am a medium string.",
-            "emailType" : "2",
-            "remark" : "Example String Value",
-            "textFormat" : "I am a short string.",
-            "shareMarketInd" : "Yes",
-            "shareSyncInd" : "No",
-            "optInStatus" : "OptedIn",
-            "optInDate" : "2011-01-24T09:45:00",
-            "optOutDate" : "2011-07-04T14:15:00",
-            "validInd" : true,
-            "defaultInd" : true
-          } ],
-          "Privacy" : {
-            "value" : null,
-            "shareMarketInd" : "Inherit",
-            "shareSyncInd" : "Yes",
-            "optInStatus" : "OptedOut",
-            "optInDate" : "2011-12-05T06:00:00",
-            "optOutDate" : "2011-01-24T09:45:00"
-          },
-          "Comments" : {
-            "value" : "Some fee text.",
-            "language" : "en"
-          }
+          } ]
         }
       } ]
     },
@@ -449,31 +176,17 @@
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeSummary" : {
-            "@type" : "RoomType",
-            "roomTypeId" : "roomType_1",
-            "roomTypeCode" : "STD",
-            "bedTypeCode" : "K1",
-            "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
-            }
+          "RoomTypeIdentifier" : {
+            "@type" : "RoomType_ID",
+            "roomTypeId" : "roomType_1"
           }
         }, {
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeSummary" : {
-            "@type" : "RoomType",
-            "roomTypeId" : "roomType_2",
-            "roomTypeCode" : "STD",
-            "bedTypeCode" : "K1",
-            "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
-            }
+          "RoomTypeIdentifier" : {
+            "@type" : "RoomType_ID",
+            "roomTypeId" : "roomType_2"
           }
         } ]
       }, {
@@ -483,31 +196,17 @@
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeSummary" : {
-            "@type" : "RoomType",
-            "roomTypeId" : "roomType_3",
-            "roomTypeCode" : "STD",
-            "bedTypeCode" : "K1",
-            "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
-            }
+          "RoomTypeIdentifier" : {
+            "@type" : "RoomType_ID",
+            "roomTypeId" : "roomType_3"
           }
         }, {
           "@type" : "StayDayRoom",
           "numberOfUnits" : 75,
           "occupancyType" : "Single",
-          "RoomTypeSummary" : {
-            "@type" : "RoomType",
-            "roomTypeId" : "roomType_4",
-            "roomTypeCode" : "STD",
-            "bedTypeCode" : "K1",
-            "nonSmokingInd" : true,
-            "CommentsSummary" : {
-              "@type" : "Comments",
-              "TextualComment" : [ "I am a long string.", "I am a long string." ]
-            }
+          "RoomTypeIdentifier" : {
+            "@type" : "RoomType_ID",
+            "roomTypeId" : "roomType_4"
           }
         } ]
       } ],
@@ -613,6 +312,16 @@
         "currencyCode" : "USD",
         "decimalPlaces" : 2
       }
+    },
+    "AdditionalInfo" : {
+      "value" : null,
+      "attachDocumentInd" : true,
+      "aVNeedsInd" : true,
+      "decisionFactorsInd" : true,
+      "contractualRequirementsInd" : true,
+      "billingInfoInd" : true,
+      "otherSuppliersInd" : true,
+      "thirdPartyPlannerInd" : true
     }
   }
 }
