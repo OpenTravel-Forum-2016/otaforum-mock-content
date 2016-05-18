@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompanyName xmlns="http://www.opentravel.org/OTM/Common/v2" code="AI"
+    codeContext="I am a tiny string." department="Adventure department"
+    division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</CompanyName>

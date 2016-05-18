@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.opentravel.org/OTM/Common/v0"
+    version="0.0.0" xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:LibraryName>OTA_SimpleTypes</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>FINAL</otm:LibraryStatus>
+                <otm:SourceFile>/OTA_SimpleTypes_0_0_0.otm</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T14:45:07.265-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:simpleType name="String_Long">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A long string  
+Minimum length of 0 and a maximum length of 4096</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Long</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a long string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4096"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A string with a minimum length of 0 and a maximum length of 512.</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a medium string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="512"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Short">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A short string  
+Minimum length of 0 and a maximum length of 128</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Short</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a short string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Tiny">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A tiny string  
+Minimum length of 0 and a maximum length of 32</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Tiny</otm:OTA2Entity>
+                <otm:Example context="OTA2">I am a tiny string.</otm:Example>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="String_Text">
+        <xsd:annotation>
+            <xsd:documentation source="Description">A string intended for free text 
+Minimum length of 0 and maximum length of 4096</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="Simple">String_Text</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4096"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+</xsd:schema>

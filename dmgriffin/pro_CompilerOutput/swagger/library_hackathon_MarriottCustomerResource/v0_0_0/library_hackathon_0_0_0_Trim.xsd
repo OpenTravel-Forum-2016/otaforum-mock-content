@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://opentravel.org/local/dmgri807/mmm/v0"
+    version="0.0.0"
+    xmlns:m="http://opentravel.org/local/dmgri807/mmm/v0"
+    xmlns:ota2="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:otm="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <xsd:annotation>
+        <xsd:appinfo>
+            <otm:Library>
+                <otm:LibraryName>library_hackathon</otm:LibraryName>
+                <otm:LibraryVersion>0.0.0</otm:LibraryVersion>
+                <otm:LibraryStatus>DRAFT</otm:LibraryStatus>
+                <otm:SourceFile>/library1</otm:SourceFile>
+                <otm:CompilerVersion>4.0-SNAPSHOT</otm:CompilerVersion>
+                <otm:CompileDate>2016-05-18T14:45:07.245-04:00</otm:CompileDate>
+            </otm:Library>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import namespace="http://www.opentravel.org/OTM/Common/v0" schemaLocation="ota2_imports.xsd"/>
+    <xsd:import
+        namespace="http://www.OpenTravel.org/ns/OTA2/AppInfo_v01_00" schemaLocation="built-ins/OTA2_AppInfo_v1.0.0.xsd"/>
+    
+    <xsd:element name="MarriottCustomerSubGrp" type="m:MarriottCustomer_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Marriott's extension of the Open Travel Customer
+</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">MarriottCustomer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="MarriottCustomerID"
+        substitutionGroup="m:MarriottCustomerSubGrp" type="m:MarriottCustomer_ID"/>
+    <xsd:element name="MarriottCustomerIdentifier"
+        substitutionGroup="m:MarriottCustomerSubGrp" type="m:MarriottCustomer_ID"/>
+    <xsd:element name="MarriottCustomer"
+        substitutionGroup="m:MarriottCustomerID" type="m:MarriottCustomer"/>
+    <xsd:element name="MarriottCustomerSummary"
+        substitutionGroup="m:MarriottCustomerSubGrp" type="m:MarriottCustomer"/>
+    
+    <xsd:complexType name="MarriottCustomer_ID">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Marriott's extension of the Open Travel Customer
+</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">MarriottCustomer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="Identifier" type="ota2:Identifier">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">An identifier used to uniquely reference an object in a system (e.g. an airline reservation reference, customer profile reference, booking confirmation number, or a reference to a previous availability quote).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element maxOccurs="5" minOccurs="0" name="OtherID" type="ota2:Identifier">
+                <xsd:annotation>
+                    <xsd:documentation source="Description">These identifiers are assigned by systems other than the system that generated this record.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="optional">
+            <xsd:annotation>
+                <xsd:documentation source="Description">Provides a unique reference to this contact person.</xsd:documentation>
+                <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type</xsd:documentation>
+                <xsd:appinfo>
+                    <otm:Equivalent context="Common">RPH</otm:Equivalent>
+                </xsd:appinfo>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="MarriottCustomer">
+        <xsd:annotation>
+            <xsd:documentation source="Description">Marriott's extension of the Open Travel Customer
+</xsd:documentation>
+            <xsd:appinfo>
+                <otm:OTA2Entity type="BusinessObject">MarriottCustomer</otm:OTA2Entity>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:complexContent>
+            <xsd:extension base="m:MarriottCustomer_ID">
+                <xsd:sequence>
+                    <xsd:element maxOccurs="1" minOccurs="1" ref="ota2:Person_Name">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Name information for a person.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}PersonNameType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">PersonName</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="5" minOccurs="0" ref="ota2:AddressSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information about an address that identifies a location for a specific purposes.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}AddressInfoType</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">Address</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" ref="ota2:TelephoneSubGrp">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Information about a telephone number, including the actual number and its usage.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Example value: p = 555-555-5555</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element maxOccurs="5" minOccurs="0"
+                        name="Email" type="ota2:Email">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Electronic email addresses, in IETF specified format.</xsd:documentation>
+                            <xsd:documentation source="Implementer">Assigned XSD Type: {http://chameleon.anonymous/ns}EmailType</xsd:documentation>
+                            <xsd:documentation source="Implementer">Example value: p = john.smith@email.com</xsd:documentation>
+                            <xsd:appinfo>
+                                <otm:Equivalent context="Common">Email</otm:Equivalent>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="Privacy" type="ota2:Privacy">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Allows for control of the sharing of data between parties.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="Comments" type="ota2:Text_Free">
+                        <xsd:annotation>
+                            <xsd:documentation source="Description">Textual information about the person.</xsd:documentation>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="MIRewardsNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" ref="ota2:ExtensionPoint"/>
+                </xsd:sequence>
+                <xsd:attribute name="gender" type="ota2:Gender_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The gender of the person.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="maritalStatus_Enum"
+                    type="ota2:MaritalStatus_Enum" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">Specifies the marital status of the person.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+                <xsd:attribute name="birthDate" type="xsd:date" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation source="Description">The birth date of the person.</xsd:documentation>
+                        <xsd:documentation source="Implementer">AttributeGroup: BirthDateGroup</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    
+</xsd:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RequestorIDDetail xmlns="http://www.opentravel.org/OTM/Common/v0"
+    messagePassword="I am a tiny string." name="I am a medium string."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <Identifier company="Acme" instance="i0987654321"
+        system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</Identifier>
+</RequestorIDDetail>

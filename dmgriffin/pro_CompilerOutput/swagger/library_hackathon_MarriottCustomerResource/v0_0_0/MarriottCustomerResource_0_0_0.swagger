@@ -1,0 +1,495 @@
+{
+  "swagger": "2.0",
+  "x-otm-resource": {
+    "namespace": "http://opentravel.org/local/dmgri807/mmm/v0",
+    "localName": "MarriottCustomerResource"
+  },
+  "info": {
+    "title": "MarriottCustomerResource",
+    "x-otm-library": {
+      "ResourceName": "MarriottCustomerResource",
+      "LibraryName": "library_hackathon",
+      "LibraryVersion": "0.0.0",
+      "LibraryStatus": "DRAFT",
+      "SourceFile": "/library1",
+      "CompilerVersion": "4.0-SNAPSHOT",
+      "CompileDate": "2016-05-18T14:45:07.230-0400"
+    },
+    "version": "0.0.0"
+  },
+  "host": "127.0.0.1",
+  "basePath": "/MarriottCustomers",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/{Identifier}": {
+      "get": {
+        "summary": "MarriottCustomerResource - Get",
+        "operationId": "Get",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "header",
+            "description": "Provides a unique reference to this contact person.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "RPH"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Identifier",
+            "in": "path",
+            "description": "An identifier used to uniquely reference an object in a system (e.g. an airline reservation reference, customer profile reference, booking confirmation number, or a reference to a previous availability quote).",
+            "required": true,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "url",
+            "in": "header",
+            "description": "Uri of the creating system. The URI should be an URL and be globally unique. Should only be omitted when the context is clearly implied for the containing document.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "system",
+            "in": "header",
+            "description": "Name or identifier for the creating system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "sysABC3344"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "company",
+            "in": "header",
+            "description": "Name of the company that manages the reference system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "Acme"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "instance",
+            "in": "header",
+            "description": "The identification of a record as it exists at a point in time. An instance is used in update messages where the sender must assure the server that the update sent refers to the most recent modification level of the object being updated.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "Instance"
+                }
+              ],
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "i0987654321"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Marriott\u0027s extension of the Open Travel Customer",
+            "schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.schema.json#/definitions/MarriottCustomerID"
+            },
+            "x-xml-schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.xsd#/MarriottCustomerID"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "MarriottCustomerResource - Update",
+        "operationId": "Update",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "header",
+            "description": "Provides a unique reference to this contact person.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "RPH"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Identifier",
+            "in": "path",
+            "description": "An identifier used to uniquely reference an object in a system (e.g. an airline reservation reference, customer profile reference, booking confirmation number, or a reference to a previous availability quote).",
+            "required": true,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "url",
+            "in": "header",
+            "description": "Uri of the creating system. The URI should be an URL and be globally unique. Should only be omitted when the context is clearly implied for the containing document.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "system",
+            "in": "header",
+            "description": "Name or identifier for the creating system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "sysABC3344"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "company",
+            "in": "header",
+            "description": "Name of the company that manages the reference system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "Acme"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "instance",
+            "in": "header",
+            "description": "The identification of a record as it exists at a point in time. An instance is used in update messages where the sender must assure the server that the update sent refers to the most recent modification level of the object being updated.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "Instance"
+                }
+              ],
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "i0987654321"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Marriott\u0027s extension of the Open Travel Customer",
+            "schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.schema.json#/definitions/MarriottCustomerID"
+            },
+            "x-xml-schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.xsd#/MarriottCustomer"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "MarriottCustomerResource - Create",
+        "operationId": "Create",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "header",
+            "description": "Provides a unique reference to this contact person.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "RPH"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Identifier",
+            "in": "path",
+            "description": "An identifier used to uniquely reference an object in a system (e.g. an airline reservation reference, customer profile reference, booking confirmation number, or a reference to a previous availability quote).",
+            "required": true,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "url",
+            "in": "header",
+            "description": "Uri of the creating system. The URI should be an URL and be globally unique. Should only be omitted when the context is clearly implied for the containing document.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "system",
+            "in": "header",
+            "description": "Name or identifier for the creating system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "sysABC3344"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "company",
+            "in": "header",
+            "description": "Name of the company that manages the reference system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "Acme"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "instance",
+            "in": "header",
+            "description": "The identification of a record as it exists at a point in time. An instance is used in update messages where the sender must assure the server that the update sent refers to the most recent modification level of the object being updated.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "Instance"
+                }
+              ],
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "i0987654321"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "MarriottCustomerID",
+            "in": "body",
+            "description": "Marriott\u0027s extension of the Open Travel Customer",
+            "required": true,
+            "schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.schema.json#/definitions/MarriottCustomerID"
+            },
+            "x-xml-schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.xsd#/MarriottCustomer"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Marriott\u0027s extension of the Open Travel Customer",
+            "schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.schema.json#/definitions/MarriottCustomerID"
+            },
+            "x-xml-schema": {
+              "$ref": "library_hackathon_0_0_0_Trim.xsd#/MarriottCustomer"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "MarriottCustomerResource - Delete",
+        "operationId": "Delete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "header",
+            "description": "Provides a unique reference to this contact person.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}RPH_Type"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "RPH"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Identifier",
+            "in": "path",
+            "description": "An identifier used to uniquely reference an object in a system (e.g. an airline reservation reference, customer profile reference, booking confirmation number, or a reference to a previous availability quote).",
+            "required": true,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "url",
+            "in": "header",
+            "description": "Uri of the creating system. The URI should be an URL and be globally unique. Should only be omitted when the context is clearly implied for the containing document.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "system",
+            "in": "header",
+            "description": "Name or identifier for the creating system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "sysABC3344"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "company",
+            "in": "header",
+            "description": "Name of the company that manages the reference system.",
+            "x-otm-annotations": {
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "Acme"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          },
+          {
+            "name": "instance",
+            "in": "header",
+            "description": "The identification of a record as it exists at a point in time. An instance is used in update messages where the sender must assure the server that the update sent refers to the most recent modification level of the object being updated.",
+            "x-otm-annotations": {
+              "documentation": {
+                "implementers": [
+                  "Assigned XSD Type: {http://chameleon.anonymous/ns}StringLength1to32"
+                ]
+              },
+              "equivalents": [
+                {
+                  "context": "Common",
+                  "value": "Instance"
+                }
+              ],
+              "examples": [
+                {
+                  "context": "Common",
+                  "value": "i0987654321"
+                }
+              ]
+            },
+            "required": false,
+            "type": "string",
+            "maxLength": 128
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

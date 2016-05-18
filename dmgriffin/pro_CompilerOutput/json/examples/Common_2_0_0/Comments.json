@@ -1,0 +1,8 @@
+{
+  "CommentsDetail" : {
+    "@type" : "CommentsDetail",
+    "name" : "I am a short string.",
+    "language" : "eng",
+    "TextualComment" : [ "I am a long string.", "I am a long string.", "I am a long string." ]
+  }
+}

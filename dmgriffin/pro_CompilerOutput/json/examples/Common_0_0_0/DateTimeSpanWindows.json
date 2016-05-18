@@ -1,0 +1,24 @@
+{
+  "DateTimeSpanWindowsDetail" : {
+    "@type" : "DateTimeSpanWindowsDetail",
+    "TimeSpan" : {
+      "value" : null,
+      "start" : "2010-12-31T11:55:00Z",
+      "end" : "12/20/2016"
+    },
+    "StartWindow" : {
+      "value" : null,
+      "start" : "2010-12-31T11:55:00Z",
+      "end" : "12/20/2016"
+    },
+    "EndWindow" : {
+      "value" : null,
+      "start" : "2010-12-31T11:55:00Z",
+      "end" : "12/20/2016"
+    },
+    "Duration" : [ "PT1004199059S", "PT130S", "PT2M10S" ],
+    "DurationUnit" : {
+      "value" : "SUN"
+    }
+  }
+}

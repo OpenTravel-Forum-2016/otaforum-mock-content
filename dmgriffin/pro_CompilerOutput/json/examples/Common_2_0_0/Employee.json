@@ -1,0 +1,11 @@
+{
+  "Employee" : {
+    "value" : null,
+    "id" : "employee_1",
+    "level" : "I am a tiny string.",
+    "title" : "I am a short string.",
+    "status" : "Active",
+    "description" : "I am a short string.",
+    "employer" : "I am a tiny string."
+  }
+}

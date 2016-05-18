@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DateTimeSpanWindowsDetail
+    xmlns="http://www.opentravel.org/OTM/Common/v0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v0 ../../Common_0_0_0.xsd">
+    <TimeSpan end="12/20/2016" start="2010-12-31T11:55:00Z"/>
+    <StartWindow end="12/20/2016" start="2010-12-31T11:55:00Z"/>
+    <EndWindow end="12/20/2016" start="2010-12-31T11:55:00Z"/>
+    <Duration>PT1004199059S</Duration>
+    <Duration>PT130S</Duration>
+    <Duration>PT2M10S</Duration>
+    <DurationUnit>SUN</DurationUnit>
+</DateTimeSpanWindowsDetail>

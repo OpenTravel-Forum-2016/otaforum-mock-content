@@ -1,0 +1,15 @@
+{
+  "BookingChannel" : {
+    "@type" : "BookingChannel",
+    "type" : "2",
+    "primaryInd" : true,
+    "CompanyName" : {
+      "value" : "Travel Adventure Partners Incorporated",
+      "division" : "Travel Division",
+      "department" : "Adventure department",
+      "shortName" : "Adventure Inc",
+      "code" : "AI",
+      "codeContext" : "I am a tiny string."
+    }
+  }
+}

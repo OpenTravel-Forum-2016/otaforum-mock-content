@@ -1,0 +1,32 @@
+{
+  "MarriottCustomerIdentifier" : {
+    "@type" : "MarriottCustomerID",
+    "id" : "marriottCustomer_1",
+    "Identifier" : {
+      "value" : "guid12345",
+      "url" : "http://www.w3.org/2001/XMLSchema",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    },
+    "OtherID" : [ {
+      "value" : "guid12345",
+      "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    }, {
+      "value" : "guid12345",
+      "url" : "http://www.w3.org/2001/XMLSchema",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    }, {
+      "value" : "guid12345",
+      "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+      "system" : "sysABC3344",
+      "company" : "Acme",
+      "instance" : "i0987654321"
+    } ]
+  }
+}

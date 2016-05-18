@@ -1,0 +1,16 @@
+{
+  "ErrorWarning" : {
+    "value" : "I am a medium string.",
+    "language" : "eng",
+    "type" : "Advisory",
+    "typeExtension" : "type_Other_Value",
+    "shortText" : "I am a short string.",
+    "code" : "2",
+    "DocURL" : "http://www.w3.org/2001/XMLSchema",
+    "tag" : "I am a medium string.",
+    "recordID" : "I am a short string.",
+    "nodeList" : "I am a medium string.",
+    "status" : "Complete",
+    "statusExtension" : "status_Other_Value"
+  }
+}
